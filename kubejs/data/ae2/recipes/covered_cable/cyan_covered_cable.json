@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "ae2:covered_cable"
+    },
+    {
+      "tag": "forge:dyes/cyan"
+    }
+  ],
+  "result": {
+    "item": "ae2:cyan_covered_cable"
+  }
+}

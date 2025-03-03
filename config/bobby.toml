@@ -4,7 +4,7 @@
 
 	[Settings."General Settings"]
 		"Enable Bobby" = true
-		"Do not load block entities in fake chunks" = true
+		"Do not load block entities in fake chunks" = false
 		"Reduce the light levels in fake chunks" = false
 		"Max Render Distance" = 32
 		"Integrated Server View Distance override" = 0

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "ae2:glass_cable"
+    },
+    {
+      "tag": "forge:dyes/light_blue"
+    }
+  ],
+  "result": {
+    "item": "ae2:light_blue_glass_cable"
+  }
+}

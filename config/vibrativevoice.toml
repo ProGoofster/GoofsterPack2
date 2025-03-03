@@ -12,7 +12,7 @@ peakDuration = 20
 #These are the restrictions that may influence the outcome of the vibrations resulting from voice chat.
 [restrictions]
 	#This is the range after which players can no longer be heard for frequency modulation. Defaults to 1000.
-	groups = false
+	groups = true
 	#If true, whispering will change the volume by the specified (whisperFactor) amount. Defaults to true.
 	whispering = true
 	#This is the factor by how much whispering will reduce noise, with 0 completely silencing the audio and 1 being unaffected. Defaults to 0.8.
