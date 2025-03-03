@@ -13,9 +13,11 @@
 /downloads
 /resourcepacks
 .curseclient
-options.txt
+# options.txt
 /local
 /logs
 /schematics
 /modernfix
 /crash-reports
+usercache.json
+usernamecache.json
