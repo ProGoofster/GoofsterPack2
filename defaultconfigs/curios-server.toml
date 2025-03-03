@@ -17,3 +17,9 @@ keepCurios = "DEFAULT"
 		#Range: 1 ~ 48
 		maxSlotsPerPage = 48
 
+#this may not work
+[[curiosSettings]]
+	identifier = "terminal"
+	size = 1
+	icon = "curios:slot/empty_terminal_slot"
+	priority = 4000

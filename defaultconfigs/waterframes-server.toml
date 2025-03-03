@@ -5,16 +5,16 @@
 	[waterframes.rendering]
 		#Width limit of displays in blocks
 		#Range: 1.0 ~ 256.0
-		maxWidth = 40.0
+		maxWidth = 256.0
 		#Height limit of displays in blocks
 		#Range: 1.0 ~ 256.0
-		maxHeight = 40.0
+		maxHeight = 256.0
 		#Max Radius of rendering distance in blocks
 		#Range: 4 ~ 512
-		maxRenderDistance = 64
+		maxRenderDistance = 256
 		#Max distance of projections in blocks
 		#Range: 4.0 ~ 512.0
-		maxProjectionDistance = 64.0
+		maxProjectionDistance = 128.0
 		#Enables media processing and rendering, disabling it will not render nothing, you can still hear videos
 		keepRendering = true
 
@@ -22,7 +22,7 @@
 	[waterframes.multimedia]
 		#Max volume distance radius
 		#Range: 8 ~ 512
-		maxVolumeDistance = 64
+		maxVolumeDistance = 512
 		#Max volume value
 		#values over 100 uses VLC überVolume
 		#Range: 10 ~ 120
@@ -68,7 +68,7 @@
 	[waterframes.remote_control]
 		#Distance in blocks of RC range
 		#Range: 4 ~ 256
-		distance = 32
+		distance = 256
 
 	#Configurations related to permissions
 	[waterframes.permissions]
@@ -95,7 +95,7 @@
 			#[WARNING]: THE AUTHOR OF THE MOD (SRRAPERO720) IS NOT RESPONSIBLE IF IN YOUR SERVER SOMEONE PUTS NSFW MEDIA
 			#WATERMEDIA HAVE SUPPORT FOR ADULT PAGES AND WHITELIST WAS DESIGNED TO PREVENT THAT
 			#MIMIMIMI THE KIDS, SHUT UP, I GIVE YOU THE OPTIONS ENABLED _BY DEFAULT_ TO PREVENT THAT
-			enable = true
+			enable = false
 			#Moves the whitelist into the darkside
 			blacklistMode = false
 			urls = ["imgur.com", "gyazo.com", "prntscr.com", "tinypic.com", "puu.sh", "pinimg.com", "photobucket.com", "staticflickr.com", "flic.kr", "tenor.co", "tenor.com", "gfycat.com", "giphy.com", "gph.is", "gifbin.com", "i.redd.it", "media.tumblr.com", "twimg.com", "githubusercontent.com", "googleusercontent.com", "googleapis.com", "wikimedia.org", "ytimg.com", "youtube.com", "youtu.be", "twitch.tv", "twitter.com", "x.com", "soundcloud.com", "kick.com", "streamable.com", "srrapero720.me", "fbcdn.net", "drive.google.com"]

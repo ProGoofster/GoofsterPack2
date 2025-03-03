@@ -387,9 +387,9 @@
 
 	[server.shulkerBoxDisallowedItems]
 		#List of items that are not allowed to be put in shulkerboxes - e.g. "minecraft:bundle"
-		disallowedItems = []
+		disallowedItems = ["sophisticatedstorage:backpack", "sophisticatedstorage:iron_backpack", "sophisticatedstorage:copper_backpack", "sophisticatedstorage:gold_backpack", "sophisticatedstorage:diamond_backpack", "sophisticatedstorage:netherite_backpack"]
 		#Determines if container items (those that override canFitInsideContainerItems to false) are able to fit in shulker boxes
-		containerItemsDisallowed = false
+		containerItemsDisallowed = true
 
 	#Stack Upgrade Settings
 	[server.stackUpgrade]
@@ -648,7 +648,7 @@
 		#Range: 3 ~ 9
 		maxNumberOfSlots = 5
 		#List of items that can be decompressed by compression upgrade and their results. Item registry names are expected here in format of "mod:itemBeingDecompressed=Nxmod:itemDecompressResult
-		additionalDecompressibleItems = ["minecraft:glowstone=4xminecraft:glowstone_dust", "minecraft:quartz_block=4xminecraft:quartz"]
+		additionalDecompressibleItems = []
 
 	#Hopper Upgrade Settings
 	[server.hopperUpgrade]
