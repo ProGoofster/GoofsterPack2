@@ -18,4 +18,19 @@ ServerEvents.recipes(event => {
     event.remove({output: 'culturaldelights:cooked_squid'});
     event.remove({output: 'culturaldelights:raw_calamari'});
     event.remove({output: 'culturaldelights:cooked_calamari'});
+
+    
+    //remove dupe recipes
+    event.shaped(
+        '2x quark:mud_pillar',
+        [
+          'M',
+          'M'
+        ],
+        {
+            M: 'minecraft:mud_bricks'
+        }
+    ).id('quark:building/crafting/mud_pillar');
+    event.remove({id: 'minecraft:cake'});
+    event.remove({id: 'neapolitan:cake'});
 })

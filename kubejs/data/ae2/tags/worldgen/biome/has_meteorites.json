@@ -1,7 +1,7 @@
 {
   "replace": true,
   "values": [
-    "ad_astra:glacio_ice_peaks",
-    "ad_astra:glacio_snowy_barrens"
+    "minecraft:end_highlands",
+    "minecraft:end_midlands"
   ]
 }

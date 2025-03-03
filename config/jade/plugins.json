@@ -76,10 +76,6 @@
     "goggles.detailed": false,
     "placard": true
   },
-  "expatternprovider": {
-    "jade_chamber": true,
-    "jade_wireless": true
-  },
   "balm": {
     "jade": true
   },
@@ -94,5 +90,11 @@
     "power_storage": true,
     "crafting_monitor": true,
     "part_name": true
+  },
+  "storagedrawers": {
+    "display.stacklimit": true,
+    "main": true,
+    "display.content": true,
+    "display.status": true
   }
 }
