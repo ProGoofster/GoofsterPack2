@@ -11,3 +11,29 @@ Advanced Peripherals
 
 Create fan for fire pit
 investigate "serenety effect"
+
+General:
+    -Port "Remove recipe by tooltip"
+    -Quark woodworks Compat
+
+Create:
+    -remove brewin' chewin' create milk drain
+AE2:
+    -Remove charger?
+    -Remove tools
+    press process:
+    1. Make "Netherix Compound/Composite" from Netherite and 4 Fluix Crystals in superheated mixing basin
+    2. Make "Energized Alloy" from "Compound" with Tesla Coil 
+    3. Make "Mysterious Panel" Sequenced Assembly
+        1. Mechanical press Energized Alloy
+        2. Deploy ME cable
+        3. Deploy Gold Wire
+        4. fill with Lava (or custom fluid)
+        5. Deploy Gold Wire
+        6. Deploy ME cable
+        7. Press again
+    4. Create Mysterious Cube out of 4 "Myserious Panels", Quark heart of diamond, myalite, skystone, and fluix in Mechanical crafter
+
+    -add another recipe to turn Mysterious Cube into the four presses (crushing?)
+    -presses can be cloned in the inscriber with a press and a single Netherite ingot.
+    -remove not so mysterious cube
