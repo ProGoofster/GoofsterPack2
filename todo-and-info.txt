@@ -1,16 +1,11 @@
 Currently Disabled:
-CC: Tweaked
-Copycats
-Pattern Schematics
-Amendments
-SUpplementaries^2
+
 Fishing Bobber Detector
-Every Compat
-Advanced Peripherals
+central kitchen
+deco
+steam n rails
+Copycats
 
-
-Create fan for fire pit
-investigate "serenety effect"
 
 General:
     -Port "Remove recipe by tooltip"
@@ -18,6 +13,7 @@ General:
     -Etched config
     -delete
     -quark woodcutter compat
+    -investigate "serenety effect"
 
 Sophisitcated:
     -balance
@@ -28,6 +24,7 @@ Create:
     -fix diamond grit sandpaper name to sand paper
     -woodcutter recipe port to create
     -farmers dough
+    -Create fan for fire pit
 
 Farmers:
     -aquaculture knife and other Compat
