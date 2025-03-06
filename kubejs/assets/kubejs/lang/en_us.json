@@ -2,5 +2,9 @@
   "fluid_type.tmted.melon_juice": "Melon Juice",
   "fluid_type.tmted.tomato_sauce": "Tomato Sauce",
   "fluid_type.tmted.apple_cider": "Apple Cider",
-  "curios.identifier.terminal": "Terminal"
+  "curios.identifier.terminal": "Terminal",
+  "block.minecraft.chiseled_bookshelf": "Chiseled Bookshelf",
+  "block.minecraft.ladder": "Ladder",
+  "block.minecraft.beehive": "Beehive",
+  "block.minecraft.bookshelf": "Bookshelf"
 }

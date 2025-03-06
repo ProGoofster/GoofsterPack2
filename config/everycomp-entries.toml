@@ -27,6 +27,9 @@
 		[types.wood_type.autumnity]
 			maple = true
 
+		[types.wood_type.createdieselgenerators]
+			chip_wood = true
+
 	[types.leaves_type]
 
 		[types.leaves_type.culturaldelights]
@@ -103,11 +106,11 @@
 			post = true
 			chest = false
 			stripped_post = true
-			ladder = true
+			ladder = false
 			trapped_chest = false
-			bookshelf = true
+			bookshelf = false
 			hollow_log = true
-			vertical_slab = true
+			vertical_slab = false
 
 		[entries.wood_type.create]
 			window_pane = true

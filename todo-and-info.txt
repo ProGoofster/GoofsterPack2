@@ -14,26 +14,42 @@ investigate "serenety effect"
 
 General:
     -Port "Remove recipe by tooltip"
-    -Quark woodworks Compat
+    -default name for ladders and bookshelves
+    -Etched config
+    -delete
+    -quark woodcutter compat
 
+Sophisitcated:
+    -balance
+    -2 -> 4 -> 6 -> 8 (if possible)
 Create:
     -remove brewin' chewin' create milk drain
+    -pressing recipes for all paths
+    -fix diamond grit sandpaper name to sand paper
+    -woodcutter recipe port to create
+    -farmers dough
+
+Farmers:
+    -aquaculture knife and other Compat
+    -plum logs
+
 AE2:
     -Remove charger?
     -Remove tools
     press process:
     1. Make "Netherix Compound/Composite" from Netherite and 4 Fluix Crystals in superheated mixing basin
     2. Make "Energized Alloy" from "Compound" with Tesla Coil 
-    3. Make "Mysterious Panel" Sequenced Assembly
+    3. Make "[Type] Panel" Sequenced Assembly
         1. Mechanical press Energized Alloy
         2. Deploy ME cable
-        3. Deploy Gold Wire
+        3. Deploy signifier
         4. fill with Lava (or custom fluid)
-        5. Deploy Gold Wire
+        5. Deploy signifier
         6. Deploy ME cable
         7. Press again
     4. Create Mysterious Cube out of 4 "Myserious Panels", Quark heart of diamond, myalite, skystone, and fluix in Mechanical crafter
 
     -add another recipe to turn Mysterious Cube into the four presses (crushing?)
+    -mysterious cube can be rebuilt shapeless recipe with all 4
     -presses can be cloned in the inscriber with a press and a single Netherite ingot.
     -remove not so mysterious cube
