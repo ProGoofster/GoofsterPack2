@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
         B: 'ae2:smooth_sky_stone_block'
     }).id('ae2:mysterious_cube');
 
-    event.recipes.create.milling(["ae2:calculation_processor_press", "ae2:engineering_processor_press", "ae2:calculation_processor_press", "ae2:silicon_press"], "ae2:mysterious_cube")
+    event.recipes.create.milling(["ae2:calculation_processor_press", "ae2:engineering_processor_press", "ae2:logic_processor_press", "ae2:silicon_press"], "ae2:mysterious_cube")
 
     // event.recipes.create.mixing('ae2:fluix_crystal', [Fluid.of('minecraft:water', 250), 'ae2:charged_certus_quartz_crystal', 'ae2:fluix_dust']);
     // event.recipes.create.mixing('ae2:certus_quartz_crystal', [Fluid.of('minecraft:water', 250), 'ae2:charged_certus_quartz_crystal', 'ae2:certus_quartz_dust']);

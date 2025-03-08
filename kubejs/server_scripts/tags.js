@@ -10,3 +10,12 @@ ServerEvents.tags('fluid', event => {
 	event.add('minecraft:water', 'minecraft:water');
 	event.add('minecraft:water', 'minecraft:flowing_water');
 })
+
+ServerEvents.tags('block', event => {
+    //fix liquid blaze burner w/fan
+    event.add('create:fan_processing_catalysts/smoking', 'createaddition:liquid_blaze_burner');
+
+    //make fire pit work w/fan
+    event.add('create:fan_processing_catalysts/smoking', 'supplementaries:fire_pit');
+    event.add('create:passive_boiler_heaters', 'supplementaries:fire_pit');
+})

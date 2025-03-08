@@ -1,4 +1,12 @@
 ServerEvents.recipes((event) => {
+  //dough compat
+  event.remove({output: "farmersdelight:wheat_dough"});
+  event.remove({id: 'farmersdelight:cutting/tag_dough'});
+
+  //remove cultural dough reipce
+  event.remove({id: 'culturaldelights:cooking/raw_pasta'})
+
+
   //cutting board dripstone
   event.custom({
     type: "farmersdelight:cutting",

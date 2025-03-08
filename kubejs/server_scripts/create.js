@@ -4,11 +4,6 @@ ServerEvents.recipes(event => {
     event.recipes.shapeless('create:dough', ['minecraft:water_bucket', 'create:wheat_flour']);
     event.remove({output: "create:dough", type: "minecraft:crafting_shaped"});
     event.replaceInput({}, "farmersdelight:wheat_dough", "create:dough");
-//fixes
-    //IS THIS EVEN NESSESARY ANYMORE?
-    // event.add('create:fan_processing_catalysts/smoking', 'createaddition:liquid_blaze_burner');
-    // event.add('create:fan_processing_catalysts/blasting', 'createaddition:liquid_blaze_burner');   
-
 //renewables
     //copper
 
