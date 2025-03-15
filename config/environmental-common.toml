@@ -15,7 +15,7 @@
 		#Range: > 0
 		"Vertical serenity range (radius)" = 8
 		#If Koi exude Serenity as a potion effect
-		"Serenity potion effect" = true
+		"Serenity potion effect" = false
 
 	[mobs.pig]
 		#If Pigs hunt for Truffles when given a Golden Carrot

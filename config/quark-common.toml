@@ -145,8 +145,8 @@
 
 	[building.variant_ladders]
 		#This feature disables itself if any of the following mods are loaded:
-		# - woodster
 		# - woodworks
+		# - woodster
 		#This is done to prevent content overlap.
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = true
@@ -154,8 +154,8 @@
 
 	[building.variant_bookshelves]
 		#This feature disables itself if any of the following mods are loaded:
-		# - woodster
 		# - woodworks
+		# - woodster
 		#This is done to prevent content overlap.
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = true
@@ -191,8 +191,8 @@
 
 	[building.thatch]
 		#This feature disables itself if any of the following mods are loaded:
-		# - environmental
 		# - goated
+		# - environmental
 		#This is done to prevent content overlap.
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = false
@@ -234,8 +234,8 @@
 
 	[building.leaf_carpet]
 		#This feature disables itself if any of the following mods are loaded:
-		# - immersive_weathering
 		# - woodworks
+		# - immersive_weathering
 		#This is done to prevent content overlap.
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = true
@@ -531,7 +531,7 @@
 	"Double Door Opening" = true
 	"Zombie Villagers On Normal" = true
 	"Hoe Harvesting" = false
-	Emotes = false
+	Emotes = true
 	"Slimes To Magma Cubes" = true
 	"Snow Golem Player Heads" = true
 	"Vexes Die With Their Masters" = true
@@ -780,7 +780,7 @@
 	"No More Lava Pockets" = false
 	Corundum = true
 	"Chorus Vegetation" = true
-	"Fallen Logs" = true
+	"Fallen Logs" = false
 
 	[world.nether_obsidian_spikes]
 		#The chance for a chunk to contain spikes (1 is 100%, 0 is 0%)
@@ -1197,7 +1197,7 @@
 					"Is Blacklist" = true
 
 		[world.blossom_trees.orange]
-			Rarity = 100
+			Rarity = 200
 
 			[world.blossom_trees.orange.dimensions]
 				"Is Blacklist" = false
@@ -1334,10 +1334,10 @@
 
 	[world.fallen_logs]
 		#Percentage of fallen logs spawning as hollow. Requires Hollow Logs Module to be enabled
-		"Hollow Chance" = 0.7
+		"Hollow Chance" = 1.0
 		Rarity = 5
 		#chance for logs to spawn on water
-		"On Water Chance" = 0.1
+		"On Water Chance" = 0.0
 		"Sparse Biome Rarity" = 12
 		#Tags that define which biomes can have which wood types
 		"Biome Tags" = ["quark:has_fallen_acacia=minecraft:acacia_log", "quark:has_fallen_birch=minecraft:birch_log", "quark:has_fallen_cherry=minecraft:cherry_log", "quark:has_fallen_dark_oak=minecraft:dark_oak_log", "quark:has_fallen_jungle=minecraft:jungle_log", "quark:has_fallen_mangrove=minecraft:mangrove_log", "quark:has_fallen_oak=minecraft:oak_log", "quark:has_fallen_spruce=minecraft:spruce_log"]
@@ -1350,7 +1350,7 @@
 	Foxhound = true
 	Wraith = true
 	Crabs = true
-	Forgotten = true
+	Forgotten = false
 	Shiba = true
 	Stonelings = true
 	Toretoise = true

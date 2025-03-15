@@ -3,6 +3,7 @@
   "renderNametagsThroughWalls": true,
   "blockEntityWhitelist": [
     "create:rope_pulley",
+    "create:elevator_pulley",
     "botania:flame_ring",
     "minecraft:beacon",
     "create:hose_pulley",

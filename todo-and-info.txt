@@ -7,45 +7,35 @@ steam n rails
 Copycats
 
 General:
-    -Port "Remove recipe by tooltip"
-    -default name for ladders and bookshelves
-    -Etched config
-    -delete
-    -quark woodcutter compat
-    -investigate "serenety effect"
+    -arid glass ctm
+    -dirty glass ctm
+    -look into possible recipe conflicts
 
 Sophisitcated:
-    -balance
-    -2 -> 4 -> 6 -> 8 (if possible)
-Create:
-    -remove brewin' chewin' create milk drain
-    -pressing recipes for all paths
-    -fix diamond grit sandpaper name to sand paper
-    -woodcutter recipe port to create
-    -farmers dough
-    -Create fan for fire pit
+    -add chest to shulker recipes
+    -retexture all barrels to spruce
 
 Farmers:
-    -aquaculture knife and other Compat
     -plum logs
 
 AE2:
-    -Remove charger?
-    -Remove tools
-    press process:
-    1. Make "Netherix Compound/Composite" from Netherite and 4 Fluix Crystals in superheated mixing basin
-    2. Make "Energized Alloy" from "Compound" with Tesla Coil 
-    3. Make "[Type] Panel" Sequenced Assembly
-        1. Mechanical press Energized Alloy
-        2. Deploy ME cable
-        3. Deploy signifier
-        4. fill with Lava (or custom fluid)
-        5. Deploy signifier
-        6. Deploy ME cable
-        7. Press again
-    4. Create Mysterious Cube out of 4 "Myserious Panels", Quark heart of diamond, myalite, skystone, and fluix in Mechanical crafter
-
-    -add another recipe to turn Mysterious Cube into the four presses (crushing?)
-    -mysterious cube can be rebuilt shapeless recipe with all 4
     -presses can be cloned in the inscriber with a press and a single Netherite ingot.
-    -remove not so mysterious cube
+
+
+Custom mods:
+    -Port "Remove recipe by tooltip" if emi doesn't remove it already
+    -port track maps to create 6
+    -ae2 wires without immersive engineering fork
+    -pull request woodworks to make the name of the "oak" type change back to default if you turn off that type, as well as a general config for it
+
+before publishing:
+    -remove probejs and polymorphic and borderless window
+    -remove emi lookup_history
+    -wait for steam n rails, central kitchen, and copycats to update
+    -if i used configured defaults get rid of it
+
+for server:
+    configure dynmap
+    add vibrate voice
+    port create track map to create 6
+    install and test canary

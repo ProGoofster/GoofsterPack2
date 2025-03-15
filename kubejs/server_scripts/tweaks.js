@@ -1,4 +1,10 @@
 ServerEvents.recipes(event => {
+    // remove unwanted
+    event.remove({output: "advancedperipherals:redstone_integrator"})
+    event.remove({output: "advancedperipherals:inventory_manager"})
+    event.remove({output: "advancedperipherals:memory_card"})
+    event.remove({output: "advancedperipherals:chunk_controller"})
+    // ladder
     event.shaped(
         '3x minecraft:ladder',
         [
@@ -36,7 +42,7 @@ ServerEvents.recipes(event => {
 
     //terracotta dying
     event.replaceInput({input: '#minecraft:terracotta', output: '#minecraft:terracotta'}, 'minecraft:terracotta', '#minecraft:terracotta')
-    event.replaceInput({input: 'quark:shingles', output: /quark:.*shingles$/}, 'quark:shingles', /quark:.*shingles$/)
+    event.replaceInput({input: 'quark:shingles', output: 'quark:shingles'}, 'quark:shingles', 'quark:shingles')
 
     //wood variant compatibility
     event.remove({mod: "woodworks", output: "#forge:chests/wooden"})
@@ -46,4 +52,23 @@ ServerEvents.recipes(event => {
 
     event.replaceOutput({output: "quark:oak_chest"}, "quark:oak_chest", "minecraft:chest")
     event.shapeless('minecraft:bookshelf', '#forge:bookshelves')
+
+    //recipe for netherite upgrade
+    event.shaped(
+        'minecraft:netherite_upgrade_smithing_template',
+        [
+          'DED',
+          'DHD',
+          'DDD'
+        ],
+        {
+            D: 'minecraft:diamond',
+            E: 'kubejs:energized_alloy',
+            H: 'quark:diamond_heart'
+        }
+    ).id('kubejs:netherite_upgrade');
+
+    //aquaculture
+    event.remove({output: 'aquaculture:fish_fillet_raw', type: 'minecraft:shapeless'});
+    event.remove({output: /aquaculture:.*_fillet_knife/});
 });

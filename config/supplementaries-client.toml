@@ -186,9 +186,9 @@
 
 	[tweaks.colored_maps]
 		#Needs the server config with same name on. If on here it will ignore the server one and keep vanilla colors
-		tinted_blocks_on_maps = true
+		tinted_blocks_on_maps = false
 		#Colors tall grass same color as grass
-		tall_grass_color = true
+		tall_grass_color = false
 		#Makes colored maps a bit more accurate. Might affect performance
 		accurate_colors = false
 

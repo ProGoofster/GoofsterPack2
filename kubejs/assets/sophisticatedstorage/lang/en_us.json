@@ -1,5 +1,10 @@
 {
   "block.sophisticatedstorage.barrel": "Sophisticated Barrel",
+  "block.sophisticatedstorage.copper_barrel": "Copper Barrel",
+  "block.sophisticatedstorage.iron_barrel": "Iron Barrel",
+  "block.sophisticatedstorage.gold_barrel": "Gold Barrel",
+  "block.sophisticatedstorage.diamond_barrel": "Diamond Barrel",
+  "block.sophisticatedstorage.netherite_barrel": "Netherite Barrel",
   "block.sophisticatedstorage.limited_barrel_1": "Drawer I",
   "block.sophisticatedstorage.limited_barrel_2": "Drawer II",
   "block.sophisticatedstorage.limited_barrel_3": "Drawer III",
@@ -25,5 +30,12 @@
   "block.sophisticatedstorage.limited_netherite_barrel_3": "Netherite Drawer III",
   "block.sophisticatedstorage.limited_netherite_barrel_4": "Netherite Drawer IV",
   "block.sophisticatedstorage.chest": "Sophisticated Chest",
-  "item.sophisticatedstorage.basic_tier_upgrade.tooltip": "Upgrades vanilla inventories to their sophisticated version"
+  "block.sophisticatedstorage.copper_chest": "Copper Chest",
+  "block.sophisticatedstorage.iron_chest": "Iron Chest",
+  "block.sophisticatedstorage.gold_chest": "Gold Chest",
+  "block.sophisticatedstorage.diamond_chest": "Diamond Chest",
+  "block.sophisticatedstorage.netherite_chest": "Netherite Chest",
+  "item.sophisticatedstorage.basic_tier_upgrade.tooltip": "Upgrades vanilla inventories to their sophisticated version",
+  "item.sophisticatedstorage.shulker_box": "Sophisticated Shulker Box",
+  "block.sophisticatedstorage.shulker_box": "Sophisticated Shulker Box"
 }

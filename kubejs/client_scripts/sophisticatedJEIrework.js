@@ -1,5 +1,5 @@
 let storageTypes = [["chest", ""],["barrel", ""],["shulker_box",""],["barrel_1", "limited_"],["barrel_2", "limited_"],["barrel_3", "limited_"],["barrel_4", "limited_"]]
-let tiers = ["", "iron_", "gold_", "diamond_", "netherite_"]
+let tiers = ["", "iron_", "copper_", "gold_", "diamond_", "netherite_"]
 
 JEIEvents.hideItems(event => {
     storageTypes.forEach(type => {

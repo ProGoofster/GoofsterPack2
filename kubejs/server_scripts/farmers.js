@@ -6,6 +6,9 @@ ServerEvents.recipes((event) => {
   //remove cultural dough reipce
   event.remove({id: 'culturaldelights:cooking/raw_pasta'})
 
+  //neapoliton milk fix
+  event.remove({output: 'neapolitan:milk_bottle'});
+  event.remove({input: 'neapolitan:milk_bottle', output: 'minecraft:milk_bucket'});
 
   //cutting board dripstone
   event.custom({
@@ -27,4 +30,18 @@ ServerEvents.recipes((event) => {
       action: "pickaxe_dig",
     },
   }).id('farmersdelight:cutting/dripstone');
+
+  //brewin and chewin create compat
+  event.remove({id: 'brewinandchewin:emptying/create/honey_bottle'})
+  event.remove({id: 'brewinandchewin:emptying/create/milk_bottle'})
+  event.remove({id: 'brewinandchewin:emptying/create/milk_bucket'})
+  event.remove({id: 'brewinandchewin:emptying/create/potion'})
+  event.remove({id: 'brewinandchewin:emptying/create/water_bucket'})
+
+  event.remove({id: 'brewinandchewin:filling/create/honey_bottle'})
+  event.remove({id: 'brewinandchewin:filling/create/milk_bottle'})
+  event.remove({id: 'brewinandchewin:filling/create/milk_bucket'})
+  event.remove({id: 'brewinandchewin:filling/create/potion'})
+  event.remove({id: 'brewinandchewin:filling/create/water_bucket'})
+
 });
