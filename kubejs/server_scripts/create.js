@@ -4,6 +4,8 @@ ServerEvents.recipes((event) => {
   event.remove({ id: "createaddition:crafting/electrum_amulet" });
   event.remove({ id: "createaddition:crafting/electrum_ingot" });
   event.remove({ id: "createaddition:crafting/electrum_nugget" });
+  event.remove({ id: "createaddition:crafting/electrum_block" });
+  event.remove({ id: "createaddition:crafting/electrum" });
   event.remove({ id: "createaddition:crafting/electrum_sheet" });
   event.remove({ id: "createaddition:crafting/electrum_spool" });
   event.remove({ id: "createaddition:pressing/electrum_ingot" });

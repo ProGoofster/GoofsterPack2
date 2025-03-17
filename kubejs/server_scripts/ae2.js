@@ -252,9 +252,13 @@ ServerEvents.recipes((event) => {
     "minecraft:copper_ingot",
     "ae2:fluix_crystal"
   );
+
+  //remove everything from create kinetics
+  event.remove({mod: "createappliedkinetics", not: {id: 'createappliedkinetics:me_proxy'}})
 });
 
 MoreJSEvents.villagerTrades((event) => {
   var proff = VillagerUtils.getProfessions();
   event.removeVanillaTrades(proff[14], 1);
+  console.log(proff)
 });

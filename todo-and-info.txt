@@ -6,10 +6,24 @@ deco
 steam n rails
 Copycats
 
+mods to consider:
+    -easy magic
+    -extendedAE
+        -something with nbt filtering
+        -a way to set a storage bus to allow unstackables
+
+
 General:
     -arid glass ctm
     -dirty glass ctm
     -look into possible recipe conflicts
+    -copper and tuff and quark overlap
+    -steal tags from old pack
+
+Create:
+    -chocolate compat
+        -remove from loot tables
+    -remove xp rotor and it's recipes
 
 Sophisitcated:
     -add chest to shulker recipes
@@ -19,17 +33,28 @@ Farmers:
     -plum logs
 
 AE2:
-    -presses can be cloned in the inscriber with a press and a single Netherite ingot.
+    -integrate wrenches with create
+    -port good update textures (cables, mostly)
+    -make sure all ways to craft cables cost the same
+        -dense smart cables require 4 dusts from normal dense cables
+    -soap can remove color
+    -steal textures from appplied kinetics for panels
+    -fix or remove compass
 
 
 Custom mods:
-    -Port "Remove recipe by tooltip" if emi doesn't remove it already
     -port track maps to create 6
-    -ae2 wires without immersive engineering fork
     -pull request woodworks to make the name of the "oak" type change back to default if you turn off that type, as well as a general config for it
+    -make random motd mod for forge 1.20.1'
+    -MEProxy
+        -add icon to creative menu tab, or add item to ae2 tab
+        -proxy attached to cable
+        -add gui and filtering
+        -replace tooltip with guide menu
+    -port the random motd mod to 1.20.1
 
 before publishing:
-    -remove probejs and polymorphic and borderless window
+    -remove distant horizons, probejs and borderless window
     -remove emi lookup_history
     -wait for steam n rails, central kitchen, and copycats to update
     -if i used configured defaults get rid of it
