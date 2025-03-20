@@ -55,7 +55,7 @@ Custom mods:
 
 before publishing:
     -remove distant horizons, probejs and borderless window
-        -remove all probejs filesz
+        -remove all probejs files
     -remove emi lookup_history
     -wait for steam n rails, central kitchen, and copycats to update
     -if i used configured defaults get rid of it

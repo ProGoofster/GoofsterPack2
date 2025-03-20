@@ -73,6 +73,23 @@
 			currant = true
 			grimwood = true
 
+	[types.cake]
+
+		[types.cake.farmersrespite]
+			coffee_cake = true
+
+		[types.cake.createaddition]
+			chocolate_cake = true
+			honey_cake = true
+
+		[types.cake.neapolitan]
+			vanilla_cake = true
+			chocolate_cake = true
+			strawberry_cake = true
+			banana_cake = true
+			mint_cake = true
+			adzuki_cake = true
+
 #Disables specific entries
 [entries]
 
@@ -103,12 +120,12 @@
 			palisade = true
 
 		[entries.wood_type.woodworks]
-			bookshelf = false
-			chiseled_bookshelf = false
-			trapped_chest = false
-			boards = false
-			chest = false
-			ladder = false
+			bookshelf = true
+			chiseled_bookshelf = true
+			trapped_chest = true
+			boards = true
+			chest = true
+			ladder = true
 			beehive = true
 
 	[entries.leaves_type]
@@ -118,5 +135,5 @@
 			leaf_carpet = true
 
 		[entries.leaves_type.woodworks]
-			leaf_pile = false
+			leaf_pile = true
 
