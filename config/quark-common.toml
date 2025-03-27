@@ -287,7 +287,7 @@
 	"Automatic Tool Restock" = true
 	"Expanded Item Interactions" = true
 	"Inventory Sorting" = false
-	"Hotbar Changer" = false
+	"Hotbar Changer" = true
 	"Easy Transfering" = false
 
 	[management.quick_armor_swapping]
@@ -1665,7 +1665,7 @@
 
 [experimental]
 	#Allows placing variant blocks automatically via a selector menu triggered from a keybind
-	"Variant Selector" = false
+	"Variant Selector" = true
 	"Narrator Readout" = false
 	"Climate Control Remover" = false
 	"Enchantments Begone" = false

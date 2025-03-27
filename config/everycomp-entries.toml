@@ -27,6 +27,9 @@
 		[types.wood_type.autumnity]
 			maple = true
 
+		[types.wood_type.architects_palette]
+			twisted = true
+
 	[types.leaves_type]
 
 		[types.leaves_type.culturaldelights]
@@ -72,6 +75,9 @@
 			kousa = true
 			currant = true
 			grimwood = true
+
+		[types.leaves_type.architects_palette]
+			twisted = true
 
 	[types.cake]
 
@@ -127,6 +133,13 @@
 			chest = true
 			ladder = true
 			beehive = true
+
+		[entries.wood_type.architects_palette]
+			board_stairs = true
+			railing = true
+			board_slab = true
+			boards = true
+			board_wall = true
 
 	[entries.leaves_type]
 

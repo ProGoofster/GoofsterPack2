@@ -19,11 +19,15 @@ General:
     -look into possible recipe conflicts
     -copper and tuff and quark overlap
     -steal tags from old pack
+    -bundles always
+    -quark vanilla chests in oak chest strucutres
+    -make nether fog better or remove amplified nether
 
 Create:
     -chocolate compat
         -remove from loot tables
     -remove xp rotor and it's recipes
+    -check central kitchen compat
 
 Sophisitcated:
     -add chest to shulker recipes
@@ -41,12 +45,16 @@ AE2:
     -steal textures from appplied kinetics for panels
     -fix or remove compass
 
+Architects pallate:
+    -check compatibility (polymorph)
+
 
 Custom mods:
     -port track maps to create 6
     -pull request woodworks to make the name of the "oak" type change back to default if you turn off that type, as well as a general config for it
     -make random motd mod for forge 1.20.1'
     -MEProxy
+        -fix loot table and hardness
         -add icon to creative menu tab, or add item to ae2 tab
         -proxy attached to cable
         -add gui and filtering
@@ -65,3 +73,17 @@ for server:
     add vibrate voice
     port create track map to create 6
     install and test canary
+
+server info:
+    seed choices:
+        "-4411874076111810754"
+            -smaller island, found first
+            -furthest inner ring stronghold at 2,148
+            -land only ~200m from eastern shore
+        "2625317107780289611"
+            -larger island
+            -world border at 2k would be easier (all three strongholds)
+            -closes continental land is over 600 blocks away 
+            -better nether
+    -small worldborder around island for the first week or so
+    -
