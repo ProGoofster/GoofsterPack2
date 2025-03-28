@@ -24,6 +24,16 @@ ServerEvents.tags('item', event => {
     event.removeAllTagsFrom(/aquaculture:.*_fillet_knife/)
     event.removeAllTagsFrom('abnormals_delight:necromium_knife')
     event.removeAllTagsFrom('abnormals_delight:silver_knife')
+    
+    event.add('kubejs:border_antiblock', 'antiblocksrechiseled:bright_black_border')
+    event.add('kubejs:borderless_antiblock', 'antiblocksrechiseled:bright_black')
+
+    for(let color of DYE_COLORS) {
+        if(color == "black") continue;
+        event.add('kubejs:border_antiblock', `antiblocksrechiseled:wool_${color}_border`)
+        event.add('kubejs:borderless_antiblock', `antiblocksrechiseled:wool_${color}`)
+    }
+ 
 })
 
 ServerEvents.tags('fluid', event => {
