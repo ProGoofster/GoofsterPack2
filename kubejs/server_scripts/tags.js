@@ -33,6 +33,8 @@ ServerEvents.tags('item', event => {
         event.add('kubejs:border_antiblock', `antiblocksrechiseled:wool_${color}_border`)
         event.add('kubejs:borderless_antiblock', `antiblocksrechiseled:wool_${color}`)
     }
+
+    event.add('ae2:can_remove_color', 'supplementaries:soap')
  
 })
 
@@ -42,6 +44,8 @@ ServerEvents.tags('fluid', event => {
 
 	event.add('minecraft:water', 'minecraft:water');
 	event.add('minecraft:water', 'minecraft:flowing_water');
+
+    event.add("forge:tomato_sauce", "create_central_kitchen:tomato_sauce")
 })
 
 ServerEvents.tags('block', event => {
@@ -51,4 +55,9 @@ ServerEvents.tags('block', event => {
     //make fire pit work w/fan
     event.add('create:fan_processing_catalysts/smoking', 'supplementaries:fire_pit');
     event.add('create:passive_boiler_heaters', 'supplementaries:fire_pit');
+})
+
+ServerEvents.tags('worldgen/structure', event => {
+    event.removeAll('quark:oak_chest_structures');
+    event.remove('quark:crimson_chest_structures', '#minecraft:ruined_portal')
 })

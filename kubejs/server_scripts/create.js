@@ -14,6 +14,8 @@ ServerEvents.recipes((event) => {
 
   event.remove({ id: "createaddition:crafting/modular_accumulator_electrum" });
   event.remove({ id: "createaddition:crafting/large_connector_electrum" });
+  event.remove({ output: "create_enchantment_industry:experience_rotor"})
+  event.remove({ input: "create_enchantment_industry:experience_rotor"})
   event
     .custom({
       type: "create:crushing",
@@ -142,7 +144,7 @@ ServerEvents.recipes((event) => {
 //renewables
   //copper
     event.recipes.create.milling("kubejs:scoria_aggregate", '#create:stone_types/scoria')
-    event.recipes.create.splashing([Item.of('minecraft:coal').withChance(0.25), Item.of('create:copper_nugget').withChance(0.12)], 'kubejs:scoria_aggregate')
+    event.recipes.create.splashing([Item.of('minecraft:coal').withChance(0.25), Item.of('create:copper_nugget').withChance(0.42)], 'kubejs:scoria_aggregate')
   //zinc
     event.recipes.create.milling("kubejs:limesand", '#create:stone_types/limestone')
     event.recipes.create.splashing([Item.of('minecraft:bone_meal').withChance(0.25), Item.of('create:zinc_nugget').withChance(0.12)], 'kubejs:limesand')
@@ -216,8 +218,6 @@ ServerEvents.recipes((event) => {
     "#forge:cobblestone",
     Fluid.of("minecraft:lava", 100),
   ]).id("create:mixing/sky_stone_block");
-
-  //myalite
 
 //extras
   //vanilla diorite recipe as mixing

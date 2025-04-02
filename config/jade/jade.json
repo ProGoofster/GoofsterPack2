@@ -20,7 +20,7 @@
     "previewOverlay": true
   },
   "overlay": {
-    "alpha": 0.76,
+    "alpha": 0.75,
     "iconMode": "TOP",
     "animation": true,
     "disappearingDelay": 0.0,

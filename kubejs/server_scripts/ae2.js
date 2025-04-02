@@ -253,12 +253,24 @@ ServerEvents.recipes((event) => {
     "ae2:fluix_crystal"
   );
 
-  //remove everything from create kinetics
-  event.remove({mod: "createappliedkinetics", not: {id: 'createappliedkinetics:me_proxy'}})
+  //matter compressor pre-ae2
+  event.replaceInput(
+    { output: "ae2:condenser" },
+    "ae2:fluix_dust",
+    "ae2:ender_dust"
+  );
+
+  //replace wrenches
+  event.replaceInput({},
+    "#ae2:quartz_wrench",
+    "create:wrench"
+  );
+
+  //compass is broken, goodbye
+  event.remove({output: 'ae2:meteorite_compass'})
 });
 
 MoreJSEvents.villagerTrades((event) => {
   var proff = VillagerUtils.getProfessions();
-  event.removeVanillaTrades(proff[14], 1);
-  console.log(proff)
+  event.removeVanillaTrades(proff[14], [1, 5]);
 });

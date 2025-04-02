@@ -17,6 +17,18 @@ ServerEvents.recipes(event => {
         }
     ).id('minecraft:ladder');
 
+    event.shaped(
+        'minecraft:bundle',
+        [
+          'S',
+          'L'
+        ],
+        {
+            S: 'minecraft:string',
+            L: 'minecraft:leather'
+        }
+    ).id('minecraft:bundle');
+
     //replace culture squid with miner squid
     event.replaceInput({}, 'culturaldelights:squid','miners_delight:squid');
     event.replaceInput({}, 'culturaldelights:glow_squid','miners_delight:glow_squid');
@@ -39,10 +51,12 @@ ServerEvents.recipes(event => {
     ).id('quark:building/crafting/mud_pillar');
     event.remove({id: 'minecraft:cake'});
     event.remove({id: 'neapolitan:cake'});
+    event.remove({id: 'create:smelting/bread'});
+    event.remove({id: 'create:smoking/bread'});
 
     //terracotta dying
     event.replaceInput({input: '#minecraft:terracotta', output: '#minecraft:terracotta'}, 'minecraft:terracotta', '#minecraft:terracotta')
-    event.replaceInput({input: 'quark:shingles', output: 'quark:shingles'}, 'quark:shingles', 'quark:shingles')
+    event.replaceInput({input: '#quark:shingles', output: '#quark:shingles'}, 'quark:shingles', '#quark:shingles')
 
     //wood variant compatibility
     event.remove({mod: "woodworks", output: "#forge:chests/wooden"})
@@ -71,4 +85,44 @@ ServerEvents.recipes(event => {
     //aquaculture
     event.remove({output: 'aquaculture:fish_fillet_raw', type: 'minecraft:shapeless'});
     event.remove({output: /aquaculture:.*_fillet_knife/});
+
+    //choclate
+    event.replaceInput({}, 'neapolitan:chocolate_bar', 'create:bar_of_chocolate')
+    event.remove({id: 'neapolitan:chocolate/chocolate_bar'})
+    event.remove({id: 'neapolitan:chocolate/chocolate_block'})
+    event.remove({id: 'neapolitan:chocolate/chocolate_bar_from_chocolate_block'})
+    event.replaceOutput({}, 'neapolitan:chocolate_bar', 'create:bar_of_chocolate')
+
+    //berry sack overlap
+    event.remove({input: 'berry_good:sweet_berry_basket'})
+    event.remove({input: 'berry_good:glow_berry_basket'})
+    event.remove({output: 'berry_good:sweet_berry_basket'})
+    event.remove({output: 'berry_good:glow_berry_basket'})
+
+    //architects pallete compat
+    event.remove({id: 'architects_palette:tuff_bricks'})
+    event.remove({id: 'architects_palette:calcite_bricks'})
+    event.remove({id: 'architects_palette:dripstone_bricks'})
+
+    event.replaceInput({output: 'architects_palette:hadaline_tiles'}, 'architects_palette:hadaline', 'architects_palette:hadaline_bricks')
+    event.shaped(
+        'architects_palette:hadaline_bricks',
+        [
+          'DD',
+          'DD',
+        ],
+        {
+            D: 'architects_palette:hadaline_tiles',
+        }
+    ).id('architects_palette:hadaline_bricks_from_tiles');
+
+    //architects palette dupe recipe fix 
+    event.remove({id: 'architects_palette:blasting/nether_brass_ingot_from_nether_brass_blend_blasting'})
 });
+
+MoreJSEvents.villagerTrades((event) => {
+    //remove computer science guy
+    var proff = VillagerUtils.getProfessions();
+    event.removeVanillaTrades(proff[16], [1, 5]);
+    event.removeModdedTrades(proff[16], [1, 5]);
+});  
