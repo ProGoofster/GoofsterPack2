@@ -1,7 +1,34 @@
 {
   "favorites": [],
-  "lookup_history": [],
-  "craft_history": [],
+  "lookup_history": [
+    "item:trading_floor:trading_depot",
+    "item:copycats:copycat_catwalk",
+    "item:copycats:copycat_door",
+    {
+      "type": "item",
+      "id": "copycats:copycat_slope",
+      "amount": 64
+    },
+    {
+      "type": "item",
+      "id": "copycats:copycat_vertical_slope",
+      "amount": 64
+    },
+    {
+      "type": "item",
+      "id": "quark:spruce_chest",
+      "amount": 4
+    },
+    "item:quark:blackstone_furnace",
+    "item:minecraft:furnace"
+  ],
+  "craft_history": [
+    "quark:building/crafting/hollowlogs/hollow_spruce_log",
+    "quark:building/crafting/furnaces/blackstone_furnace",
+    "quark:building/crafting/sturdy_stone",
+    "quark:tweaks/crafting/utility/misc/easy_sticks",
+    "minecraft:music_disc_5"
+  ],
   "recipe_defaults": {
     "added": [],
     "tags": {},

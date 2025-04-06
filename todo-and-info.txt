@@ -1,31 +1,38 @@
 Currently Disabled:
 
-Fishing Bobber Detector
-deco
 steam n rails
-Copycats 
-create filters everywhere
 
 General
     -remove bad performance mods (compair with atm9)
+    -experiment with recipe book
     -test storage drawer slowness with addons
-    -vanilla chest in village
-        -might have to retexture, then add loottable to drop vanilla
+    -test canary on server
+        -supplementaries pushing block crash
+    -recipe tweaks
+        -dispenser utility recipe
+        -powdered concrete dying
+        -wool dying if applicable
+        -all other dying
+        -glass dying/
+    -change ae2 press info 
+    -leaf pile vs carpet
+    -everycomp
 
 Create:
     -zinc sheet compat
+    -general deco support
+
+
 
 Added Mod Support:
     -map mod prevention (stop brendans everywhere)
 
 Custom mods:
+    -port the random motd mod to 1.20.1
     -MEProxy
-        -fix loot table and hardness
-        -add icon to creative menu tab, or add item to ae2 tab
         -proxy attached to cable
         -add gui and filtering
         -replace tooltip with guide menu
-    -port the random motd mod to 1.20.1
 
 before publishing:
     -move config to default config
@@ -36,13 +43,16 @@ before publishing:
     -move emi removed to assets/emi/index/stacks
     -wait for steam n rails and copycats to update
     -use configured defaults
+    -set onboarding_finished false for voice chat
 
 for server:
+    test voice chat skulk
+    branding and logo
+    motd random
     configure dynmap
         -delete invalid model
-        -ctm mod support for antiblocks for dynmap
         -myalite crystal texture fix
-    add vibrate voice
+    set up luckperms and ops
     get create track map for .6
     install and test canary with supplementaries pushable block
     tps & mspt alias
@@ -58,3 +68,14 @@ server info:
             -better nether
     -small worldborder around island for the first week or so
         -datato disable it after ender drag
+    -start date: may 4th
+    -community planned builds (google doc)
+    -community events weekly (friday, saturday, or sunday)
+        -community planning encouraged
+        -players can "book" a week for their event in a queue
+        -backup list of rotating events when nothing booked
+            -movie viewing
+            -minigame/pvp tournament
+            -open mic
+            -race
+            -enderdragon (one time)

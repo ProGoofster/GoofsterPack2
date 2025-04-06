@@ -8,7 +8,7 @@
 	#on X, Y, or Z planes.  The default value of 50 gives the controller a very
 	#large range, but not beyond the chunk load distance.
 	#Range: 1 ~ 75
-	controllerRange = 16
+	controllerRange = 25
 	#Whether redstone upgrades should emit an analog redstone signal, requiring
 	#the use of a comparator to read it.  This will default to true starting with MC 1.21.
 	enableAnalogRedstone = true
@@ -27,7 +27,7 @@
 	#Creates a compacting drawer rule to convert 1 of item1 into n of item2.
 	compactingRules = ["minecraft:clay, minecraft:clay_ball, 4"]
 	#If enabled, carrying filled drawers in your inventory gives slowness debuff, unless a Portability Upgrade is used.
-	heavyDrawers = false
+	heavyDrawers = true
 	#If enabled, players can lock drawer interactions to just themselves.
 	enablePersonalKey = true
 

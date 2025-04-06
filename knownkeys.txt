@@ -152,3 +152,4 @@ quark.keybind.variant_selector
 supplementaries.keybind.quiver
 key.entityculling.toggle
 key.trade_cycling.cycle_trades
+keyinfo.copycats.fill_copycat
