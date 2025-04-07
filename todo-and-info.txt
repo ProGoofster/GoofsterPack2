@@ -21,6 +21,7 @@ General
 Create:
     -zinc sheet compat
     -general deco support
+    -cant invert filters bug
 
 
 
@@ -57,6 +58,7 @@ for server:
     install and test canary with supplementaries pushable block
     tps & mspt alias
     add dragon defeat datapack
+    config anti xray
 
 server info:
     seed choices:

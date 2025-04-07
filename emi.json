@@ -1,7 +1,11 @@
 {
   "favorites": [],
   "lookup_history": [
-    "item:trading_floor:trading_depot",
+    {
+      "type": "item",
+      "id": "minecraft:dispenser",
+      "amount": 64
+    },
     "item:copycats:copycat_catwalk",
     "item:copycats:copycat_door",
     {
