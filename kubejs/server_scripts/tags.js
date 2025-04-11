@@ -35,6 +35,14 @@ ServerEvents.tags('item', event => {
     }
 
     event.add('ae2:can_remove_color', 'supplementaries:soap')
+
+    event.add('forge:plates', 'createdeco:zinc_sheet', 'createdeco:andesite_sheet' ,'createdeco:netherite_sheet', 'createdeco:industrial_iron_sheet')
+    event.add('forge:plates/zinc', 'createdeco:zinc_sheet')
+    event.add('forge:plates/andesite', 'createdeco:andesite_sheet')
+    event.add('forge:plates/netherite', 'createdeco:netherite_sheet')
+    event.add('forge:plates/industrial_iron', 'createdeco:industrial_iron_sheet')
+
+    event.removeAllTagsFrom("createaddition:zinc_sheet")
  
 })
 

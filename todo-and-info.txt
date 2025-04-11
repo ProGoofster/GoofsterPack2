@@ -9,20 +9,14 @@ General
     -test canary on server
         -supplementaries pushing block crash
     -recipe tweaks
-        -dispenser utility recipe
         -powdered concrete dying
         -wool dying if applicable
         -all other dying
         -glass dying/
-    -change ae2 press info 
+    -change ae2 press info
     -leaf pile vs carpet
     -everycomp
-
-Create:
-    -zinc sheet compat
-    -general deco support
-    -cant invert filters bug
-
+    -futura block emmisive
 
 
 Added Mod Support:
@@ -53,6 +47,7 @@ for server:
     configure dynmap
         -delete invalid model
         -myalite crystal texture fix
+        -barrel cactus
     set up luckperms and ops
     get create track map for .6
     install and test canary with supplementaries pushable block
@@ -81,3 +76,7 @@ server info:
             -open mic
             -race
             -enderdragon (one time)
+
+-mods for next update
+    -Sophisticated Backpacks Create Integration
+    -railways

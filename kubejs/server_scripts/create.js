@@ -16,6 +16,7 @@ ServerEvents.recipes((event) => {
   event.remove({ id: "createaddition:crafting/large_connector_electrum" });
   event.remove({ output: "create_enchantment_industry:experience_rotor"})
   event.remove({ input: "create_enchantment_industry:experience_rotor"})
+
   event
     .custom({
       type: "create:crushing",
@@ -315,4 +316,6 @@ ServerEvents.recipes((event) => {
   event.recipes.create.milling("minecraft:soul_sand", '#forge:sandstone/soul_sandstone').id('create:milling/soul_sandstone');
   event.recipes.create.milling("atmospheric:arid_sand", '#forge:sandstone/arid_sandstone').id('create:milling/arid_sandstone');
   event.recipes.create.milling("atmospheric:red_arid_sand", '#forge:sandstone/red_arid_sandstone').id('create:milling/red_arid_sandstone');
+
+  event.replaceOutput({}, 'createaddition:zinc_sheet', 'createdeco:zinc_sheet')
 });

@@ -118,6 +118,10 @@ ServerEvents.recipes(event => {
 
     //architects palette dupe recipe fix 
     event.remove({id: 'architects_palette:blasting/nether_brass_ingot_from_nether_brass_blend_blasting'})
+
+    //remove leaf pile
+    event.remove({output: /autumnity:.*maple_leaf_pile/})
+    event.remove({output: /environmental:.*plum_leaf_pile/})
 });
 
 MoreJSEvents.villagerTrades((event) => {
