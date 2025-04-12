@@ -271,9 +271,6 @@ ServerEvents.recipes((event) => {
     .pressing("minecraft:dirt_path", "minecraft:grass_block")
     .id("create:pressing/path");
   event.recipes.create
-    .pressing("minecraft:dirt_path", "biomesoplenty:origin_grass_block")
-    .id("create:pressing/path_origin");
-  event.recipes.create
     .pressing("environmental:dirt_path", "minecraft:coarse_dirt")
     .id("create:pressing/dirt_path_coarse");
   event.recipes.create

@@ -1,0 +1,25 @@
+{
+    "values": [
+        "chisel_chipped_integration:factory_dotted_rusty_plate",
+        "chisel_chipped_integration:factory_blue_framed_circuit",
+        "chisel_chipped_integration:factory_blue_circuits",
+        "chisel_chipped_integration:factory_blue_wireframe",
+        "chisel_chipped_integration:factory_circuit",
+        "chisel_chipped_integration:factory_gold_framed_purple_plates",
+        "chisel_chipped_integration:factory_gold_plated_circuit",
+        "chisel_chipped_integration:factory_grinder",
+        "chisel_chipped_integration:factory_ice_ice_ice",
+        "chisel_chipped_integration:factory_metalbox",
+        "chisel_chipped_integration:factory_metal_column",
+        "chisel_chipped_integration:factory_old_vents",
+        "chisel_chipped_integration:factory_orange_white_caution_stripes",
+        "chisel_chipped_integration:factory_purple_wireframe",
+        "chisel_chipped_integration:factory_rusty_plate",
+        "chisel_chipped_integration:factory_segmented_rusty_plates",
+        "chisel_chipped_integration:factory_slighly_rusty_plate",
+        "chisel_chipped_integration:factory_vents",
+        "chisel_chipped_integration:factory_very_rusty_plate",
+        "chisel_chipped_integration:factory_wireframe",
+        "chisel_chipped_integration:factory_yellow_black_caution_stripes"
+    ]
+}

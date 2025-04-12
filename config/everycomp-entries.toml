@@ -349,6 +349,15 @@
 			golden_barred_trapdoor = true
 			nailed_log = true
 
+		[entries.wood_type.another_furniture]
+			flower_box = true
+			shutter = true
+			drawer = true
+			shelf = true
+			bench = true
+			table = true
+			chair = true
+
 	[entries.leaves_type]
 
 		[entries.leaves_type.quark]

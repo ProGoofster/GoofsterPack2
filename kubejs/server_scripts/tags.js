@@ -43,7 +43,20 @@ ServerEvents.tags('item', event => {
     event.add('forge:plates/industrial_iron', 'createdeco:industrial_iron_sheet')
 
     event.removeAllTagsFrom("createaddition:zinc_sheet")
- 
+
+    
+    event.removeAll('chisel_chipped_integration:metals/aluminum_blocks')
+    event.removeAll('chisel_chipped_integration:metals/bronze_blocks')
+    event.removeAll('chisel_chipped_integration:metals/cobalt_blocks')
+    event.removeAll('chisel_chipped_integration:metals/electrum_blocks')
+    event.removeAll('chisel_chipped_integration:metals/invar_blocks')
+    event.removeAll('chisel_chipped_integration:metals/lead_blocks')
+    event.removeAll('chisel_chipped_integration:metals/nickel_blocks')
+    event.removeAll('chisel_chipped_integration:metals/platinum_blocks')
+    event.removeAll('chisel_chipped_integration:metals/silver_blocks')
+    event.removeAll('chisel_chipped_integration:metals/steel_blocks')
+    event.removeAll('chisel_chipped_integration:metals/tin_blocks')
+    event.removeAll('chisel_chipped_integration:metals/uranium_blocks')
 })
 
 ServerEvents.tags('fluid', event => {

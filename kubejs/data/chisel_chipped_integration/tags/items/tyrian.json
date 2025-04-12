@@ -1,0 +1,20 @@
+{
+    "values": [
+        "chisel_chipped_integration:tyrian_disordered_metal_bits",
+        "chisel_chipped_integration:tyrian_black_scaled_plates",
+        "chisel_chipped_integration:tyrian_black_strips",
+        "chisel_chipped_integration:tyrian_blue_plates",
+        "chisel_chipped_integration:tyrian_dent",
+        "chisel_chipped_integration:tyrian_diagonal_plates",
+        "chisel_chipped_integration:tyrian_disordered_purple_bits",
+        "chisel_chipped_integration:tyrian_metal_plates",
+        "chisel_chipped_integration:tyrian_opening",
+        "chisel_chipped_integration:tyrian_platform",
+        "chisel_chipped_integration:tyrian_purple_plates",
+        "chisel_chipped_integration:tyrian_routes",
+        "chisel_chipped_integration:tyrian_rust",
+        "chisel_chipped_integration:tyrian_shiny_plate",
+        "chisel_chipped_integration:tyrian_shiny_plates",
+        "chisel_chipped_integration:tyrian_small_uneven_tiles"
+    ]
+}
