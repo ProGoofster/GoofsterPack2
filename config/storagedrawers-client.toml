@@ -9,7 +9,7 @@
 	#Distance in blocks before item labels stop rendering
 	labelRenderDistance = 25.0
 	#Distance in blocks before quantity numbers stop rendering
-	quantityRenderDistance = 10.0
+	quantityRenderDistance = 20.0
 	#Distance in blocks before quantity numbers begin to fade out
 	quantityFadeDistance = 4.0
 

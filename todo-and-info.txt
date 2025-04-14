@@ -4,19 +4,17 @@ steam n rails
 
 General
     -remove bad performance mods (compair with atm9)
-    -experiment with recipe book
-    -test storage drawer slowness with addons
-    -test canary on server
-        -supplementaries pushing block crash
     -recipe tweaks
         -powdered concrete dying
         -wool dying if applicable
         -all other dying
         -glass dying
     -change ae2 press info
-    -leaf pile vs carpet
     -everycomp
-    -futura block emmisive
+    -copycat shaft better recipe
+    -add crafting station (jei) and generate dynmap models for it (as long as it doesn't do chests)
+    -squid data fix
+    -figure out what mod is removing nether fog
 
 
 Added Mod Support:
@@ -36,24 +34,19 @@ before publishing:
     -remove emi lookup_history
     -disable emi crafting id
     -move emi removed to assets/emi/index/stacks
-    -wait for steam n rails and copycats to update
     -use configured defaults
     -set onboarding_finished false for voice chat
 
 for server:
-    test voice chat skulk
-    branding and logo
     motd random
     configure dynmap
         -delete invalid model
         -myalite crystal texture fix
-        -barrel cactus
     set up luckperms and ops
-    get create track map for .6
     install and test canary with supplementaries pushable block
     tps & mspt alias
     add dragon defeat datapack
-    config anti xray
+    overwrite config (don't delete, anticheat and such)
 
 server info:
     seed choices:

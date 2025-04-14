@@ -10,8 +10,9 @@
 **/*.log
 /.mixin.out
 /saves
+!/saves/SurivialTest/*
 /downloads
-/resourcepacks
+/resourcepacks/*.zip
 .curseclient
 # options.txt
 /local

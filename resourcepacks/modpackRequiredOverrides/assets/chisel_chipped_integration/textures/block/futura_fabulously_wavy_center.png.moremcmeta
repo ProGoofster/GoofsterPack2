@@ -1,0 +1,9 @@
+{
+	"animation": {
+        "interpolate": true
+    },
+    "overlay": {
+      "texture": "chisel_chipped_integration:textures/block/futura_fabulously_wavy_lights_center.png",
+      "emissive": true
+    }
+}
