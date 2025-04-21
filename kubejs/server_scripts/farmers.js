@@ -53,24 +53,4 @@ ServerEvents.recipes((event) => {
   event.replaceInput({input: "nethersdelight:blackstone_furnace"}, "nethersdelight:blackstone_furnace", "quark:blackstone_furnace")
   event.remove({id: "quark:building/crafting/furnaces/blackstone_smoker"})
   event.remove({id: "quark:building/crafting/furnaces/blackstone_blast_furnace"})
-
-  event.custom({
-    type: "farmersdelight:cutting",
-    ingredients: [
-      {
-        item: "minecraft:dripstone_block",
-      },
-    ],
-    result: [
-      {
-        item: "minecraft:pointed_dripstone",
-        count: 4,
-      },
-    ],
-    sound: "minecraft:block.dripstone_block.break",
-    tool: {
-      type: "farmersdelight:tool_action",
-      action: "pickaxe_dig",
-    },
-  }).id('abnormals_delight:environment/cutting/plum_log');
 });

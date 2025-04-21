@@ -1,31 +1,23 @@
 Currently Disabled:
-
 steam n rails
 
 General
-    -remove bad performance mods (compair with atm9)
     -recipe tweaks
         -powdered concrete dying
         -wool dying if applicable
         -all other dying
         -glass dying
     -change ae2 press info
-    -everycomp
     -copycat shaft better recipe
-    -add crafting station (jei) and generate dynmap models for it (as long as it doesn't do chests)
     -squid data fix
-    -figure out what mod is removing nether fog
-
+    -quark chicken grabbing
+    -make pillager outpost default again
 
 Added Mod Support:
     -map mod prevention (stop brendans everywhere)
 
 Custom mods:
     -port the random motd mod to 1.20.1
-    -MEProxy
-        -proxy attached to cable
-        -add gui and filtering
-        -replace tooltip with guide menu
 
 before publishing:
     -move config to default config
