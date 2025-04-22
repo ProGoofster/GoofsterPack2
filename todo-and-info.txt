@@ -12,6 +12,8 @@ General
     -squid data fix
     -quark chicken grabbing
     -make pillager outpost default again
+    -pig breeding
+    -atmospheric wood in vanilla structure config
 
 Added Mod Support:
     -map mod prevention (stop brendans everywhere)
@@ -59,8 +61,10 @@ server info:
             -movie viewing
             -minigame/pvp tournament
             -open mic
-            -race
             -enderdragon (one time)
+        -event ideas:
+            -boat race track
+            -fishing tourney
 
 -mods for next update
     -Sophisticated Backpacks Create Integration
