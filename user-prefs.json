@@ -2,846 +2,6 @@
   "export": {
     "filesSelection": [
       {
-        "path": "config",
-        "isSelected": true
-      },
-      {
-        "path": "config/ae2",
-        "isSelected": true
-      },
-      {
-        "path": "config/ae2/client.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/ae2/common.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/defaultoptions",
-        "isSelected": true
-      },
-      {
-        "path": "config/defaultoptions/extra",
-        "isSelected": true
-      },
-      {
-        "path": "config/defaultoptions/keybindings.txt",
-        "isSelected": true
-      },
-      {
-        "path": "config/defaultoptions/options.txt",
-        "isSelected": true
-      },
-      {
-        "path": "config/fabric",
-        "isSelected": true
-      },
-      {
-        "path": "config/fabric/indigo-renderer.properties",
-        "isSelected": true
-      },
-      {
-        "path": "config/watermedia",
-        "isSelected": true
-      },
-      {
-        "path": "config/watermedia/assets",
-        "isSelected": true
-      },
-      {
-        "path": "config/watermedia/assets/waterframes",
-        "isSelected": true
-      },
-      {
-        "path": "config/watermedia/custom_vlc_path.txt",
-        "isSelected": true
-      },
-      {
-        "path": "config/NoChatReports",
-        "isSelected": true
-      },
-      {
-        "path": "config/NoChatReports/NCR-ServerPreferences.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/NoChatReports/README.md",
-        "isSelected": true
-      },
-      {
-        "path": "config/NoChatReports/NCR-Client.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/NoChatReports/NCR-Common.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/NoChatReports/NCR-Encryption.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/Advancedperipherals",
-        "isSelected": true
-      },
-      {
-        "path": "config/Advancedperipherals/general.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/Advancedperipherals/world.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/Advancedperipherals/metaphysics.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/Advancedperipherals/peripherals.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/jei",
-        "isSelected": true
-      },
-      {
-        "path": "config/jei/world",
-        "isSelected": true
-      },
-      {
-        "path": "config/jei/world/local",
-        "isSelected": true
-      },
-      {
-        "path": "config/jei/world/local/Create_Pack_test",
-        "isSelected": true
-      },
-      {
-        "path": "config/jei/world/local/Create_Pack_test/bookmarks.ini",
-        "isSelected": true
-      },
-      {
-        "path": "config/jei/world/local/Creative",
-        "isSelected": true
-      },
-      {
-        "path": "config/jei/world/local/Creative/bookmarks.ini",
-        "isSelected": true
-      },
-      {
-        "path": "config/jei/world/local/Testing",
-        "isSelected": true
-      },
-      {
-        "path": "config/jei/world/local/Testing/bookmarks.ini",
-        "isSelected": true
-      },
-      {
-        "path": "config/jei/blacklist.cfg",
-        "isSelected": true
-      },
-      {
-        "path": "config/jei/ingredient-list-mod-sort-order.ini",
-        "isSelected": true
-      },
-      {
-        "path": "config/jei/ingredient-list-type-sort-order.ini",
-        "isSelected": true
-      },
-      {
-        "path": "config/jei/recipe-category-sort-order.ini",
-        "isSelected": true
-      },
-      {
-        "path": "config/jei/jei-debug.ini",
-        "isSelected": true
-      },
-      {
-        "path": "config/jei/jei-mod-id-format.ini",
-        "isSelected": true
-      },
-      {
-        "path": "config/jei/jei-colors.ini",
-        "isSelected": true
-      },
-      {
-        "path": "config/jei/jei-client.ini",
-        "isSelected": true
-      },
-      {
-        "path": "config/fzzy_config",
-        "isSelected": true
-      },
-      {
-        "path": "config/fzzy_config/keybinds.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/de",
-        "isSelected": true
-      },
-      {
-        "path": "config/de/mari_023",
-        "isSelected": true
-      },
-      {
-        "path": "config/de/mari_023/ae2wtlib.json5",
-        "isSelected": true
-      },
-      {
-        "path": "config/quark_emotes",
-        "isSelected": true
-      },
-      {
-        "path": "config/sound_physics_remastered",
-        "isSelected": true
-      },
-      {
-        "path": "config/sound_physics_remastered/soundphysics.properties",
-        "isSelected": true
-      },
-      {
-        "path": "config/sound_physics_remastered/occlusion.properties",
-        "isSelected": true
-      },
-      {
-        "path": "config/sound_physics_remastered/reflectivity.properties",
-        "isSelected": true
-      },
-      {
-        "path": "config/sound_physics_remastered/allowed_sounds.properties",
-        "isSelected": true
-      },
-      {
-        "path": "config/voicechat",
-        "isSelected": true
-      },
-      {
-        "path": "config/voicechat/translations.properties",
-        "isSelected": true
-      },
-      {
-        "path": "config/voicechat/voicechat-volumes.properties",
-        "isSelected": true
-      },
-      {
-        "path": "config/voicechat/username-cache.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/voicechat/voicechat-server.properties",
-        "isSelected": true
-      },
-      {
-        "path": "config/voicechat/voicechat-client.properties",
-        "isSelected": true
-      },
-      {
-        "path": "config/jade",
-        "isSelected": true
-      },
-      {
-        "path": "config/jade/hide-entities.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/jade/hide-blocks.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/jade/jade.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/jade/plugins.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/jade/sort-order.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/e4mc",
-        "isSelected": true
-      },
-      {
-        "path": "config/e4mc/e4mc.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/spark",
-        "isSelected": true
-      },
-      {
-        "path": "config/spark/tmp",
-        "isSelected": true
-      },
-      {
-        "path": "config/spark/tmp/about.txt",
-        "isSelected": true
-      },
-      {
-        "path": "config/spark/tmp/spark-111a3bd73a8-libasyncProfiler.so.tmp",
-        "isSelected": true
-      },
-      {
-        "path": "config/spark/tmp/spark-12dc0c8210e-profile-data.jfr.tmp",
-        "isSelected": true
-      },
-      {
-        "path": "config/spark/tmp/spark-1e75bfd170-libasyncProfiler.so.tmp",
-        "isSelected": true
-      },
-      {
-        "path": "config/spark/tmp/spark-1e8dcff225-profile-data.jfr.tmp",
-        "isSelected": true
-      },
-      {
-        "path": "config/spark/tmp/spark-14c2708dfc-libasyncProfiler.so.tmp",
-        "isSelected": true
-      },
-      {
-        "path": "config/spark/tmp/spark-14d7341157-profile-data.jfr.tmp",
-        "isSelected": true
-      },
-      {
-        "path": "config/spark/tmp/spark-2b3b6d9c8c4-libasyncProfiler.so.tmp",
-        "isSelected": true
-      },
-      {
-        "path": "config/spark/tmp/spark-3696d395bcd-profile-data.jfr.tmp",
-        "isSelected": true
-      },
-      {
-        "path": "config/spark/tmp/spark-2a70b89b73a-libasyncProfiler.so.tmp",
-        "isSelected": true
-      },
-      {
-        "path": "config/spark/tmp/spark-3e86ea7cdc9-profile-data.jfr.tmp",
-        "isSelected": true
-      },
-      {
-        "path": "config/spark/tmp/spark-3f66623cc34-profile-data.jfr.tmp",
-        "isSelected": true
-      },
-      {
-        "path": "config/spark/activity.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/spark/config.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/visuality",
-        "isSelected": true
-      },
-      {
-        "path": "config/visuality/particle_emitters",
-        "isSelected": true
-      },
-      {
-        "path": "config/visuality/particle_emitters/block_ambient.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/visuality/particle_emitters/block_step.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/visuality/particle_emitters/entity_armor.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/visuality/particle_emitters/entity_hit.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/visuality/config.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/MouseTweaks.cfg",
-        "isSelected": true
-      },
-      {
-        "path": "config/ae2ct-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/amendments-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/appleskin-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/aquaculture-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/armorstatues-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/atmospheric-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/attributefix.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/autumnity-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/badoptimizations.txt",
-        "isSelected": true
-      },
-      {
-        "path": "config/balm-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/berry_good-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/betteradvancements-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/blueprint-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/blueprint-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/bobby.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/borderlesswindow-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/brewinandchewin-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/brewinandchewin-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/bwncr-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/chat_heads.json5",
-        "isSelected": true
-      },
-      {
-        "path": "config/chimes-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/chimes-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/comforts-server.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/computercraft-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/configured-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/connectivity.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/connector.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/create-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/create-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/createaddition-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/cupboard.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/curios-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/curios-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/defaultoptions-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/distraction_free_recipes-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/easymagic-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/embeddium-mixins.properties",
-        "isSelected": true
-      },
-      {
-        "path": "config/emi_loot_config.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/enchdesc.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/entity_model_features.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/entity_texture_features.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/entityculling.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/environmental-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/etched-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/etf_warnings.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/everycomp-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/fairylights-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/fairylights-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/farmersdelight-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/farmersdelight-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/farmersrespite-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/fastsuite.cfg",
-        "isSelected": true
-      },
-      {
-        "path": "config/ferritecore-mixin.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/icterine.yml",
-        "isSelected": true
-      },
-      {
-        "path": "config/immediatelyfast.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/immersive_paintings.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/leavesbegone-server.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/lithium.properties",
-        "isSelected": true
-      },
-      {
-        "path": "config/merequester-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/modelfix-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/modernfix-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/modnametooltip-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/moonlight-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/moonlight-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/neapolitan-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/notenoughanimations.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/oculus.properties",
-        "isSelected": true
-      },
-      {
-        "path": "config/particular-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/polymorph-integrations.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/ponder-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/proplacer-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/puzzlesapi-iteminteractions-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/puzzlesapi-iteminteractions-server.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/puzzlesapi-slotcycling-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/quark-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/recipeessentials.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/saturn-optimizations.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/savage_and_ravage-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/savage_and_ravage-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/scarecrowsterritory-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/smoothboot.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/smoothchunk.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/sophisticatedbackpacks-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/sophisticatedcore-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/sophisticatedcore-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/supplementaries-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/supplementaries-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/suppsquared-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/toastcontrol-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/trashcans-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/vibrativevoice.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/voicechat-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/woodworks-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/zeta-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/forge-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/no_fog.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/gamemenumodoption-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/trade_cycling-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/create_central_kitchen-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/architects_palette-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/storagedrawers-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/copycats-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/copycats-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/fml.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/modernfix-mixins.properties",
-        "isSelected": true
-      },
-      {
-        "path": "config/boatiview-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/cubes_without_borders.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/easymagic-server.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/embeddium-fingerprint.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/emi.css",
-        "isSelected": true
-      },
-      {
-        "path": "config/everycomp-entries.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/everycomp-hazardous.properties",
-        "isSelected": true
-      },
-      {
-        "path": "config/flywheel-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/packetfixer.properties",
-        "isSelected": true
-      },
-      {
-        "path": "config/storagedrawers-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/waterframes-client.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/alltheleaks.json",
-        "isSelected": true
-      },
-      {
-        "path": "config/amendments-common.toml",
-        "isSelected": true
-      },
-      {
-        "path": "config/embeddium-options.json",
-        "isSelected": true
-      },
-      {
         "path": "configureddefaults",
         "isSelected": true
       },
@@ -862,11 +22,219 @@
         "isSelected": true
       },
       {
+        "path": "configureddefaults/config/Advancedperipherals",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/Advancedperipherals/world.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/Advancedperipherals/metaphysics.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/Advancedperipherals/peripherals.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/ae2",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/ae2/client.json",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/ae2/common.json",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/defaultoptions",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/defaultoptions/keybindings.txt",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/defaultoptions/options.txt",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/jade",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/jade/jade.json",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/jade/plugins.json",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/NoChatReports",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/NoChatReports/NCR-Client.json",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/NoChatReports/NCR-Encryption.json",
+        "isSelected": true
+      },
+      {
         "path": "configureddefaults/config/fairylights-client.toml",
         "isSelected": true
       },
       {
-        "path": "configureddefaults/README.md",
+        "path": "configureddefaults/config/amendments-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/amendments-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/appleskin-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/bwncr-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/copycats-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/distraction_free_recipes-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/easymagic-server.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/emi.css",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/emi_loot_config.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/enchdesc.json",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/entity_model_features.json",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/entity_texture_features.json",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/entityculling.json",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/environmental-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/everycomp-entries.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/modnametooltip-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/neapolitan-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/notenoughanimations.json",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/particular-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/quark-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/savage_and_ravage-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/scarecrowsterritory-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/sophisticatedbackpacks-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/sophisticatedcore-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/storagedrawers-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/storagedrawers-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/supplementaries-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/supplementaries-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/voicechat-client.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/woodworks-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/toastcontrol-common.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/config/badoptimizations.txt",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/defaultconfigs",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/defaultconfigs/create-server.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/defaultconfigs/etched-server.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/defaultconfigs/sophisticatedbackpacks-server.toml",
+        "isSelected": true
+      },
+      {
+        "path": "configureddefaults/defaultconfigs/waterframes-server.toml",
         "isSelected": true
       },
       {
@@ -879,23 +247,23 @@
       },
       {
         "path": "defaultconfigs",
-        "isSelected": true
+        "isSelected": false
       },
       {
         "path": "defaultconfigs/create-server.toml",
-        "isSelected": true
+        "isSelected": false
       },
       {
         "path": "defaultconfigs/etched-server.toml",
-        "isSelected": true
+        "isSelected": false
       },
       {
         "path": "defaultconfigs/sophisticatedbackpacks-server.toml",
-        "isSelected": true
+        "isSelected": false
       },
       {
         "path": "defaultconfigs/waterframes-server.toml",
-        "isSelected": true
+        "isSelected": false
       },
       {
         "path": "downloads",
@@ -4502,6 +3870,10 @@
         "isSelected": true
       },
       {
+        "path": "kubejs/assets/emi/index/stacks/hidden.json",
+        "isSelected": false
+      },
+      {
         "path": "kubejs/assets/chisel_chipped_integration",
         "isSelected": true
       },
@@ -4571,7 +3943,7 @@
       },
       {
         "path": "kubejs/config",
-        "isSelected": true
+        "isSelected": false
       },
       {
         "path": "kubejs/config/client.properties",
@@ -4583,7 +3955,7 @@
       },
       {
         "path": "kubejs/config/probejs.json",
-        "isSelected": true
+        "isSelected": false
       },
       {
         "path": "kubejs/data",
@@ -6511,11 +5883,11 @@
       },
       {
         "path": "kubejs/client_scripts",
-        "isSelected": true
+        "isSelected": false
       },
       {
         "path": "kubejs/client_scripts/example.js",
-        "isSelected": true
+        "isSelected": false
       },
       {
         "path": "local",
@@ -75850,10 +75222,6 @@
         "isSelected": true
       },
       {
-        "path": "mods/watermedia-2.1.23.jar",
-        "isSelected": true
-      },
-      {
         "path": "mods/Architects-Palette-1.20.1-1.3.6.1.jar",
         "isSelected": true
       },
@@ -75990,19 +75358,11 @@
         "isSelected": true
       },
       {
-        "path": "mods/supplementaries-1.20-3.1.26.jar",
-        "isSelected": true
-      },
-      {
         "path": "mods/Amplified_Nether_1.20.x_v1.2.5.jar",
         "isSelected": true
       },
       {
         "path": "mods/moremcmeta-1.20.1-4.5.2-forge.jar",
-        "isSelected": true
-      },
-      {
-        "path": "mods/fusion-1.2.7-forge-mc1.20.1.jar",
         "isSelected": true
       },
       {
@@ -76019,14 +75379,6 @@
       },
       {
         "path": "mods/Boat-Item-View-Forge-1.20.1-0.0.5.jar",
-        "isSelected": true
-      },
-      {
-        "path": "mods/cc-tweaked-1.20.1-forge-1.115.1.jar",
-        "isSelected": true
-      },
-      {
-        "path": "mods/copycats-2.2.2-mc.1.20.1-forge-build.241.jar",
         "isSelected": true
       },
       {
@@ -76066,10 +75418,6 @@
         "isSelected": true
       },
       {
-        "path": "mods/sophisticatedbackpacks-1.20.1-3.23.13.1229.jar",
-        "isSelected": true
-      },
-      {
         "path": "mods/Zeta-1.0-30.jar",
         "isSelected": true
       },
@@ -76082,7 +75430,31 @@
         "isSelected": true
       },
       {
-        "path": "mods/sophisticatedcore-1.20.1-1.2.47.958.jar",
+        "path": "mods/cc-tweaked-1.20.1-forge-1.115.1.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods/copycats-2.2.2-mc.1.20.1-forge-build.241.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods/watermedia-2.1.24.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods/supplementaries-1.20-3.1.29.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods/sophisticatedcore-1.20.1-1.2.49.962.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods/sophisticatedbackpacks-1.20.1-3.23.13.1230.jar",
+        "isSelected": true
+      },
+      {
+        "path": "mods/fusion-1.2.7b-forge-mc1.20.1.jar",
         "isSelected": true
       },
       {
@@ -80879,7 +80251,7 @@
       },
       {
         "path": "shaderpacks",
-        "isSelected": true
+        "isSelected": false
       },
       {
         "path": "screenshots",
@@ -81102,10 +80474,6 @@
         "isSelected": true
       },
       {
-        "path": "minecraftinstance.json",
-        "isSelected": false
-      },
-      {
         "path": "options.txt",
         "isSelected": false
       },
@@ -81119,6 +80487,10 @@
       },
       {
         "path": "servers.dat",
+        "isSelected": false
+      },
+      {
+        "path": "minecraftinstance.json",
         "isSelected": false
       }
     ],
