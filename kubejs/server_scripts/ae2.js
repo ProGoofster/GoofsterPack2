@@ -261,6 +261,7 @@ ServerEvents.recipes((event) => {
   );
 
   //replace wrenches
+  event.remove({output: "#ae2:quartz_wrench"})
   event.replaceInput({},
     "#ae2:quartz_wrench",
     "create:wrench"

@@ -2,18 +2,7 @@ Currently Disabled:
 steam n rails
 
 General
-    -recipe tweaks
-        -powdered concrete dying
-        -wool dying if applicable
-        -all other dying
-        -glass dying
     -change ae2 press info
-    -copycat shaft better recipe
-    -squid data fix
-    -quark chicken grabbing
-    -make pillager outpost default again
-    -pig breeding
-    -atmospheric wood in vanilla structure config
 
 Added Mod Support:
     -map mod prevention (stop brendans everywhere)
@@ -22,14 +11,9 @@ Custom mods:
     -port the random motd mod to 1.20.1
 
 before publishing:
-    -move config to default config
-    -remove distant horizons, spark, probejs and cwb
-        -remove all probejs files
     -remove emi lookup_history
     -disable emi crafting id
     -move emi removed to assets/emi/index/stacks
-    -use configured defaults
-    -set onboarding_finished false for voice chat
 
 for server:
     motd random

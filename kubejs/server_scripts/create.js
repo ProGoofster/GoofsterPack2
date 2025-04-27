@@ -315,4 +315,8 @@ ServerEvents.recipes((event) => {
   event.recipes.create.milling("atmospheric:red_arid_sand", '#forge:sandstone/red_arid_sandstone').id('create:milling/red_arid_sandstone');
 
   event.replaceOutput({}, 'createaddition:zinc_sheet', 'createdeco:zinc_sheet')
+
+  //copycat shaft recipe
+  event.remove({output: 'copycats:copycat_shaft'})
+  event.stonecutting('copycats:copycat_shaft', 'create:shaft')
 });

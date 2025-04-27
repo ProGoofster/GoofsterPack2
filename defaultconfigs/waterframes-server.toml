@@ -22,7 +22,7 @@
 	[waterframes.multimedia]
 		#Max volume distance radius
 		#Range: 8 ~ 512
-		maxVolumeDistance = 512
+		maxVolumeDistance = 256
 		#Max volume value
 		#values over 100 uses VLC überVolume
 		#Range: 10 ~ 120

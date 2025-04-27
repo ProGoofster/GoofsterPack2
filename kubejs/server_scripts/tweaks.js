@@ -122,6 +122,9 @@ ServerEvents.recipes(event => {
     //remove leaf pile
     event.remove({output: /autumnity:.*maple_leaf_pile/})
     event.remove({output: /environmental:.*plum_leaf_pile/})
+
+    //remove another furniture stools
+    event.remove({output: /^another_furniture:(?!.*tall_).*_stool$/})
 });
 
 MoreJSEvents.villagerTrades((event) => {

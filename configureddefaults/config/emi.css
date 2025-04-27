@@ -14,7 +14,7 @@
 	/**
 	 * How much EMI should use tooltips and popups to show controls and information.
 	 */
-	help-level: none;
+	help-level: normal;
 
 	/**
 	 * Where EMI should pull stacks from to populate the index.
@@ -360,12 +360,11 @@
 	 * Return to the previous page in EMI.
 	 */
 	back: "key.keyboard.backspace";
-	back: "key.keyboard.left";
 
 	/**
 	 * Return to the next page in EMI after going back.
 	 */
-	forward: "key.keyboard.right";
+	forward: "key.keyboard.unknown";
 
 	/**
 	 * When on a stack with an associated recipe:
