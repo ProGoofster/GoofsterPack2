@@ -57,6 +57,8 @@ ServerEvents.tags('item', event => {
     event.removeAll('chisel_chipped_integration:metals/steel_blocks')
     event.removeAll('chisel_chipped_integration:metals/tin_blocks')
     event.removeAll('chisel_chipped_integration:metals/uranium_blocks')
+
+    event.add('quark:revertable_chests', '#forge:chests/wooden')l
 })
 
 ServerEvents.tags('fluid', event => {

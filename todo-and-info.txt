@@ -1,8 +1,21 @@
-Currently Disabled:
-steam n rails
+
+
 
 General
     -change ae2 press info
+    -nerf biofuel
+    -free renames
+    -remove backpack injects (bc emi)
+    -enchanted fruit drain
+server issues:
+    -disable "copy cats"
+    -craft chests to normal
+    -fix jakeberryman.com
+    -buried treasure broken
+    -fish fillet knife tag
+    -random motd
+    -dynmap css
+
 
 Added Mod Support:
     -map mod prevention (stop brendans everywhere)
