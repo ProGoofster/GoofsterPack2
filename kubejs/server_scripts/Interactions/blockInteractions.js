@@ -1,11 +1,3 @@
-//prevents non vanilla chests from being upgraded to sophisticatd storage ones
-//ideally I would like all chests to be upgradable but I can figure that out later
-BlockEvents.rightClicked('#forge:chests/wooden', event => {
-	if(event.getItem().getId().startsWith('sophisticatedstorage:basic_t') && event.block.id.startsWith('quark:')){
-		event.cancel()
-	} 
-})
-
 const $SHOVEL_FLATTEN  = Java.loadClass('net.minecraftforge.common.ToolAction').get('shovel_flatten')
 
 //removes dirt paths

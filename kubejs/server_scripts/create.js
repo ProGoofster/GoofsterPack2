@@ -319,4 +319,20 @@ ServerEvents.recipes((event) => {
   //copycat shaft recipe
   event.remove({output: 'copycats:copycat_shaft'})
   event.stonecutting('copycats:copycat_shaft', 'create:shaft')
+
+  //draining enchanted fruit
+  event.custom({
+    type: "create_enchantment_industry:disenchanting",
+    ingredients: [
+      {
+        item: "quark:ancient_fruit",
+      },
+    ],
+    results: [
+      {
+        fluid: "create_enchantment_industry:experience",
+        amount: 10,
+      },
+    ],
+  });
 });
