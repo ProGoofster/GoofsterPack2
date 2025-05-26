@@ -8,16 +8,19 @@ General
     -remove backpack injects (bc emi)
     -enchanted fruit drain
     -all chiseled back into source at stone cutter, but not source back
+    -add recipes to oxidize copper
+
 server issues:
     -disable "copy cats"
     -craft chests to normal
     -fix jakeberryman.com
-    -buried treasure broken
     -fish fillet knife tag
     -dynmap css
-    -stripped log tags
-    -quark chests on create contraptions
-    supplementaries slimeball recipe
+    -all chests on create contraptions
+    -supplementaries slimeball recipe
+    -evercomp chipped dynmap
+    -increase time to break table cloths
+    -wired modem futura
 
 
 Added Mod Support:
