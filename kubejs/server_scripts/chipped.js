@@ -1,4 +1,4 @@
-// ServerEvents.recipes((event) => {
+ServerEvents.recipes((event) => {
 //     function genSawRecipe(recipeType){
 //         event.forEachRecipe({type: recipeType}, recipe => {
 //             let recipeJson = recipe.json;
@@ -26,4 +26,6 @@
 //     genSawRecipe('chipped:carpenters_table')
 //     genSawRecipe('chipped:botanist_workbench')
 //     genSawRecipe('chipped:alchemy_bench')
-// })
+
+    event.replaceInput({output: "chisel_chipped_integration:futura_gray_screen"}, "minecraft:redstone", "minecraft:lapis_lazuli")
+})
