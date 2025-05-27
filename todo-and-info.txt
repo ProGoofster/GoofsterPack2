@@ -16,12 +16,8 @@ General
 server issues:
     -disable "copy cats"
     -fish fillet knife tag
-    -dynmap css
     -evercomp chipped dynmap
-    -increase time to break table cloths
     -chipped missing recipes glitch
-    -certus quartz buds can't be mined with create
-
 
 Added Mod Support:
     -map mod prevention (stop brendan & korby)

@@ -170,12 +170,11 @@ ServerEvents.recipes((event) => {
     "ae2:engineering_processor_press",
   ]).keepHeldItem();
 
-  // event.recipes.create.deploying("ae2:silicon_press", ["minecraft:netherite_ingot", "ae2:silicon_press"]);
-  // event.recipes.create.deploying("ae2:logic_processor_press", ["minecraft:netherite_ingot", "ae2:logic_processor_press"]);
-  // event.recipes.create.deploying("ae2:calculation_processor_press", ["minecraft:netherite_ingot", "ae2:calculation_processor_press"]);
-  // event.recipes.create.deploying("ae2:engineering_processor_press", ["minecraft:netherite_ingot", "ae2:engineering_processor_press"]);
-  // event.replaceInput({type: 'ae2:inscriber'}, 'minecraft:iron_block', 'minecraft:netherite_ingot')
-  event.remove({ input: "minecraft:iron_block", type: "ae2:inscriber" });
+  event.recipes.create.deploying("ae2:silicon_press", ["minecraft:netherite_ingot", "ae2:silicon_press"]).keepHeldItem();
+  event.recipes.create.deploying("ae2:logic_processor_press", ["minecraft:netherite_ingot", "ae2:logic_processor_press"]).keepHeldItem();
+  event.recipes.create.deploying("ae2:calculation_processor_press", ["minecraft:netherite_ingot", "ae2:calculation_processor_press"]).keepHeldItem();
+  event.recipes.create.deploying("ae2:engineering_processor_press", ["minecraft:netherite_ingot", "ae2:engineering_processor_press"]).keepHeldItem();
+  event.replaceInput({type: 'ae2:inscriber'}, 'minecraft:iron_block', 'minecraft:netherite_ingot')
 
   var ip = "kubejs:incomplete_logic_processor";
   event.recipes
