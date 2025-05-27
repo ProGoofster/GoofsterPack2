@@ -8,31 +8,19 @@ Mods for next Update:
     -Create: Escalated
     -Create: Advanced Logistics (for redstone radio, turn off Wormhole)
 
-
 General
     -change ae2 press info
     -nerf biofuel
     -remove backpack injects (bc emi)
-    -all chiseled back into source at stone cutter, but not source back
-    -let certus quartz buds be mined with create
 
 server issues:
     -disable "copy cats"
     -fish fillet knife tag
     -dynmap css
-    -add recipes to oxidize copper
-
-server issues:
-    -disable "copy cats"
-    -craft chests to normal
-    -fix jakeberryman.com
-    -fish fillet knife tag
-    -dynmap css
-    -all chests on create contraptions
-    -supplementaries slimeball recipe
     -evercomp chipped dynmap
     -increase time to break table cloths
-    -wired modem futura
+    -chipped missing recipes glitch
+    -certus quartz buds can't be mined with create
 
 
 Added Mod Support:
@@ -51,9 +39,6 @@ for server:
     set up luckperms and ops
     install and test canary with supplementaries pushable block
     tps & mspt alias
-    add dragon defeat datapack
-    overwrite config (don't delete, anticheat and such)
-
 server info:
     seed choices:
         "2625317107780289611"

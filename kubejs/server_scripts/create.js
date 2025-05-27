@@ -1,5 +1,5 @@
 ServerEvents.recipes((event) => {
-//remove unwanted recipes
+  //remove unwanted recipes
   //electrum
   event.remove({ id: "createaddition:crafting/electrum_amulet" });
   event.remove({ id: "createaddition:crafting/electrum_ingot" });
@@ -14,8 +14,8 @@ ServerEvents.recipes((event) => {
 
   event.remove({ id: "createaddition:crafting/modular_accumulator_electrum" });
   event.remove({ id: "createaddition:crafting/large_connector_electrum" });
-  event.remove({ output: "create_enchantment_industry:experience_rotor"})
-  event.remove({ input: "create_enchantment_industry:experience_rotor"})
+  event.remove({ output: "create_enchantment_industry:experience_rotor" });
+  event.remove({ input: "create_enchantment_industry:experience_rotor" });
 
   event
     .custom({
@@ -127,14 +127,30 @@ ServerEvents.recipes((event) => {
     })
     .id("create:crushing/tuff");
   //festive copper spool
-  event.remove({ id: "createaddition:crafting/festive_spool"})
-//tweak recipes for use with tags
-  event.replaceInput({id: 'create:milling/granite'}, 'minecraft:granite', "#create:stone_types/granite")
-  event.replaceInput({id: 'create:milling/terracotta'}, 'minecraft:terracotta', "#quark:terracotta_all")
-  event.replaceInput({id: 'create:milling/granite'}, 'minecraft:granite', "#create:stone_types/granite")
-  event.replaceInput({id: 'create:milling/sandstone'}, 'minecraft:sandstone', "#c:uncolored_sandstone_blocks")
+  event.remove({ id: "createaddition:crafting/festive_spool" });
+  //tweak recipes for use with tags
+  event.replaceInput(
+    { id: "create:milling/granite" },
+    "minecraft:granite",
+    "#create:stone_types/granite"
+  );
+  event.replaceInput(
+    { id: "create:milling/terracotta" },
+    "minecraft:terracotta",
+    "#quark:terracotta_all"
+  );
+  event.replaceInput(
+    { id: "create:milling/granite" },
+    "minecraft:granite",
+    "#create:stone_types/granite"
+  );
+  event.replaceInput(
+    { id: "create:milling/sandstone" },
+    "minecraft:sandstone",
+    "#c:uncolored_sandstone_blocks"
+  );
 
-//compatibility
+  //compatibility
   //dough compat
   event.recipes.shapeless("create:dough", [
     "minecraft:water_bucket",
@@ -142,13 +158,29 @@ ServerEvents.recipes((event) => {
   ]);
   event.remove({ output: "create:dough", type: "minecraft:crafting_shaped" });
   event.replaceInput({}, "farmersdelight:wheat_dough", "create:dough");
-//renewables
+  //renewables
   //copper
-    event.recipes.create.milling("kubejs:scoria_aggregate", '#create:stone_types/scoria').processingTime(250)
-    event.recipes.create.splashing([Item.of('minecraft:coal').withChance(0.025), Item.of('create:copper_nugget').withChance(0.12)], 'kubejs:scoria_aggregate')
+  event.recipes.create
+    .milling("kubejs:scoria_aggregate", "#create:stone_types/scoria")
+    .processingTime(250);
+  event.recipes.create.splashing(
+    [
+      Item.of("minecraft:coal").withChance(0.025),
+      Item.of("create:copper_nugget").withChance(0.12),
+    ],
+    "kubejs:scoria_aggregate"
+  );
   //zinc
-    event.recipes.create.milling("kubejs:limesand", '#create:stone_types/limestone').processingTime(250)
-    event.recipes.create.splashing([Item.of('minecraft:bone_meal').withChance(0.15), Item.of('create:zinc_nugget').withChance(0.12)], 'kubejs:limesand')
+  event.recipes.create
+    .milling("kubejs:limesand", "#create:stone_types/limestone")
+    .processingTime(250);
+  event.recipes.create.splashing(
+    [
+      Item.of("minecraft:bone_meal").withChance(0.15),
+      Item.of("create:zinc_nugget").withChance(0.12),
+    ],
+    "kubejs:limesand"
+  );
   //calcite
   event.recipes
     .createCompacting("minecraft:calcite", [
@@ -195,18 +227,22 @@ ServerEvents.recipes((event) => {
     .id("createaddition:mixing/netherrack");
 
   //basalt
-  event.recipes.createMixing("2x minecraft:basalt", [
-    "minecraft:blue_ice",
-    "minecraft:soul_soil",
-    Fluid.of("minecraft:lava", 100),
-  ]).id("create:mixing/basalt");
+  event.recipes
+    .createMixing("2x minecraft:basalt", [
+      "minecraft:blue_ice",
+      "minecraft:soul_soil",
+      Fluid.of("minecraft:lava", 100),
+    ])
+    .id("create:mixing/basalt");
 
   //end stone
-  event.recipes.createCompacting("minecraft:end_stone", [
-    "2x minecraft:flint",
-    "minecraft:purpur_block",
-    Fluid.of("minecraft:lava", 100),
-  ]).id("create:compacting/end_stone");
+  event.recipes
+    .createCompacting("minecraft:end_stone", [
+      "2x minecraft:flint",
+      "minecraft:purpur_block",
+      Fluid.of("minecraft:lava", 100),
+    ])
+    .id("create:compacting/end_stone");
 
   //ae2 skystone
   event.replaceInput(
@@ -214,13 +250,28 @@ ServerEvents.recipes((event) => {
     "ae2:sky_stone_block",
     "#ae2:sky_stone"
   );
-  event.recipes.createMixing("2x ae2:sky_stone_block", [
-    "ae2:sky_dust",
-    "#forge:cobblestone",
-    Fluid.of("minecraft:lava", 100),
-  ]).id("create:mixing/sky_stone_block");
 
-//extras
+  event.recipes
+    .createMixing("2x ae2:sky_stone_block", [
+      "ae2:sky_dust",
+      "#forge:cobblestone",
+      Fluid.of("minecraft:lava", 100),
+    ])
+    .id("create:mixing/sky_stone_block");
+
+  //crying obsidian
+  event.recipes
+    .createMixing("minecraft:crying_obsidian", [
+      "minecraft:amethyst_shard",
+      "minecraft:obsidian",
+      "minecraft:ghast_tear",
+      Fluid.of("minecraft:water", 250),
+    ])
+    .superheated()
+    .id("create:mixing/crying_obsidian");
+
+
+  //extras
   //vanilla diorite recipe as mixing
   event.recipes
     .createMixing("minecraft:diorite", [
@@ -309,16 +360,24 @@ ServerEvents.recipes((event) => {
   event.blasting("create:scorchia", "create:scoria");
 
   //crushing sandstone
-  event.recipes.create.milling("minecraft:red_sand", '#c:red_sandstone_blocks').id('create:milling/red_sandstone');
-  event.recipes.create.milling("minecraft:soul_sand", '#forge:sandstone/soul_sandstone').id('create:milling/soul_sandstone');
-  event.recipes.create.milling("atmospheric:arid_sand", '#forge:sandstone/arid_sandstone').id('create:milling/arid_sandstone');
-  event.recipes.create.milling("atmospheric:red_arid_sand", '#forge:sandstone/red_arid_sandstone').id('create:milling/red_arid_sandstone');
+  event.recipes.create
+    .milling("minecraft:red_sand", "#c:red_sandstone_blocks")
+    .id("create:milling/red_sandstone");
+  event.recipes.create
+    .milling("minecraft:soul_sand", "#forge:sandstone/soul_sandstone")
+    .id("create:milling/soul_sandstone");
+  event.recipes.create
+    .milling("atmospheric:arid_sand", "#forge:sandstone/arid_sandstone")
+    .id("create:milling/arid_sandstone");
+  event.recipes.create
+    .milling("atmospheric:red_arid_sand", "#forge:sandstone/red_arid_sandstone")
+    .id("create:milling/red_arid_sandstone");
 
-  event.replaceOutput({}, 'createaddition:zinc_sheet', 'createdeco:zinc_sheet')
+  event.replaceOutput({}, "createaddition:zinc_sheet", "createdeco:zinc_sheet");
 
   //copycat shaft recipe
-  event.remove({output: 'copycats:copycat_shaft'})
-  event.stonecutting('copycats:copycat_shaft', 'create:shaft')
+  event.remove({ output: "copycats:copycat_shaft" });
+  event.stonecutting("copycats:copycat_shaft", "create:shaft");
 
   //draining enchanted fruit
   event.custom({
