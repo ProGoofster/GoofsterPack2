@@ -164,6 +164,12 @@ ServerEvents.tags("block", (event) => {
     "supplementaries:fire_pit"
   );
   event.add("create:passive_boiler_heaters", "supplementaries:fire_pit");
+
+  event.add('create:non_movable', 'ae2:flawless_budding_quartz');
+
+  event.add("create:chest_mounted_storage", [/^(?!minecraft:ender_chest$|ae2:sky_stone_chest$).*_chest$/])
+  event.add("create:simple_mounted_storage", [/.*_cabinet/, /^(?!minecraft:ender_chest$|ae2:sky_stone_chest$).*_chest$/, /everycomp:af\/.*_drawer/, /another_furniture:.*_drawer/])
+  event.add("create:single_block_inventories", [/.*_cabinet/, /^(?!minecraft:ender_chest$|ae2:sky_stone_chest$).*_chest$/, /everycomp:af\/.*_drawer/, /another_furniture:.*_drawer/])
 });
 
 ServerEvents.tags("worldgen/structure", (event) => {

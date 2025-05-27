@@ -144,11 +144,11 @@ ServerEvents.recipes((event) => {
   event.replaceInput({}, "farmersdelight:wheat_dough", "create:dough");
 //renewables
   //copper
-    event.recipes.create.milling("kubejs:scoria_aggregate", '#create:stone_types/scoria')
-    event.recipes.create.splashing([Item.of('minecraft:coal').withChance(0.25), Item.of('create:copper_nugget').withChance(0.42)], 'kubejs:scoria_aggregate')
+    event.recipes.create.milling("kubejs:scoria_aggregate", '#create:stone_types/scoria').processingTime(250)
+    event.recipes.create.splashing([Item.of('minecraft:coal').withChance(0.025), Item.of('create:copper_nugget').withChance(0.12)], 'kubejs:scoria_aggregate')
   //zinc
-    event.recipes.create.milling("kubejs:limesand", '#create:stone_types/limestone')
-    event.recipes.create.splashing([Item.of('minecraft:bone_meal').withChance(0.25), Item.of('create:zinc_nugget').withChance(0.12)], 'kubejs:limesand')
+    event.recipes.create.milling("kubejs:limesand", '#create:stone_types/limestone').processingTime(250)
+    event.recipes.create.splashing([Item.of('minecraft:bone_meal').withChance(0.15), Item.of('create:zinc_nugget').withChance(0.12)], 'kubejs:limesand')
   //calcite
   event.recipes
     .createCompacting("minecraft:calcite", [
