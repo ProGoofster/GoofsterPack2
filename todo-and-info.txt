@@ -20,6 +20,19 @@ server issues:
     -disable "copy cats"
     -fish fillet knife tag
     -dynmap css
+    -add recipes to oxidize copper
+
+server issues:
+    -disable "copy cats"
+    -craft chests to normal
+    -fix jakeberryman.com
+    -fish fillet knife tag
+    -dynmap css
+    -all chests on create contraptions
+    -supplementaries slimeball recipe
+    -evercomp chipped dynmap
+    -increase time to break table cloths
+    -wired modem futura
 
 
 Added Mod Support:
