@@ -1,5 +1,6 @@
 Mods for next Update:
     -Create Steam and Rails
+        -or: Create: Chimneys
     -Create Stock Bridge
     -Create: Fishing Bobber Detector
     -Create: CC Total Logistics
@@ -12,20 +13,24 @@ General
     -change ae2 press info
     -nerf biofuel
     -remove backpack injects (bc emi)
+    -lapis and ink sac automation
+        -lapis
+            -haunting something magical...
+        -ink sac
+            -from ink, filling "empty sacs"
 
 server issues:
     -disable "copy cats"
     -fish fillet knife tag
     -evercomp chipped dynmap
     -chipped missing recipes glitch
+    -liquid blaze burner texture transparency issue
 
 Added Mod Support:
     -map mod prevention (stop brendan & korby)
 
 before publishing:
     -remove emi lookup_history
-    -disable emi crafting id
-    -move emi removed to assets/emi/index/stacks
 
 for server:
     motd random
