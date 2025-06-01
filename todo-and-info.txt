@@ -8,6 +8,8 @@ Mods for next Update:
     -Create Factory Logistics
     -Create: Escalated
     -Create: Advanced Logistics (for redstone radio, turn off Wormhole)
+    -compact machines / hyperbox
+        -test for worldborder, chunk loading, ect
 
 General
     -change ae2 press info
