@@ -21,6 +21,15 @@ General
         -ink sac
             -from ink, filling "empty sacs"
 
+    
+Storage Drawers:
+    Rebalance Drawer Upgrades
+        -iron
+        -gold 
+        -diamond
+        -netherite
+        -space metal
+
 server issues:
     -disable "copy cats"
     -fish fillet knife tag

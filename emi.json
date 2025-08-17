@@ -1,6 +1,10 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:storagedrawers:copper_storage_upgrade",
+    "item:storagedrawers:obsidian_storage_upgrade",
+    "item:storagedrawers:iron_storage_upgrade",
+    "item:waterframes:big_tv",
     "item:minecraft:diamond_pickaxe{Damage:0}",
     "item:create:white_table_cloth",
     "item:minecraft:copper_block",
