@@ -30,6 +30,14 @@
 		[types.wood_type.architects_palette]
 			twisted = true
 
+		[types.wood_type.vanillabackport]
+			pale_oak = true
+
+		[types.wood_type.ad_astra]
+			aeronos = true
+			strophar = true
+			glacian = true
+
 	[types.leaves_type]
 
 		[types.leaves_type.culturaldelights]
@@ -146,6 +154,12 @@
 			golden_apple_jungle = true
 			golden_apple_oak = true
 			golden_apple_spruce = true
+
+		[types.leaves_type.vanillabackport]
+			pale_oak = true
+
+		[types.leaves_type.ad_astra]
+			glacian = true
 
 	[types.cake]
 

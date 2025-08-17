@@ -11,6 +11,19 @@ Mods for next Update:
     -compact machines / hyperbox
         -test for worldborder, chunk loading, ect
 
+progression
+    moon - cresote
+        ie ores
+    mars - custom fluid made from biodisel + additive made by arc furnace
+        mekanism ores + any extra ie ores
+    venus + mercury - ??? some mekanism fluid
+        second stage of mekanism ores
+    glacio - ???
+        quantum entangleporter
+        mek suit 
+        digital miner
+        teleporter
+
 General
     -change ae2 press info
     -nerf biofuel
@@ -21,7 +34,8 @@ General
         -ink sac
             -from ink, filling "empty sacs"
 
-    
+hyperbox
+    ae2 cells recipes
 Storage Drawers:
     Rebalance Drawer Upgrades
         -iron
