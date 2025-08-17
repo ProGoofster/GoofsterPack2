@@ -30,6 +30,7 @@ progression
         teleporter
         ultimate tier
         refined obsidian with "etrium" found on glacio in raw form, must be processed
+        curvey pipes lol
 
     important considerations:
         metal fabrication needs to involve machines unlocked on the planet the metal is from
