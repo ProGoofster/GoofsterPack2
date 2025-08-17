@@ -1,6 +1,183 @@
 {
   "favorites": [],
   "lookup_history": [
+    {
+      "type": "jemi",
+      "uid": "gas:mekanism:hydrofluoric_acid"
+    },
+    {
+      "type": "jemi",
+      "uid": "gas:mekanism:uranium_hexafluoride"
+    },
+    {
+      "type": "jemi",
+      "uid": "gas:mekanism:fissile_fuel"
+    },
+    {
+      "type": "jemi",
+      "uid": "gas:mekanism:nuclear_waste",
+      "amount": 10
+    },
+    {
+      "type": "jemi",
+      "uid": "gas:mekanism:polonium"
+    },
+    "item:mekanism:pellet_polonium",
+    "item:mekanism:supercharged_coil",
+    "item:mekanism:module_base",
+    "item:mekanism:pellet_plutonium",
+    {
+      "type": "jemi",
+      "uid": "gas:mekanism:plutonium",
+      "amount": 1000
+    },
+    "item:mekanism:reprocessed_fissile_fragment",
+    "item:mekanismgenerators:fission_reactor_port",
+    "item:mekanismgenerators:fission_reactor_logic_adapter",
+    "item:mekanismgenerators:fission_fuel_assembly",
+    "item:mekanismgenerators:control_rod_assembly",
+    "item:mekanism:isotopic_centrifuge",
+    "item:mekanismgenerators:fission_reactor_casing",
+    "item:mekanism:ingot_steel",
+    "#item:ad_astra:steel_ingots",
+    "item:mekanism:basic_universal_cable",
+    "item:mekanism:advanced_universal_cable",
+    "item:mekanism:chemical_oxidizer",
+    {
+      "type": "jemi",
+      "uid": "gas:mekanism:uranium_oxide"
+    },
+    "item:mekanism:chemical_infuser",
+    "item:mekanism:solar_neutron_activator",
+    "item:mekanism:pressurized_reaction_chamber",
+    "item:ad_astra:tier_4_rocket{BotariumData:{StoredFluids:[{Amount:3000L,Fluid:\"ad_astra:fuel\"}]}}",
+    "item:ad_astra:desh_engine",
+    "item:ad_astra:ostrum_engine",
+    "item:ad_astra:calorite_engine",
+    "item:ad_astra:tier_4_rocket{}",
+    {
+      "type": "jemi",
+      "uid": "gas:mekanismgenerators:deuterium"
+    },
+    {
+      "type": "jemi",
+      "uid": "gas:mekanismgenerators:fusion_fuel"
+    },
+    {
+      "type": "fluid",
+      "id": "mekanismgenerators:fusion_fuel",
+      "amount": 0
+    },
+    {
+      "type": "fluid",
+      "id": "ad_astra:fuel",
+      "amount": 0
+    },
+    "item:mekanism:alloy_reinforced",
+    "item:mekanism:elite_mechanical_pipe",
+    "item:mekanism:thermal_evaporation_block",
+    "item:mekanism:thermal_evaporation_valve",
+    "item:mekanism:thermal_evaporation_controller",
+    {
+      "type": "fluid",
+      "id": "mekanism:brine",
+      "amount": 10
+    },
+    {
+      "type": "jemi",
+      "uid": "gas:mekanism:chlorine"
+    },
+    {
+      "type": "jemi",
+      "uid": "gas:mekanism:ethene"
+    },
+    {
+      "type": "jemi",
+      "uid": "gas:mekanism:hydrogen_chloride"
+    },
+    {
+      "type": "jemi",
+      "uid": "gas:mekanism:hydrogen"
+    },
+    "item:mekanism:salt",
+    "item:mekanism:block_salt",
+    {
+      "type": "fluid",
+      "id": "mekanism:ethene",
+      "amount": 0
+    },
+    "item:mekanism:dust_sulfur",
+    "#item:forge:dusts/sulfur",
+    {
+      "type": "jemi",
+      "uid": "gas:mekanism:sulfuric_acid"
+    },
+    {
+      "type": "fluid",
+      "id": "mekanism:sulfuric_acid",
+      "amount": 0
+    },
+    {
+      "type": "fluid",
+      "id": "mekanism:hydrogen_chloride",
+      "amount": 0
+    },
+    {
+      "type": "fluid",
+      "id": "mekanism:hydrogen",
+      "amount": 0
+    },
+    {
+      "type": "jemi",
+      "uid": "gas:mekanismgenerators:tritium"
+    },
+    "item:mekanism:steel_casing",
+    "item:mekanism:rotary_condensentrator",
+    {
+      "type": "jemi",
+      "uid": "gas:mekanism:lithium"
+    },
+    "fluid:mekanism:lithium",
+    "item:mekanism:dust_lithium",
+    "fluid:mekanism:heavy_water",
+    "fluid:mekanismgenerators:deuterium",
+    "item:mekanismgenerators:reactor_glass",
+    "item:mekanismgenerators:fusion_reactor_port",
+    "item:mekanismgenerators:laser_focus_matrix",
+    "item:mekanismgenerators:rotational_complex",
+    "item:mekanismgenerators:fusion_reactor_frame",
+    {
+      "type": "jemi",
+      "uid": "infuse type:mekanism:gold"
+    },
+    {
+      "type": "jemi",
+      "uid": "pigment:mekanism:yellow"
+    },
+    "item:mekanism:ingot_refined_glowstone",
+    "item:mekanism:block_refined_glowstone",
+    "item:mekanism:elite_universal_cable",
+    "item:mekanism:alloy_infused",
+    {
+      "type": "jemi",
+      "uid": "infuse type:mekanism:refined_obsidian",
+      "amount": 40
+    },
+    "item:mekanism:alloy_atomic",
+    "item:mekanism:dust_refined_obsidian",
+    "item:ad_astra:etrionic_blast_furnace",
+    "#item:ad_astra:steel_nuggets",
+    "item:ad_astra:steel_ingot",
+    "item:ad_astra:ostrum_nugget",
+    "item:mekanism:enriched_refined_obsidian",
+    [
+      "item:mekanism:basic_chemical_tank{mekData:{InfusionTanks:[{Tank:0b,stored:{amount:64000L,infuseTypeName:\"mekanism:refined_obsidian\"}}]}}",
+      "item:mekanism:enriched_refined_obsidian",
+      "item:mekanism:dust_refined_obsidian"
+    ],
+    "item:mekanism:ultimate_control_circuit",
+    "item:mekanism:teleportation_core",
+    "item:mekanism:cardboard_box",
     "item:curvy_pipes:huge_energy_pipe",
     "item:curvy_pipes:small_item_pipe",
     "item:curvy_pipes:medium_item_pipe",
@@ -111,7 +288,14 @@
   ],
   "craft_history": [],
   "recipe_defaults": {
-    "added": [],
+    "added": [
+      "jei:/mekanismgenerators/activating/tritium",
+      "jei:/mekanism/evaporating/brine",
+      "jei:/mekanismgenerators/separator/heavy_water",
+      "jei:/mekanism/rotary/lithium",
+      "jei:/mekanism/evaporating/lithium",
+      "jei:/mekanism/crystallizing/lithium"
+    ],
     "tags": {},
     "resolutions": {},
     "disabled": []

@@ -16,13 +16,29 @@ progression
         ie ores
     mars - custom fluid made from biodisel + additive made by arc furnace
         mekanism ores + any extra ie ores
-    venus + mercury - ??? some mekanism fluid
+        basic + advanced tier
+    venus + mercury - custom Chloroethane ethelyene + hydrogen chloride
         second stage of mekanism ores
-    glacio - ???
+        elite tier
+        atomic disassembler (move down from ultimate)
+        fission
+        polonium (rework isotopic centrefuge recipe)
+    glacio - custom made from DT Fuel + polonium, maybe singularity?
         quantum entangleporter
         mek suit 
         digital miner
         teleporter
+        ultimate tier
+        refined obsidian with "etrium" found on glacio in raw form, must be processed
+
+    important considerations:
+        metal fabrication needs to involve machines unlocked on the planet the metal is from
+        process for refining fuel should bypass ad astra's crappy machines, remove as many ad astra machines as possible
+        fuel refining should take A LOT of raw resources, to the point you need to automate it
+        rockets should also take a lot of resources, and be made in create crafters - look at that one modpack dejojo played
+        making the new fuel + rocket should involve processes from the tiers before, and more than it did to get to the first planet
+        
+
 
 General
     -change ae2 press info
