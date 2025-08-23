@@ -11,6 +11,10 @@
 	# 
 	# Internal use to record what version the config file was first written with.
 	configVersion = 2
+	# 
+	# Whether to log actions such as adding rules or deny list entries.
+	# You may wish to disable this if you've added many such entries.
+	logStartupActivity = true
 
 # Configuration around drawer storage blocks
 [Drawers]
@@ -262,6 +266,9 @@
 	# Quantify keys are used to show or hide the count of items on the face of drawers.
 	[Tools.QuantifyKey]
 		enable = true
+		# 
+		# Show labels by default on newly placed drawers.
+		showDefault = false
 
 	# Concealment keys are used to show or hide the item labels on the face of drawers.
 	# The primary use of this key is for performance by disabling the more expensive dynamic rendering.
@@ -286,4 +293,27 @@
 		# 
 		# When true, does not show current quantities unless quantify key was used
 		respectQuantifyKey = false
+		# Enables Jade integration if mod is present.
+		enable = true
+
+	# Configuration around the CoFH Core mod.
+	# Adds support for a CoFH groups personal key.
+	[Integration.CoFHCore]
+		# Enables CoFH Core integration if mod is present.
+		enable = true
+
+	# Configuration around the FTB Chunks mod.
+	# Improves support for claimed chunks.
+	[Integration.FTBChunks]
+		# Enables FTB Chunks integration if mod is present.
+		enable = true
+
+	# Configuration around the FTB Teams mod.
+	# Adds support for a teams personal key.
+	[Integration.FTBTeams]
+		# Enables FTB Teams integration if mod is present.
+		enable = true
+		# 
+		# Enables recipe to obtain key from another supported personal key in crafting grid.
+		enableCycleRecipe = true
 

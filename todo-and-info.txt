@@ -24,6 +24,7 @@ progression
         fission
         polonium (rework isotopic centrefuge recipe)
     glacio - custom made from DT Fuel + polonium, maybe singularity?
+        custom ae2 certus quartz ore + custom certus quartz geodes
         quantum entangleporter
         mek suit 
         digital miner
@@ -40,8 +41,24 @@ progression
         fuel refining should take A LOT of raw resources, to the point you need to automate it
         rockets should also take a lot of resources, and be made in create crafters - look at that one modpack dejojo played
         making the new fuel + rocket should involve processes from the tiers before, and more than it did to get to the first planet
-        
+compat
+    coal + charcoal to dust w/other crushers
 
+curvey pipes
+    Scale properly with mekanism
+    use mekanism equivalents in crafting
+
+Immersive Engineering
+    Fix textures
+    make fluids makable by mek
+
+Mekanism
+    Ethanol recipe (ethelyene + water)
+
+Create Crafts and additions
+    Remove biofuel, replace with biodisel
+
+Alternative AE2 press recipes
 
 General
     -change ae2 press info

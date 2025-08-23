@@ -23,6 +23,7 @@ StartupEvents.registry("item", (event) => {
   event
     .create("netherite_fluix_compound")
     .displayName("Netherite-Fluix Compound");
+  
   event.create("energized_alloy").glow(true);
 
   event
@@ -47,6 +48,92 @@ StartupEvents.registry("item", (event) => {
     .displayName("Mysterious Panel (Silicon)")
     .glow(true);
 });
+
+StartupEvents.registry("fluid", (event) => {
+  event
+    .create("chloroethane")
+    .displayName("Liquid Chloroethane")
+
+  event
+    .create("polonium_fusion_fuel")
+    .displayName("Liquid Polonium-Enhanced D-T Compound")
+
+    event
+    .create("rocket_fuel_1")
+    .stillTexture("kubejs:block/fuel_still")
+    .flowingTexture("kubejs:block/fuel_flow")
+    .displayName("Grade 1 Rocket Fuel")
+    .bucketItem
+    .tooltip("§7Fuel for a Tier 1 Rocket")
+  event
+    .create("rocket_fuel_2")
+    .stillTexture("kubejs:block/fuel_still")
+    .flowingTexture("kubejs:block/fuel_flow")
+    .displayName("Grade 2 Rocket Fuel")
+    .bucketItem
+    .tooltip("§7Fuel for a Tier 2 Rocket and below")
+  event
+    .create("rocket_fuel_3")
+    .stillTexture("kubejs:block/fuel_still")
+    .flowingTexture("kubejs:block/fuel_flow")
+    .displayName("Grade 3 Rocket Fuel")
+    .bucketItem
+    .tooltip("§7Fuel for a Tier 3 Rocket and below")
+  event
+    .create("rocket_fuel_4")
+    .stillTexture("kubejs:block/fuel_still")
+    .flowingTexture("kubejs:block/fuel_flow")
+    .displayName("Grade 4 Rocket Fuel")
+    .bucketItem
+    .tooltip("§7Fuel for a Tier 4 Rocket and below")
+
+  event
+    .create("rocket_cryo_fuel_1")
+    .stillTexture("kubejs:block/cryo_fuel_still")
+    .flowingTexture("kubejs:block/cryo_fuel_flow")
+    .displayName("Grade 1 Rocket Cryo Fuel")
+    .bucketItem
+    .tooltip("§7Efficient fuel for a Tier 1 Rocket")
+  event
+    .create("rocket_cryo_fuel_2")
+    .stillTexture("kubejs:block/cryo_fuel_still")
+    .flowingTexture("kubejs:block/cryo_fuel_flow")
+    .displayName("Grade 2 Rocket Cryo Fuel")
+    .bucketItem
+    .tooltip("§7Efficient fuel for a Tier 2 Rocket and below")
+  event
+    .create("rocket_cryo_fuel_3")
+    .stillTexture("kubejs:block/cryo_fuel_still")
+    .flowingTexture("kubejs:block/cryo_fuel_flow")
+    .displayName("Grade 3 Rocket Cryo Fuel")
+    .bucketItem
+    .tooltip("§7Efficient fuel for a Tier 3 Rocket and below")
+  event
+    .create("rocket_cryo_fuel_4")
+    .stillTexture("kubejs:block/cryo_fuel_still")
+    .flowingTexture("kubejs:block/cryo_fuel_flow")
+    .displayName("Grade 4 Rocket Cryo Fuel")
+    .bucketItem
+    .tooltip("§7Efficient fuel for a Tier 4 Rocket and below")
+})
+
+// const $Slurry = Java.loadClass('mekanism.api.chemical.slurry.Slurry')
+// const $SlurryBuilder = Java.loadClass('mekanism.api.chemical.slurry.SlurryBuilder')
+
+const $Gas = Java.loadClass('mekanism.api.chemical.gas.Gas')
+const $GasBuilder = Java.loadClass('mekanism.api.chemical.gas.GasBuilder')
+
+StartupEvents.registry('mekanism:gas', event => {
+  event.createCustom('chloroethane', () => $Gas($GasBuilder.builder()))
+  event.createCustom('polonium_fusion_fuel', () => $Gas($GasBuilder.builder())).displayName("Polonium-Enhanced D-T Compound")
+})
+
+// StartupEvents.registry('mekanism:slurry', event => {
+//   global.mekStackAdditions.forEach(entry => {
+//     event.createCustom(`clean_${entry.material}`, () => $Slurry($SlurryBuilder.clean().ore(`forge:ores/${entry.material}`).tint(Color.of(entry.color).getRgbJS())))
+//     event.createCustom(`dirty_${entry.material}`, () => $Slurry($SlurryBuilder.dirty().ore(`forge:ores/${entry.material}`).tint(Color.of(entry.color).getRgbJS())))
+//   })
+// })
 
 ItemEvents.modification((event) => {
   event.modify("waterframes:remote", (item) => {

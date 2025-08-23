@@ -1,6 +1,9 @@
 {
   "replace": true,
   "values": [
-    "minecraft:end_highlands"
+    "minecraft:end_highlands",
+    "ad_astra:mercury_deltas",
+    "ad_astra:glacio_ice_peaks",
+    "ad_astra:glacio_snowy_barrens"
   ]
 }

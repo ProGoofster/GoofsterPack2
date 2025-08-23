@@ -139,6 +139,8 @@ ServerEvents.tags("item", (event) => {
     "environmental:stripped_plum_log",
     "environmental:stripped_plum_wood"
   ]);
+
+  event.add("forge:sandstone/venus_sandstone", "ad_astra:venus_sandstone")
 });
 
 ServerEvents.tags("fluid", (event) => {
@@ -149,6 +151,10 @@ ServerEvents.tags("fluid", (event) => {
   event.add("minecraft:water", "minecraft:flowing_water");
 
   event.add("forge:tomato_sauce", "create_central_kitchen:tomato_sauce");
+
+  event.removeAllTagsFrom("ad_astra:oxygen");
+  event.removeAllTagsFrom("ad_astra:hydrogen");
+  
 });
 
 ServerEvents.tags("block", (event) => {

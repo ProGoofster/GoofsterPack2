@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:ore",
+    "config": {
+      "size": 9,
+      "discard_chance_on_air_exposure": 0,
+      "targets": [
+        {
+          "target": {
+            "predicate_type": "minecraft:tag_match",
+            "tag": "ad_astra:moon_ore_replaceables"
+          },
+          "state": {
+            "Name": "immersiveengineering:ore_silver"
+          }
+        }
+      ]
+    }
+  }
+  

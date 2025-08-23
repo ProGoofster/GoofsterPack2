@@ -2,6 +2,181 @@
   "favorites": [],
   "lookup_history": [
     {
+      "type": "fluid",
+      "id": "mekanism:oxygen",
+      "amount": 1000
+    },
+    "item:mekanism:oxygen_bucket",
+    {
+      "type": "jemi",
+      "uid": "gas:mekanism:oxygen"
+    },
+    {
+      "type": "item",
+      "id": "immersiveengineering:component_iron",
+      "amount": 64
+    },
+    {
+      "type": "item",
+      "id": "immersiveengineering:component_steel",
+      "amount": 64
+    },
+    "item:antiblocksrechiseled:wool_yellow_border",
+    "item:antiblocksrechiseled:wool_yellow",
+    "item:antiblocksrechiseled:wool_blue",
+    "item:antiblocksrechiseled:bright_black_border",
+    "item:immersiveengineering:dust_coke",
+    "item:immersiveengineering:coal_coke",
+    "item:minecraft:charcoal",
+    "item:minecraft:coal",
+    "item:mekanism:chemical_crystallizer{mekData:{EnergyContainers:[{Container:0b,stored:\"1600000\"}],GasTanks:[],InfusionTanks:[],Items:[{Item:{Count:1b,id:\"mekanism:creative_energy_cube\",tag:{mekData:{EnergyContainers:[{Container:0b,stored:\"18446744073709551615.9999\"}],componentConfig:{config0:{side0:4,side1:4,side2:4,side3:4,side4:4,side5:4}}}}},Slot:2b}],PigmentTanks:[],SlurryTanks:[],componentConfig:{config0:{side0:1,side1:1,side2:1,side3:1,side4:1,side5:1},config2:{side0:1,side1:1,side2:1,side3:1,side4:1,side5:1},config3:{side0:1,side1:1,side2:1,side3:1,side4:1,side5:1},config4:{side0:1,side1:1,side2:1,side3:1,side4:1,side5:1},config5:{side0:1,side1:1,side2:1,side3:1,side4:1,side5:1},config6:{side0:1,side1:1,side2:4,side3:8,side4:1,side5:1},eject0:0b,eject2:0b,eject3:0b,eject4:0b,eject5:0b,eject6:1b},componentEjector:{color0:-1,color1:-1,color2:-1,color3:-1,color4:-1,color5:-1,strictInput:0b},componentUpgrade:{Items:[],upgrades:[{amount:8,type:0},{amount:8,type:1}]},controlType:0,owner:[I;-1762281640,934102906,-1759191579,2105331540]}}",
+    "item:mekanism:digital_miner",
+    "item:mekanism:dust_iron",
+    {
+      "type": "item",
+      "id": "mekanism:dirty_dust_iron",
+      "amount": 2
+    },
+    {
+      "type": "item",
+      "id": "mekanism:clump_iron",
+      "amount": 2
+    },
+    {
+      "type": "item",
+      "id": "mekanism:shard_iron",
+      "amount": 2
+    },
+    {
+      "type": "item",
+      "id": "mekanism:crystal_iron",
+      "amount": 10
+    },
+    "item:mekanism:chemical_injection_chamber",
+    {
+      "type": "jemi",
+      "uid": "slurry:mekanism:clean_iron"
+    },
+    {
+      "type": "jemi",
+      "uid": "slurry:mekanism:dirty_iron"
+    },
+    {
+      "type": "item",
+      "id": "minecraft:raw_iron",
+      "amount": 3
+    },
+    "#item:forge:dusts/iron",
+    "item:minecraft:iron_ingot",
+    "item:mekanism:creative_chemical_tank{mekData:{SlurryTanks:[{Tank:0b,stored:{amount:9223372036854775807L,slurryName:\"mekanism:dirty_iron\"}}]}}",
+    "item:minecraft:iron_nugget",
+    "item:ad_astra_giselle_addon:module_space_breathing_unit",
+    "item:ad_astra_giselle_addon:module_gravity_normalizing_unit",
+    "item:ad_astra_giselle_addon:gravity_normalizer",
+    "item:immersiveengineering:dust_iron",
+    {
+      "type": "jemi",
+      "uid": "infuse type:mekanism:refined_obsidian"
+    },
+    {
+      "type": "fluid",
+      "id": "createaddition:bioethanol",
+      "amount": 0
+    },
+    "item:mekanismgenerators:bio_generator",
+    {
+      "type": "fluid",
+      "id": "mekanismgenerators:bioethanol",
+      "amount": 0
+    },
+    {
+      "type": "fluid",
+      "id": "immersiveengineering:ethanol",
+      "amount": 0
+    },
+    {
+      "type": "jemi",
+      "uid": "gas:mekanism:chlorine"
+    },
+    {
+      "type": "fluid",
+      "id": "mekanism:chlorine",
+      "amount": 0
+    },
+    "item:ae2:certus_quartz_crystal",
+    "item:ae2:charged_certus_quartz_crystal",
+    "item:kubejs:netherite_fluix_compound",
+    "item:kubejs:energized_alloy",
+    "item:kubejs:unfused_engineering_panel",
+    {
+      "type": "fluid",
+      "id": "createaddition:seed_oil",
+      "amount": 1000
+    },
+    "item:createaddition:seed_oil_bucket",
+    {
+      "type": "fluid",
+      "id": "immersiveengineering:plantoil",
+      "amount": 0
+    },
+    {
+      "type": "fluid",
+      "id": "immersiveengineering:acetaldehyde",
+      "amount": 0
+    },
+    "item:dice:red_d6",
+    "item:ad_astra:large_gas_tank{BotariumData:{StoredFluids:[{Amount:3000L,Fluid:\"ad_astra:oxygen\"}]}}",
+    "item:ad_astra:gas_tank{BotariumData:{StoredFluids:[{Amount:1000L,Fluid:\"ad_astra:oxygen\"}]}}",
+    "item:ad_astra:orange_industrial_lamp",
+    "item:ad_astra:cheese_block",
+    "item:ad_astra:sky_stone",
+    "item:ad_astra:rocket_nose_cone",
+    "item:ad_astra:fan",
+    "item:ad_astra:engine_frame",
+    "item:ad_astra:wheel",
+    "item:ad_astra:oxygen_gear",
+    "item:ad_astra:ostrum_nugget",
+    "item:ad_astra:ti_69",
+    "item:ad_astra:vent",
+    "item:ad_astra:solar_panel",
+    "item:ad_astra:photovoltaic_etrium_cell",
+    {
+      "type": "item",
+      "id": "minecraft:tinted_glass",
+      "amount": 3
+    },
+    "item:mekanism:ingot_lead",
+    "item:mekanism:lead_ore",
+    "item:immersiveengineering:ingot_aluminum",
+    "item:immersiveengineering:ore_aluminum",
+    "item:ad_astra:fuel_bucket",
+    "item:ad_astra:hydrogen_bucket",
+    {
+      "type": "fluid",
+      "id": "ad_astra:hydrogen",
+      "amount": 0
+    },
+    {
+      "type": "fluid",
+      "id": "ad_astra:oxygen",
+      "amount": 0
+    },
+    "item:ad_astra:oxygen_loader",
+    "item:ad_astra:gas_tank",
+    "item:ae2:item_storage_cell_64k{}",
+    "item:mekanism:electrolytic_core",
+    "item:mekanism:electrolytic_separator{mekData:{EnergyContainers:[{Container:0b,stored:\"160000\"}],FluidTanks:[{Tank:0b,stored:{Amount:24000,FluidName:\"minecraft:water\"}}],GasTanks:[{Tank:0b,stored:{amount:1608L,gasName:\"mekanism:hydrogen\"}},{Tank:1b,stored:{amount:804L,gasName:\"mekanism:oxygen\"}}],componentConfig:{config0:{side0:1,side1:1,side2:1,side3:1,side4:1,side5:1},config1:{side0:1,side1:1,side2:1,side3:1,side4:1,side5:1},config2:{side0:0,side1:5,side2:6,side3:0,side4:0,side5:0},config6:{side0:1,side1:5,side2:6,side3:8,side4:0,side5:0},eject0:0b,eject1:0b,eject2:1b,eject6:0b},componentEjector:{color0:-1,color1:-1,color2:-1,color3:-1,color4:-1,color5:-1,strictInput:0b},componentUpgrade:{Items:[],upgrades:[]},controlType:0,dumpLeft:1,dumpRight:0,owner:[I;-1762281640,934102906,-1759191579,2105331540]}}",
+    "item:mekanism:energy_tablet",
+    "item:mekanism:rotary_condensentrator{mekData:{EnergyContainers:[{Container:0b,stored:\"20000\"}],FluidTanks:[{Tank:0b,stored:{Amount:2553,FluidName:\"mekanism:oxygen\"}}],GasTanks:[{Tank:0b,stored:{amount:931L,gasName:\"mekanism:oxygen\"}}],componentConfig:{config0:{side0:1,side1:1,side2:1,side3:1,side4:1,side5:1},config1:{side0:1,side1:1,side2:4,side3:1,side4:1,side5:1},config2:{side0:1,side1:4,side2:1,side3:1,side4:1,side5:1},config6:{side0:1,side1:1,side2:4,side3:8,side4:1,side5:1},eject0:0b,eject1:1b,eject2:1b,eject6:0b},componentEjector:{color0:-1,color1:-1,color2:-1,color3:-1,color4:-1,color5:-1,strictInput:0b},componentUpgrade:{Items:[],upgrades:[]},controlType:0,owner:[I;-1762281640,934102906,-1759191579,2105331540]}}",
+    "item:ad_astra:oxygen_bucket",
+    "item:ad_astra:oxygen_sensor",
+    "item:ad_astra:cryo_freezer",
+    "item:ad_astra:fuel_refinery",
+    "item:ad_astra:etrionic_blast_furnace",
+    "item:ad_astra:compressor",
+    "item:ad_astra:venus_sand",
+    "item:ad_astra:venus_sandstone",
+    {
       "type": "jemi",
       "uid": "gas:mekanism:hydrofluoric_acid"
     },
@@ -85,10 +260,6 @@
     },
     {
       "type": "jemi",
-      "uid": "gas:mekanism:chlorine"
-    },
-    {
-      "type": "jemi",
       "uid": "gas:mekanism:ethene"
     },
     {
@@ -132,7 +303,6 @@
       "uid": "gas:mekanismgenerators:tritium"
     },
     "item:mekanism:steel_casing",
-    "item:mekanism:rotary_condensentrator",
     {
       "type": "jemi",
       "uid": "gas:mekanism:lithium"
@@ -158,17 +328,10 @@
     "item:mekanism:block_refined_glowstone",
     "item:mekanism:elite_universal_cable",
     "item:mekanism:alloy_infused",
-    {
-      "type": "jemi",
-      "uid": "infuse type:mekanism:refined_obsidian",
-      "amount": 40
-    },
     "item:mekanism:alloy_atomic",
     "item:mekanism:dust_refined_obsidian",
-    "item:ad_astra:etrionic_blast_furnace",
     "#item:ad_astra:steel_nuggets",
     "item:ad_astra:steel_ingot",
-    "item:ad_astra:ostrum_nugget",
     "item:mekanism:enriched_refined_obsidian",
     [
       "item:mekanism:basic_chemical_tank{mekData:{InfusionTanks:[{Tank:0b,stored:{amount:64000L,infuseTypeName:\"mekanism:refined_obsidian\"}}]}}",
@@ -290,15 +453,34 @@
   "recipe_defaults": {
     "added": [
       "jei:/mekanismgenerators/activating/tritium",
-      "jei:/mekanism/evaporating/brine",
       "jei:/mekanismgenerators/separator/heavy_water",
-      "jei:/mekanism/rotary/lithium",
-      "jei:/mekanism/evaporating/lithium",
-      "jei:/mekanism/crystallizing/lithium"
+      "jei:/mekanism/crystallizing/lithium",
+      "jei:/mekanism/evaporating/brine",
+      "jei:/mekanism/evaporating/lithium"
     ],
     "tags": {},
     "resolutions": {},
     "disabled": []
   },
-  "hidden_stacks": []
+  "hidden_stacks": [
+    {
+      "type": "fluid",
+      "id": "ad_astra:oxygen",
+      "amount": 0
+    },
+    {
+      "type": "fluid",
+      "id": "ad_astra:hydrogen",
+      "amount": 0
+    },
+    "item:ad_astra:oxygen_bucket",
+    "item:ad_astra:hydrogen_bucket",
+    {
+      "type": "fluid",
+      "id": "mekanismgenerators:bioethanol",
+      "amount": 0
+    },
+    "item:mekanismgenerators:bioethanol_bucket",
+    "item:mekanism:creative_fluid_tank{mekData:{FluidTanks:[{Tank:0b,stored:{Amount:2147483647,FluidName:\"mekanismgenerators:bioethanol\"}}]}}"
+  ]
 }
