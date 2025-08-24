@@ -1,19 +1,26 @@
 {
-    "type": "minecraft:ore",
+    "type": "immersiveengineering:ie_ore",
     "config": {
-      "size": 8,
-      "discard_chance_on_air_exposure": 0,
-      "targets": [
-        {
-          "target": {
-            "predicate_type": "minecraft:tag_match",
-            "tag": "ad_astra:moon_ore_replaceables"
-          },
-          "state": {
-            "Name": "immersiveengineering:ore_lead"
-          }
-        }
-      ]
+        "type": 1,
+        "targets": [
+            {
+                "state": {
+                    "Name": "immersiveengineering:ore_lead"
+                },
+                "target": {
+                    "predicate_type": "minecraft:tag_match",
+                    "tag": "minecraft:stone_ore_replaceables"
+                }
+            },
+            {
+                "state": {
+                    "Name": "immersiveengineering:deepslate_ore_lead"
+                },
+                "target": {
+                    "predicate_type": "minecraft:tag_match",
+                    "tag": "minecraft:deepslate_ore_replaceables"
+                }
+            }
+        ]
     }
-  }
-  
+}

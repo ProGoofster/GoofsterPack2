@@ -1,11 +1,11 @@
 {
-    "feature": "immersiveengineering:lead",
+    "feature": "immersiveengineering:deep_nickel",
     "placement": [
         {
             "type": "minecraft:height_range",
             "height": {
                 "type": "immersiveengineering:ie_range",
-                "value": 1
+                "value": 4
             }
         },
         {
@@ -13,7 +13,7 @@
         },
         {
             "type": "immersiveengineering:ie_count",
-            "value": 1
+            "value": 4
         }
     ]
 }

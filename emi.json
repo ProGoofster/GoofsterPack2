@@ -3,6 +3,36 @@
   "lookup_history": [
     {
       "type": "fluid",
+      "id": "immersiveengineering:ethanol",
+      "amount": 8
+    },
+    {
+      "type": "fluid",
+      "id": "immersiveengineering:biodiesel",
+      "amount": 0
+    },
+    {
+      "type": "fluid",
+      "id": "immersiveengineering:herbicide",
+      "amount": 0
+    },
+    "item:immersiveengineering:ore_lead",
+    {
+      "type": "fluid",
+      "id": "brewinandchewin:salty_folly",
+      "amount": 250
+    },
+    "item:brewinandchewin:salty_folly",
+    "fluid:mekanism:brine",
+    {
+      "type": "jemi",
+      "uid": "gas:mekanism:brine",
+      "amount": 15
+    },
+    "item:mekanism:salt",
+    "item:ae2:singularity",
+    {
+      "type": "fluid",
       "id": "mekanism:oxygen",
       "amount": 1000
     },
@@ -87,11 +117,6 @@
     {
       "type": "fluid",
       "id": "mekanismgenerators:bioethanol",
-      "amount": 0
-    },
-    {
-      "type": "fluid",
-      "id": "immersiveengineering:ethanol",
       "amount": 0
     },
     {
@@ -254,11 +279,6 @@
     "item:mekanism:thermal_evaporation_valve",
     "item:mekanism:thermal_evaporation_controller",
     {
-      "type": "fluid",
-      "id": "mekanism:brine",
-      "amount": 10
-    },
-    {
       "type": "jemi",
       "uid": "gas:mekanism:ethene"
     },
@@ -270,7 +290,6 @@
       "type": "jemi",
       "uid": "gas:mekanism:hydrogen"
     },
-    "item:mekanism:salt",
     "item:mekanism:block_salt",
     {
       "type": "fluid",
@@ -454,8 +473,8 @@
     "added": [
       "jei:/mekanismgenerators/activating/tritium",
       "jei:/mekanismgenerators/separator/heavy_water",
-      "jei:/mekanism/crystallizing/lithium",
       "jei:/mekanism/evaporating/brine",
+      "jei:/mekanism/crystallizing/lithium",
       "jei:/mekanism/evaporating/lithium"
     ],
     "tags": {},

@@ -1,11 +1,14 @@
 {
-    "type": "immersiveengineering:ie_ore",
+    "type": "mekanism:ore",
     "config": {
-        "type": 3,
+        "oreVeinType": {
+            "type": "osmium",
+            "index": 2
+        },
         "targets": [
             {
                 "state": {
-                    "Name": "immersiveengineering:ore_nickel"
+                    "Name": "mekanism:osmium_ore"
                 },
                 "target": {
                     "predicate_type": "minecraft:tag_match",
@@ -14,7 +17,7 @@
             },
             {
                 "state": {
-                    "Name": "immersiveengineering:deepslate_ore_nickel"
+                    "Name": "mekanism:deepslate_osmium_ore"
                 },
                 "target": {
                     "predicate_type": "minecraft:tag_match",

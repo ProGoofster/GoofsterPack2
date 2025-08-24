@@ -1,7 +1,7 @@
 {
     "type": "immersiveengineering:ie_ore",
     "config": {
-        "type": 3,
+        "type": 4,
         "targets": [
             {
                 "state": {

@@ -1,11 +1,14 @@
 {
-    "type": "immersiveengineering:ie_ore",
+    "type": "mekanism:ore",
     "config": {
-        "type": 3,
+        "oreVeinType": {
+            "type": "lead",
+            "index": 0
+        },
         "targets": [
             {
                 "state": {
-                    "Name": "immersiveengineering:ore_nickel"
+                    "Name": "mekanism:lead_ore"
                 },
                 "target": {
                     "predicate_type": "minecraft:tag_match",
@@ -14,7 +17,7 @@
             },
             {
                 "state": {
-                    "Name": "immersiveengineering:deepslate_ore_nickel"
+                    "Name": "mekanism:deepslate_lead_ore"
                 },
                 "target": {
                     "predicate_type": "minecraft:tag_match",
