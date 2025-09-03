@@ -1,23 +1,9 @@
 {
-    "feature": "mekanism:ore_osmium_small",
+    "feature": "kubejs:ore_osmium_small",
     "placement": [
         {
-            "type": "mekanism:disableable",
-            "oreVeinType": {
-                "type": "osmium",
-                "index": 2
-            },
-            "retroGen": false
-        },
-        {
             "type": "minecraft:count",
-            "count": {
-                "type": "mekanism:configurable_constant",
-                "oreVeinType": {
-                    "type": "osmium",
-                    "index": 2
-                }
-            }
+            "count": 8
         },
         {
             "type": "minecraft:in_square"
@@ -25,10 +11,12 @@
         {
             "type": "minecraft:height_range",
             "height": {
-                "type": "mekanism:configurable",
-                "oreVeinType": {
-                    "type": "osmium",
-                    "index": 2
+                "type": "minecraft:uniform",
+                "max_inclusive": {
+                    "absolute": 64
+                },
+                "min_inclusive": {
+                    "above_bottom": 0
                 }
             }
         },

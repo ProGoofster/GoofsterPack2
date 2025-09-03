@@ -1,19 +1,27 @@
 {
-    "feature": "immersiveengineering:nickel",
+    "feature": "kubejs:ore_nickel",
     "placement": [
-        {
-            "type": "minecraft:height_range",
-            "height": {
-                "type": "immersiveengineering:ie_range",
-                "value": 3
-            }
-        },
-        {
-            "type": "minecraft:in_square"
-        },
-        {
-            "type": "immersiveengineering:ie_count",
-            "value": 3
+      {
+        "type": "minecraft:count",
+        "count": 9
+      },
+      {
+        "type": "minecraft:in_square"
+      },
+      {
+        "type": "minecraft:height_range",
+        "height": {
+          "type": "minecraft:uniform",
+          "min_inclusive": {
+            "above_bottom": 0
+          },
+          "max_inclusive": {
+            "absolute": 24
+          }
         }
+      },
+      {
+        "type": "minecraft:biome"
+      }
     ]
-}
+  }

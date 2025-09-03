@@ -1,23 +1,9 @@
 {
-    "feature": "mekanism:ore_uranium_small",
+    "feature": "kubejs:ore_uranium_small",
     "placement": [
         {
-            "type": "mekanism:disableable",
-            "oreVeinType": {
-                "type": "uranium",
-                "index": 0
-            },
-            "retroGen": false
-        },
-        {
             "type": "minecraft:count",
-            "count": {
-                "type": "mekanism:configurable_constant",
-                "oreVeinType": {
-                    "type": "uranium",
-                    "index": 0
-                }
-            }
+            "count": 4
         },
         {
             "type": "minecraft:in_square"
@@ -25,10 +11,12 @@
         {
             "type": "minecraft:height_range",
             "height": {
-                "type": "mekanism:configurable",
-                "oreVeinType": {
-                    "type": "uranium",
-                    "index": 0
+                "type": "minecraft:trapezoid",
+                "max_inclusive": {
+                    "absolute": 8
+                },
+                "min_inclusive": {
+                    "above_bottom": 0
                 }
             }
         },

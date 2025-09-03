@@ -1,39 +1,27 @@
 {
-    "feature": "mekanism:ore_tin_small",
-    "placement": [
-        {
-            "type": "mekanism:disableable",
-            "oreVeinType": {
-                "type": "tin",
-                "index": 0
-            },
-            "retroGen": false
+  "feature": "kubejs:ore_tin_small",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 14
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:trapezoid",
+        "max_inclusive": {
+          "absolute": 94
         },
-        {
-            "type": "minecraft:count",
-            "count": {
-                "type": "mekanism:configurable_constant",
-                "oreVeinType": {
-                    "type": "tin",
-                    "index": 0
-                }
-            }
-        },
-        {
-            "type": "minecraft:in_square"
-        },
-        {
-            "type": "minecraft:height_range",
-            "height": {
-                "type": "mekanism:configurable",
-                "oreVeinType": {
-                    "type": "tin",
-                    "index": 0
-                }
-            }
-        },
-        {
-            "type": "minecraft:biome"
+        "min_inclusive": {
+          "absolute": 20
         }
-    ]
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
 }

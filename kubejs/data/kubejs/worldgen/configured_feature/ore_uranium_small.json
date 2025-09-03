@@ -1,18 +1,16 @@
 {
-    "type": "mekanism:ore",
+    "type": "minecraft:ore",
     "config": {
-        "oreVeinType": {
-            "type": "uranium",
-            "index": 0
-        },
+        "discard_chance_on_air_exposure": 0.0,
+        "size": 4,
         "targets": [
             {
                 "state": {
                     "Name": "mekanism:uranium_ore"
                 },
                 "target": {
-                    "predicate_type": "minecraft:tag_match",
-                    "tag": "minecraft:stone_ore_replaceables"
+                    "predicate_type": "minecraft:block_match",
+                    "block": "minecraft:stone"
                 }
             },
             {
@@ -20,8 +18,108 @@
                     "Name": "mekanism:deepslate_uranium_ore"
                 },
                 "target": {
+                    "predicate_type": "minecraft:block_match",
+                    "block": "minecraft:deepslate"
+                }
+            },
+            {
+                "state": {
+                    "Name": "kubejs:andesite_uranium_ore"
+                },
+                "target": {
+                    "predicate_type": "minecraft:block_match",
+                    "block": "minecraft:andesite"
+                }
+            },
+            {
+                "state": {
+                    "Name": "kubejs:granite_uranium_ore"
+                },
+                "target": {
+                    "predicate_type": "minecraft:block_match",
+                    "block": "minecraft:granite"
+                }
+            },
+            {
+                "state": {
+                    "Name": "kubejs:diorite_uranium_ore"
+                },
+                "target": {
+                    "predicate_type": "minecraft:block_match",
+                    "block": "minecraft:diorite"
+                }
+            },
+            {
+                "state": {
+                    "Name": "kubejs:tuff_uranium_ore"
+                },
+                "target": {
+                    "predicate_type": "minecraft:block_match",
+                    "block": "minecraft:tuff"
+                }
+            },
+            {
+                "state": {
+                    "Name": "kubejs:nether_uranium_ore"
+                },
+                "target": {
+                    "predicate_type": "minecraft:block_match",
+                    "block": "minecraft:netherrack"
+                }
+            },
+            {
+                "state": {
+                    "Name": "kubejs:end_uranium_ore"
+                },
+                "target": {
+                    "predicate_type": "minecraft:block_match",
+                    "block": "minecraft:end_stone"
+                }
+            },
+
+            {
+                "state": {
+                    "Name": "kubejs:moon_uranium_ore"
+                },
+                "target": {
                     "predicate_type": "minecraft:tag_match",
-                    "tag": "minecraft:deepslate_ore_replaceables"
+                    "tag": "ad_astra:moon_stone_replaceables"
+                }
+            },
+            {
+                "state": {
+                    "Name": "kubejs:mars_uranium_ore"
+                },
+                "target": {
+                    "predicate_type": "minecraft:tag_match",
+                    "tag": "ad_astra:mars_stone_replaceables"
+                }
+            },
+            {
+                "state": {
+                    "Name": "kubejs:venus_uranium_ore"
+                },
+                "target": {
+                    "predicate_type": "minecraft:tag_match",
+                    "tag": "ad_astra:venus_stone_replaceables"
+                }
+            },
+            {
+                "state": {
+                    "Name": "kubejs:mercury_uranium_ore"
+                },
+                "target": {
+                    "predicate_type": "minecraft:tag_match",
+                    "tag": "ad_astra:mercury_stone_replaceables"
+                }
+            },
+            {
+                "state": {
+                    "Name": "kubejs:glacio_uranium_ore"
+                },
+                "target": {
+                    "predicate_type": "minecraft:tag_match",
+                    "tag": "ad_astra:glacio_stone_replaceables"
                 }
             }
         ]

@@ -1,6 +1,8 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:minecraft:iron_ore",
+    "item:minecraft:gilded_blackstone",
     {
       "type": "fluid",
       "id": "immersiveengineering:ethanol",
@@ -473,9 +475,9 @@
     "added": [
       "jei:/mekanismgenerators/activating/tritium",
       "jei:/mekanismgenerators/separator/heavy_water",
-      "jei:/mekanism/evaporating/brine",
       "jei:/mekanism/crystallizing/lithium",
-      "jei:/mekanism/evaporating/lithium"
+      "jei:/mekanism/evaporating/lithium",
+      "jei:/mekanism/evaporating/brine"
     ],
     "tags": {},
     "resolutions": {},
