@@ -65,7 +65,7 @@ StartupEvents.registry("block", (event) => {
       return new $RedStoneOreBlock(baseProperties);
     })
 
-    redstoneOres.push(redstoneOreBlock)
+    redstoneOres.push([redstoneOreBlock, stone[0]])
   })
 
 event
@@ -88,7 +88,7 @@ StartupEvents.registry("item", (event) => {
   
   let i = 0
   redstoneOres.forEach(redstoneOre => {
-    event.createCustom(`${ORE_STONE_TYPES[i][0]}_redstone_ore`, () => $BlockItem(redstoneOre.get(), new $Item$Properties()));
+    event.createCustom(`${redstoneOre[1]}_redstone_ore`, () => $BlockItem(redstoneOre[0].get(), new $Item$Properties()));
     i++
   })
 

@@ -10,6 +10,11 @@ Mods for next Update:
     -Create: Advanced Logistics (for redstone radio, turn off Wormhole)
     -compact machines / hyperbox
         -test for worldborder, chunk loading, ect
+    -Mekanism
+    -Ad astra
+    -Integrated Dynamics
+    -industrial foregoing??
+    -botania??
 
 progression
     moon - cresote
@@ -31,7 +36,9 @@ progression
         teleporter
         ultimate tier
         refined obsidian with "etrium" found on glacio in raw form, must be processed
-        curvey pipes lol
+        Integrated Dynamics trees, common
+        every type of ore
+
     custom "overworld 2" planet - lots of antimatter
         on server is winter '23 world
 
