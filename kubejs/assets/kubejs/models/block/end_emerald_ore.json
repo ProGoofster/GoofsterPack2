@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "kubejs:block/ore/emerald/end_emerald_ore"
+  }
+}

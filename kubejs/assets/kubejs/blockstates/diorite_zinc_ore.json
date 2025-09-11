@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "kubejs:block/diorite_zinc_ore"
+    }
+  }
+}

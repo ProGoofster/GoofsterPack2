@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Mod File Generator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .info-card {
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        
+        .stat-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .stat-number {
+            font-size: 2em;
+            font-weight: bold;
+            color: #ffeb3b;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        .generate-btn {
+            width: 100%;
+            padding: 15px;
+            font-size: 1.2em;
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+        
+        .generate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+        
+        .generate-btn:disabled {
+            background: #666;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .progress {
+            width: 100%;
+            height: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 20px 0;
+            display: none;
+        }
+        
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #4CAF50, #8BC34A);
+            width: 0%;
+            transition: width 0.3s ease;
+            border-radius: 5px;
+        }
+        
+        .log {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            padding: 15px;
+            max-height: 200px;
+            overflow-y: auto;
+            font-family: monospace;
+            font-size: 0.9em;
+            margin-top: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .log div {
+            margin: 2px 0;
+        }
+        
+        .success {
+            color: #4CAF50;
+        }
+        
+        .info {
+            color: #2196F3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 Minecraft Mod File Generator</h1>
+        
+        <div class="info-card">
+            <h3>📋 Generation Overview</h3>
+            <p>This tool will generate model and blockstate files for all combinations of stone types and mineral types for your Minecraft mod. Each block will use the texture pattern: <code>kubejs:block/ore/${mineral}/${stone}_${mineral}_ore</code></p>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number" id="mineralCount">21</div>
+                <div>Mineral Types</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="stoneCount">11</div>
+                <div>Stone Types</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="totalFiles">462</div>
+                <div>Total Files</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="totalBlocks">231</div>
+                <div>Unique Blocks</div>
+            </div>
+        </div>
+        
+        <button class="generate-btn" onclick="generateFiles()">
+            🚀 Generate All Files
+        </button>
+        
+        <div class="progress" id="progress">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        
+        <div class="log" id="log" style="display: none;"></div>
+    </div>
+
+    <script>
+        const ORE_MINERAL_TYPES = [
+            {
+                mineralType: "aluminum",
+                blockId: "immersiveengineering:ore_aluminum",
+                toolLevel: "stone"
+            },
+            {
+                mineralType: "lead",
+                blockId: "immersiveengineering:ore_lead",
+                toolLevel: "iron"
+            },
+            {
+                mineralType: "nickel",
+                blockId: "immersiveengineering:ore_nickel",
+                toolLevel: "iron"
+            },
+            {
+                mineralType: "silver",
+                blockId: "immersiveengineering:ore_silver",
+                toolLevel: "iron"
+            },
+            {
+                mineralType: "uranium",
+                blockId: "mekanism:uranium_ore",
+                toolLevel: "iron"
+            },
+            {
+                mineralType: "osmium",
+                blockId: "mekanism:osmium_ore",
+                toolLevel: "stone"
+            },
+            {
+                mineralType: "tin",
+                blockId: "mekanism:tin_ore",
+                toolLevel: "stone"
+            },
+            {
+                mineralType: "fluorite",
+                blockId: "mekanism:fluorite_ore",
+                toolLevel: "stone"
+            },
+            {
+                mineralType: "zinc",
+                blockId: "create:zinc_ore",
+                toolLevel: "iron"
+            },
+            {
+                mineralType: "certus",
+                blockId: null,
+                toolLevel: "stone"
+            },
+            {
+                mineralType: "charged_certus",
+                blockId: null,
+                toolLevel: "stone"
+            },
+            {
+                mineralType: "etrium",
+                blockId: null,
+                toolLevel: "diamond"
+            },
+            {
+                mineralType: "coal",
+                blockId: "minecraft:coal_ore",
+                toolLevel: null
+            },
+            {
+                mineralType: "iron",
+                blockId: "minecraft:iron_ore",
+                toolLevel: "stone"
+            },
+            {
+                mineralType: "gold",
+                blockId: "minecraft:gold_ore",
+                toolLevel: "iron"
+            },
+            {
+                mineralType: "diamond",
+                blockId: "minecraft:diamond_ore",
+                toolLevel: "iron"
+            },
+            {
+                mineralType: "emerald",
+                blockId: "minecraft:emerald_ore",
+                toolLevel: "iron"
+            },
+            {
+                mineralType: "copper",
+                blockId: "minecraft:copper_ore",
+                toolLevel: "stone"
+            },
+            {
+                mineralType: "lapis",
+                blockId: "minecraft:lapis_ore",
+                toolLevel: "stone"
+            },
+            {
+                mineralType: "quartz",
+                blockId: null,
+                toolLevel: null
+            },
+            {
+                mineralType: "redstone",
+                blockId: null,
+                toolLevel: null
+            }
+        ];
+
+        const ORE_STONE_TYPES = [
+            {
+                stoneType: "andesite",
+                blockType: "stone",
+                mapColor: "STONE"
+            },
+            {
+                stoneType: "granite",
+                blockType: "stone",
+                mapColor: "DIRT"
+            },
+            {
+                stoneType: "diorite",
+                blockType: "stone",
+                mapColor: "QUARTZ"
+            },
+            {
+                stoneType: "tuff",
+                blockType: "stone",
+                mapColor: "TERRACOTTA_GRAY"
+            },
+            {
+                stoneType: "nether",
+                blockType: "stone",
+                mapColor: "NETHER"
+            },
+            {
+                stoneType: "soul_soil",
+                blockType: "dirt",
+                mapColor: "COLOR_BROWN"
+            },
+            {
+                stoneType: "end",
+                blockType: "deepslate",
+                mapColor: "SAND"
+            },
+            {
+                stoneType: "moon",
+                blockType: "stone",
+                mapColor: "TERRACOTTA_LIGHT_GRAY"
+            },
+            {
+                stoneType: "mars",
+                blockType: "stone",
+                mapColor: "TERRACOTTA_RED"
+            },
+            {
+                stoneType: "venus",
+                blockType: "stone",
+                mapColor: "TERRACOTTA_ORANGE"
+            },
+            {
+                stoneType: "mercury",
+                blockType: "stone",
+                mapColor: "TERRACOTTA_PURPLE"
+            },
+            {
+                stoneType: "glacio",
+                blockType: "stone",
+                mapColor: "ICE"
+            }
+        ];
+
+        function log(message, type = 'info') {
+            const logEl = document.getElementById('log');
+            const div = document.createElement('div');
+            div.className = type;
+            div.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            logEl.appendChild(div);
+            logEl.scrollTop = logEl.scrollHeight;
+            logEl.style.display = 'block';
+        }
+
+        function updateProgress(current, total) {
+            const progress = document.getElementById('progress');
+            const progressBar = document.getElementById('progressBar');
+            const percentage = (current / total) * 100;
+            
+            progress.style.display = 'block';
+            progressBar.style.width = percentage + '%';
+        }
+
+        function generateBlockstateFile(stoneType, mineralType) {
+            if (mineralType == "redstone"){
+                return {
+                    "variants": {
+                        "lit=false": {
+                            "model": `kubejs:block/ore/${mineralType}/${stoneType}_${mineralType}_ore`
+                        },
+                        "lit=true": {
+                            "model": `kubejs:block/ore/${mineralType}/${stoneType}_${mineralType}_ore`
+                        }
+                    }
+                }
+            }
+            return {
+                "variants": {
+                    "": {
+                        "model": `kubejs:block/${stoneType}_${mineralType}_ore`
+                    }
+                }
+            };
+        }
+
+        function generateBlockModelFile(stoneType, mineralType) {
+            return {
+                "parent": "minecraft:block/cube_all",
+                "textures": {
+                    "all": `kubejs:block/ore/${mineralType}/${stoneType}_${mineralType}_ore`
+                }
+            };
+        }
+
+        function generateItemModelFile(stoneType, mineralType) {
+            return {
+                "parent": `kubejs:block/${stoneType}_${mineralType}_ore`
+            };
+        }
+
+        async function generateFiles() {
+            const button = document.querySelector('.generate-btn');
+            button.disabled = true;
+            button.textContent = '⚙️ Generating Files...';
+            
+            log('Starting file generation...', 'info');
+            
+            const zip = new JSZip();
+            const totalCombinations = ORE_STONE_TYPES.length * ORE_MINERAL_TYPES.length;
+            let currentProgress = 0;
+
+            // Create folder structure
+            const blockstatesFolder = zip.folder('blockstates');
+            const modelsFolder = zip.folder('models');
+            const blockFolder = modelsFolder.folder('block');
+            const itemFolder = modelsFolder.folder('item');
+
+            log(`Generating files for ${totalCombinations} block combinations...`, 'info');
+
+            for (const stone of ORE_STONE_TYPES) {
+                for (const mineral of ORE_MINERAL_TYPES) {
+                    const blockId = `${stone.stoneType}_${mineral.mineralType}_ore`;
+                    
+                    // Generate blockstate file
+                    const blockstateContent = generateBlockstateFile(stone.stoneType, mineral.mineralType);
+                    blockstatesFolder.file(`${blockId}.json`, JSON.stringify(blockstateContent, null, 2));
+                    
+                    // Generate model file
+                    const blockModelContent = generateBlockModelFile(stone.stoneType, mineral.mineralType);
+                    const itemModelContent = generateItemModelFile(stone.stoneType, mineral.mineralType);
+                    blockFolder.file(`${blockId}.json`, JSON.stringify(blockModelContent, null, 2));
+                    itemFolder.file(`${blockId}.json`, JSON.stringify(itemModelContent, null, 2));
+                    
+                    currentProgress++;
+                    updateProgress(currentProgress, totalCombinations);
+                    
+                    // Allow UI to update
+                    if (currentProgress % 10 === 0) {
+                        await new Promise(resolve => setTimeout(resolve, 1));
+                    }
+                }
+            }
+
+            log('Files generated successfully! Creating zip archive...', 'success');
+            
+            // Generate and download zip
+            const content = await zip.generateAsync({type: 'blob'});
+            const url = URL.createObjectURL(content);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'minecraft_ore_files.zip';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            
+            log(`Successfully generated and downloaded ${totalCombinations * 2} files!`, 'success');
+            
+            button.disabled = false;
+            button.textContent = '✅ Download Complete - Generate Again?';
+            
+            setTimeout(() => {
+                button.textContent = '🚀 Generate All Files';
+            }, 3000);
+        }
+
+        // Update statistics on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const mineralCount = ORE_MINERAL_TYPES.length;
+            const stoneCount = ORE_STONE_TYPES.length;
+            const totalBlocks = mineralCount * stoneCount;
+            const totalFiles = totalBlocks * 2; // blockstate + model for each block
+            
+            document.getElementById('mineralCount').textContent = mineralCount;
+            document.getElementById('stoneCount').textContent = stoneCount;
+            document.getElementById('totalFiles').textContent = totalFiles;
+            document.getElementById('totalBlocks').textContent = totalBlocks;
+        });
+    </script>
+</body>
+</html>

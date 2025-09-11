@@ -1,6 +1,15 @@
 {
   "favorites": [],
   "lookup_history": [
+    "item:modularrouters:blank_upgrade",
+    "item:modularrouters:modular_router",
+    "item:modularrouters:blank_module",
+    "item:modularrouters:activator_module",
+    "item:modularrouters:detector_module",
+    "item:modularrouters:breaker_module",
+    "item:integratedscripting:mendesite",
+    "item:ad_astra:photovoltaic_etrium_cell",
+    "item:constructionwand:infinity_wand{wand_options:{}}",
     "item:minecraft:iron_ore",
     "item:minecraft:gilded_blackstone",
     {
@@ -166,7 +175,6 @@
     "item:ad_astra:ti_69",
     "item:ad_astra:vent",
     "item:ad_astra:solar_panel",
-    "item:ad_astra:photovoltaic_etrium_cell",
     {
       "type": "item",
       "id": "minecraft:tinted_glass",
@@ -474,10 +482,10 @@
   "recipe_defaults": {
     "added": [
       "jei:/mekanismgenerators/activating/tritium",
-      "jei:/mekanismgenerators/separator/heavy_water",
+      "jei:/mekanism/evaporating/brine",
       "jei:/mekanism/crystallizing/lithium",
-      "jei:/mekanism/evaporating/lithium",
-      "jei:/mekanism/evaporating/brine"
+      "jei:/mekanismgenerators/separator/heavy_water",
+      "jei:/mekanism/evaporating/lithium"
     ],
     "tags": {},
     "resolutions": {},

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=false": {
+      "model": "kubejs:block/ore/redstone/mercury_redstone_ore"
+    },
+    "lit=true": {
+      "model": "kubejs:block/ore/redstone/mercury_redstone_ore"
+    }
+  }
+}

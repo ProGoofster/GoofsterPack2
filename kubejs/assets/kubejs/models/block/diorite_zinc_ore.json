@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "kubejs:block/ore/zinc/diorite_zinc_ore"
+  }
+}

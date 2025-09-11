@@ -81,6 +81,14 @@
   "balm": {
     "jade": true
   },
+  "integrateddynamicscompat": {
+    "proxy": true,
+    "mechanical_squeezer": true,
+    "mechanical_drying_basin": true,
+    "drying_basin": true,
+    "part": true,
+    "squeezer": true
+  },
   "ae2": {
     "part_icon": true,
     "charger": true,
@@ -93,20 +101,8 @@
     "crafting_monitor": true,
     "part_name": true
   },
-  "extendedcrafting": {
-    "elite_auto_table": true,
-    "ender_crafter": true,
-    "basic_auto_table": true,
-    "flux_crafter": true,
-    "advanced_table": true,
-    "auto_ender_crafter": true,
-    "ultimate_table": true,
-    "ultimate_auto_table": true,
-    "elite_table": true,
-    "basic_table": true,
-    "crafting_core": true,
-    "advanced_auto_table": true,
-    "compressor": true
+  "modularrouters": {
+    "router": true
   },
   "jadeaddons": {
     "equipment_requirement": ""
@@ -123,6 +119,9 @@
   },
   "supplementaries": {
     "hat_stand": true
+  },
+  "corpse": {
+    "corpse": true
   },
   "storagedrawers": {
     "display.stacklimit": true,

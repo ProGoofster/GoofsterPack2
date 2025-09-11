@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "kubejs:block/granite_uranium_ore"
+    }
+  }
+}

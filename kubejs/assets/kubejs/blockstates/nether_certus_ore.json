@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "kubejs:block/nether_certus_ore"
+    }
+  }
+}

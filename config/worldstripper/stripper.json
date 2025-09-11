@@ -47,6 +47,9 @@
     "minecraft:tuff",
     "minecraft:glow_lichen",
     "ad_astra:moon_stone",
-    "minecraft:soul_soil"
+    "minecraft:soul_soil",
+    "ad_astra:moon_sand",
+    "quark:permafrost",
+    "minecraft:packed_ice"
   ]
 }

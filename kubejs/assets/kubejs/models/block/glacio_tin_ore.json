@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "kubejs:block/ore/tin/glacio_tin_ore"
+  }
+}

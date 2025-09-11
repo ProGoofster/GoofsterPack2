@@ -38,6 +38,9 @@
 			strophar = true
 			glacian = true
 
+		[types.wood_type.integrateddynamics]
+			menril = true
+
 	[types.leaves_type]
 
 		[types.leaves_type.culturaldelights]
@@ -160,6 +163,9 @@
 
 		[types.leaves_type.ad_astra]
 			glacian = true
+
+		[types.leaves_type.integrateddynamics]
+			menril = true
 
 	[types.cake]
 

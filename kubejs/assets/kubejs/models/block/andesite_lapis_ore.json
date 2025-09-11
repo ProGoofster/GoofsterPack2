@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "kubejs:block/ore/lapis/andesite_lapis_ore"
+  }
+}

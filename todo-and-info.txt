@@ -64,8 +64,12 @@ Mekanism
 
 Create Crafts and additions
     Remove biofuel, replace with biodisel
+    replace strawed blazes with blaze burners that auto take liquids life tfg
 
 Alternative AE2 press recipes
+
+Ore stuff:
+    Ores in huge viens not working
 
 General
     -change ae2 press info

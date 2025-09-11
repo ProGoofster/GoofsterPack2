@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "kubejs:block/mercury_charged_certus_ore"
+    }
+  }
+}
