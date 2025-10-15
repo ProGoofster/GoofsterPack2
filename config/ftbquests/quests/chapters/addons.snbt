@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "addons"
+	group: "6109BB5CC8B8C5FB"
+	id: "7A1F24902E9B0425"
+	order_index: 6
+	quest_links: [ ]
+	quests: [ ]
+	title: "Addons"
+}

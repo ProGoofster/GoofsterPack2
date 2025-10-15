@@ -50,6 +50,8 @@
     "minecraft:soul_soil",
     "ad_astra:moon_sand",
     "quark:permafrost",
-    "minecraft:packed_ice"
+    "minecraft:packed_ice",
+    "ad_astra:permafrost",
+    "ad_astra:glacio_stone"
   ]
 }

@@ -1,0 +1,126 @@
+{
+    "type": "minecraft:ore",
+    "config": {
+        "discard_chance_on_air_exposure": 0,
+        "size": 20,
+        "targets": [
+            {
+                "state": {
+                    "Name": "minecraft:copper_large_ore"
+                },
+                "target": {
+                    "predicate_type": "minecraft:block_match",
+                    "block": "minecraft:stone"
+                }
+            },
+            {
+                "state": {
+                    "Name": "minecraft:deepslate_copper_large_ore"
+                },
+                "target": {
+                    "predicate_type": "minecraft:block_match",
+                    "block": "minecraft:deepslate"
+                }
+            },
+            {
+                "state": {
+                    "Name": "kubejs:andesite_copper_large_ore"
+                },
+                "target": {
+                    "predicate_type": "minecraft:block_match",
+                    "block": "minecraft:andesite"
+                }
+            },
+            {
+                "state": {
+                    "Name": "kubejs:granite_copper_large_ore"
+                },
+                "target": {
+                    "predicate_type": "minecraft:block_match",
+                    "block": "minecraft:granite"
+                }
+            },
+            {
+                "state": {
+                    "Name": "kubejs:diorite_copper_large_ore"
+                },
+                "target": {
+                    "predicate_type": "minecraft:block_match",
+                    "block": "minecraft:diorite"
+                }
+            },
+            {
+                "state": {
+                    "Name": "kubejs:tuff_copper_large_ore"
+                },
+                "target": {
+                    "predicate_type": "minecraft:block_match",
+                    "block": "minecraft:tuff"
+                }
+            },
+            {
+                "state": {
+                    "Name": "kubejs:nether_copper_large_ore"
+                },
+                "target": {
+                    "predicate_type": "minecraft:block_match",
+                    "block": "minecraft:stone"
+                }
+            },
+            {
+                "state": {
+                    "Name": "kubejs:end_copper_large_ore"
+                },
+                "target": {
+                    "predicate_type": "minecraft:block_match",
+                    "block": "minecraft:end_stone"
+                }
+            },
+            {
+                "state": {
+                    "Name": "kubejs:moon_copper_large_ore"
+                },
+                "target": {
+                    "predicate_type": "minecraft:tag_match",
+                    "tag": "ad_astra:moon_stone_replaceables"
+                }
+            },
+            {
+                "state": {
+                    "Name": "kubejs:mars_copper_large_ore"
+                },
+                "target": {
+                    "predicate_type": "minecraft:tag_match",
+                    "tag": "ad_astra:mars_stone_replaceables"
+                }
+            },
+            {
+                "state": {
+                    "Name": "kubejs:venus_copper_large_ore"
+                },
+                "target": {
+                    "predicate_type": "minecraft:tag_match",
+                    "tag": "ad_astra:venus_stone_replaceables"
+                }
+            },
+            {
+                "state": {
+                    "Name": "kubejs:mercury_copper_large_ore"
+                },
+                "target": {
+                    "predicate_type": "minecraft:tag_match",
+                    "tag": "ad_astra:mercury_stone_replaceables"
+                }
+            },
+            {
+                "state": {
+                    "Name": "kubejs:glacio_copper_large_ore"
+                },
+                "target": {
+                    "predicate_type": "minecraft:tag_match",
+                    "tag": "ad_astra:glacio_stone_replaceables"
+                }
+            }
+        ]
+    }
+}

@@ -378,6 +378,28 @@
 			table = true
 			chair = true
 
+		[entries.wood_type.refurbished_furniture]
+			storage_cabinet = true
+			desk = true
+			cutting_board = true
+			lattice_fence = true
+			basin = true
+			kitchen_drawer = true
+			kitchen_cabinetry = true
+			chair = true
+			light_ceiling_fan = true
+			table = true
+			mail_box = true
+			kitchen_storage_cabinet = true
+			storage_jar = true
+			drawer = true
+			kitchen_sink = true
+			toilet = true
+			crate = true
+			dark_ceiling_fan = true
+			lattice_fence_gate = true
+			bath = true
+
 	[entries.leaves_type]
 
 		[entries.leaves_type.quark]
@@ -386,4 +408,7 @@
 
 		[entries.leaves_type.woodworks]
 			leaf_pile = false
+
+		[entries.leaves_type.refurbished_furniture]
+			hedge = true
 

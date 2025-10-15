@@ -1,5 +1,13 @@
 {
   "bookGuiScale": 0,
   "clickedVisualize": false,
-  "bookData": {}
+  "bookData": {
+    "laserio:laseriobook": {
+      "viewedEntries": [
+        "laserio:laser_connector_advanced"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    }
+  }
 }

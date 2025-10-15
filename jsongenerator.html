@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,7 @@
             min-height: 100vh;
             color: white;
         }
-        
+
         .container {
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
@@ -24,14 +25,14 @@
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
-        
+
         h1 {
             text-align: center;
             margin-bottom: 30px;
             font-size: 2.5em;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         }
-        
+
         .info-card {
             background: rgba(255, 255, 255, 0.15);
             border-radius: 15px;
@@ -39,14 +40,14 @@
             margin-bottom: 25px;
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
-        
+
         .stats {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 15px;
             margin-bottom: 25px;
         }
-        
+
         .stat-item {
             background: rgba(255, 255, 255, 0.1);
             padding: 15px;
@@ -54,14 +55,14 @@
             text-align: center;
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
-        
+
         .stat-number {
             font-size: 2em;
             font-weight: bold;
             color: #ffeb3b;
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
-        
+
         .generate-btn {
             width: 100%;
             padding: 15px;
@@ -75,18 +76,18 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
             margin-bottom: 20px;
         }
-        
+
         .generate-btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
         }
-        
+
         .generate-btn:disabled {
             background: #666;
             cursor: not-allowed;
             transform: none;
         }
-        
+
         .progress {
             width: 100%;
             height: 10px;
@@ -96,7 +97,7 @@
             margin: 20px 0;
             display: none;
         }
-        
+
         .progress-bar {
             height: 100%;
             background: linear-gradient(90deg, #4CAF50, #8BC34A);
@@ -104,7 +105,7 @@
             transition: width 0.3s ease;
             border-radius: 5px;
         }
-        
+
         .log {
             background: rgba(0, 0, 0, 0.3);
             border-radius: 10px;
@@ -116,29 +117,33 @@
             margin-top: 20px;
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
-        
+
         .log div {
             margin: 2px 0;
         }
-        
+
         .success {
             color: #4CAF50;
         }
-        
+
         .info {
             color: #2196F3;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>🎮 Minecraft Mod File Generator</h1>
-        
+
         <div class="info-card">
             <h3>📋 Generation Overview</h3>
-            <p>This tool will generate model and blockstate files for all combinations of stone types and mineral types for your Minecraft mod. Each block will use the texture pattern: <code>kubejs:block/ore/${mineral}/${stone}_${mineral}_ore</code></p>
+            <p>This tool will generate model and blockstate files for all combinations of stone types and mineral types
+                for your Minecraft mod. Each block will use the texture pattern:
+                <code>kubejs:block/ore/${mineral}/${stone}_${mineral}_ore</code>
+            </p>
         </div>
-        
+
         <div class="stats">
             <div class="stat-item">
                 <div class="stat-number" id="mineralCount">21</div>
@@ -157,15 +162,15 @@
                 <div>Unique Blocks</div>
             </div>
         </div>
-        
+
         <button class="generate-btn" onclick="generateFiles()">
             🚀 Generate All Files
         </button>
-        
+
         <div class="progress" id="progress">
             <div class="progress-bar" id="progressBar"></div>
         </div>
-        
+
         <div class="log" id="log" style="display: none;"></div>
     </div>
 
@@ -173,172 +178,486 @@
         const ORE_MINERAL_TYPES = [
             {
                 mineralType: "aluminum",
-                blockId: "immersiveengineering:ore_aluminum",
-                toolLevel: "stone"
+                minDrop: 1,
+                maxDrop: 1,
+                dropId: "immersiveengineering:raw_aluminum",
+                addStone: false,
+                addNether: true
             },
             {
                 mineralType: "lead",
-                blockId: "immersiveengineering:ore_lead",
-                toolLevel: "iron"
+                minDrop: 1,
+                maxDrop: 1,
+                dropId: "immersiveengineering:raw_lead",
+                addStone: false,
+                addNether: true
             },
             {
                 mineralType: "nickel",
-                blockId: "immersiveengineering:ore_nickel",
-                toolLevel: "iron"
+                minDrop: 1,
+                maxDrop: 1,
+                dropId: "immersiveengineering:raw_nickel",
+                addStone: false,
+                addNether: true
             },
             {
                 mineralType: "silver",
-                blockId: "immersiveengineering:ore_silver",
-                toolLevel: "iron"
+                minDrop: 1,
+                maxDrop: 1,
+                dropId: "immersiveengineering:raw_silver",
+                addStone: false,
+                addNether: true
             },
             {
                 mineralType: "uranium",
-                blockId: "mekanism:uranium_ore",
-                toolLevel: "iron"
+                minDrop: 1,
+                maxDrop: 1,
+                dropId: "mekanism:raw_silver",
+                addStone: false,
+                addNether: true
             },
             {
                 mineralType: "osmium",
-                blockId: "mekanism:osmium_ore",
-                toolLevel: "stone"
+                minDrop: 1,
+                maxDrop: 1,
+                dropId: "mekanism:raw_osmium",
+                addStone: false,
+                addNether: true
             },
             {
                 mineralType: "tin",
-                blockId: "mekanism:tin_ore",
-                toolLevel: "stone"
+                minDrop: 1,
+                maxDrop: 1,
+                dropId: "mekanism:raw_tin",
+                addStone: false,
+                addNether: true
             },
             {
                 mineralType: "fluorite",
-                blockId: "mekanism:fluorite_ore",
-                toolLevel: "stone"
+                minDrop: 2,
+                maxDrop: 4,
+                dropId: "mekanism:fluorite_gem",
+                addStone: false,
+                addNether: true
             },
             {
                 mineralType: "zinc",
-                blockId: "create:zinc_ore",
-                toolLevel: "iron"
+                minDrop: 1,
+                maxDrop: 1,
+                dropId: "create:raw_zinc",
+                addStone: false,
+                addNether: true
             },
             {
                 mineralType: "certus",
-                blockId: null,
-                toolLevel: "stone"
+                minDrop: 1,
+                maxDrop: 2,
+                dropId: "ae2:certus_quartz_crystal",
+                addStone: true,
+                addNether: true,
+                fortuneFormula: "uniform"
             },
             {
                 mineralType: "charged_certus",
-                blockId: null,
-                toolLevel: "stone"
+                minDrop: 1,
+                maxDrop: 2,
+                dropId: "ae2:charged_certus_quartz_crystal",
+                addStone: true,
+                addNether: true,
+                fortuneFormula: "uniform"
+
             },
             {
                 mineralType: "etrium",
-                blockId: null,
-                toolLevel: "diamond"
+                minDrop: 1,
+                maxDrop: 1,
+                dropId: "kubejs:raw_etrium",
+                addStone: true,
+                addNether: true
             },
+            //vanilla
             {
                 mineralType: "coal",
-                blockId: "minecraft:coal_ore",
-                toolLevel: null
+                minDrop: 1,
+                maxDrop: 1,
+                dropId: "minecraft:coal",
+                addStone: false,
+                addNether: true
             },
             {
                 mineralType: "iron",
-                blockId: "minecraft:iron_ore",
-                toolLevel: "stone"
+                minDrop: 1,
+                maxDrop: 1,
+                dropId: "minecraft:raw_iron",
+                addStone: false,
+                addNether: true
             },
             {
                 mineralType: "gold",
-                blockId: "minecraft:gold_ore",
-                toolLevel: "iron"
+                minDrop: 1,
+                maxDrop: 1,
+                dropId: "minecraft:raw_gold",
+                addStone: false,
+                addNether: false
             },
             {
                 mineralType: "diamond",
-                blockId: "minecraft:diamond_ore",
-                toolLevel: "iron"
+                minDrop: 1,
+                maxDrop: 1,
+                dropId: "minecraft:diamond",
+                addStone: false,
+                addNether: true
             },
             {
                 mineralType: "emerald",
-                blockId: "minecraft:emerald_ore",
-                toolLevel: "iron"
+                minDrop: 1,
+                maxDrop: 1,
+                dropId: "minecraft:emerald",
+                addStone: false,
+                addNether: true
             },
             {
                 mineralType: "copper",
-                blockId: "minecraft:copper_ore",
-                toolLevel: "stone"
+                minDrop: 2,
+                maxDrop: 5,
+                dropId: "minecraft:raw_copper",
+                addStone: false,
+                addNether: true
             },
             {
                 mineralType: "lapis",
-                blockId: "minecraft:lapis_ore",
-                toolLevel: "stone"
+                minDrop: 9,
+                maxDrop: 4,
+                dropId: "minecraft:lapis_lazuli",
+                addStone: false,
+                addNether: true
             },
             {
                 mineralType: "quartz",
-                blockId: null,
-                toolLevel: null
+                minDrop: 1,
+                maxDrop: 1,
+                dropId: "minecraft:quartz",
+                addStone: true,
+                addNether: false
             },
+            //special case, needs handling
             {
                 mineralType: "redstone",
-                blockId: null,
-                toolLevel: null
+                minDrop: 5,
+                maxDrop: 4,
+                dropId: "minecraft:redstone",
+                addStone: false,
+                addNether: true,
+                fortuneFormula: "uniform"
             }
         ];
 
         const ORE_STONE_TYPES = [
+            "andesite",
+            "granite",
+            "diorite",
+            "tuff",
+            "nether",
+            "soul_soil",
+            "end",
+            "moon",
+            "mars",
+            "venus",
+            "mercury",
+            "glacio"
+        ];
+
+        const ORE_FEATURE_TYPES = [
             {
-                stoneType: "andesite",
-                blockType: "stone",
-                mapColor: "STONE"
+                featureName: "aluminum",
+                discardChance: 0.0,
+                featureSize: 0,
+                addStone: false,
+                addNether: true,
+                baseMod: "immersiveengineering"
+
             },
             {
-                stoneType: "granite",
-                blockType: "stone",
-                mapColor: "DIRT"
+                featureName: "fluorite_buried",
+                discardChance: 0.0,
+                featureSize: 0,
+                addStone: false,
+                addNether: true,
+                baseMod: "mekanism"
             },
             {
-                stoneType: "diorite",
-                blockType: "stone",
-                mapColor: "QUARTZ"
+                featureName: "fluorite_normal",
+                discardChance: 0.0,
+                featureSize: 0,
+                addStone: false,
+                addNether: true,
+                baseMod: "mekanism"
             },
             {
-                stoneType: "tuff",
-                blockType: "stone",
-                mapColor: "TERRACOTTA_GRAY"
+                featureName: "lead_normal",
+                discardChance: 0.0,
+                featureSize: 0,
+                addStone: false,
+                addNether: true,
+                baseMod: "immersiveengineering"
             },
             {
-                stoneType: "nether",
-                blockType: "stone",
-                mapColor: "NETHER"
+                featureName: "lead",
+                discardChance: 0.0,
+                featureSize: 0,
+                addStone: false,
+                addNether: true,
+                baseMod: "immersiveengineering"
             },
             {
-                stoneType: "soul_soil",
-                blockType: "dirt",
-                mapColor: "COLOR_BROWN"
+                featureName: "nickel",
+                discardChance: 0.0,
+                featureSize: 0,
+                addStone: false,
+                addNether: true,
+                baseMod: "immersiveengineering"
             },
             {
-                stoneType: "end",
-                blockType: "deepslate",
-                mapColor: "SAND"
+                featureName: "deep_nickel",
+                discardChance: 0.0,
+                featureSize: 0,
+                addStone: false,
+                addNether: true,
+                baseMod: "immersiveengineering"
             },
             {
-                stoneType: "moon",
-                blockType: "stone",
-                mapColor: "TERRACOTTA_LIGHT_GRAY"
+                featureName: "osmium_middle",
+                discardChance: 0.0,
+                featureSize: 0,
+                addStone: false,
+                addNether: true,
+                baseMod: "mekanism"
             },
             {
-                stoneType: "mars",
-                blockType: "stone",
-                mapColor: "TERRACOTTA_RED"
+                featureName: "osmium_small",
+                discardChance: 0.0,
+                featureSize: 0,
+                addStone: false,
+                addNether: true,
+                baseMod: "mekanism"
             },
             {
-                stoneType: "venus",
-                blockType: "stone",
-                mapColor: "TERRACOTTA_ORANGE"
+                featureName: "osmium_upper",
+                discardChance: 0.0,
+                featureSize: 0,
+                addStone: false,
+                addNether: true,
+                baseMod: "mekanism"
             },
             {
-                stoneType: "mercury",
-                blockType: "stone",
-                mapColor: "TERRACOTTA_PURPLE"
+                featureName: "silver",
+                discardChance: 0.0,
+                featureSize: 0,
+                addStone: false,
+                addNether: true,
+                baseMod: "immersiveengineering"
             },
             {
-                stoneType: "glacio",
-                blockType: "stone",
-                mapColor: "ICE"
-            }
+                featureName: "tin_large",
+                discardChance: 0.0,
+                featureSize: 0,
+                addStone: false,
+                addNether: true,
+                baseMod: "mekanism"
+            },
+            {
+                featureName: "tin_small",
+                discardChance: 0.0,
+                featureSize: 0,
+                addStone: false,
+                addNether: true,
+                baseMod: "mekanism"
+            },
+            {
+                featureName: "uranium_buried",
+                discardChance: 0.0,
+                featureSize: 0,
+                addStone: false,
+                addNether: true,
+                baseMod: "mekanism"
+            },
+            {
+                featureName: "uranium_small",
+                discardChance: 0.0,
+                featureSize: 0,
+                addStone: false,
+                addNether: true,
+                baseMod: "mekanism"
+            },
+            {
+                featureName: "zinc",
+                discardChance: 0.0,
+                featureSize: 12,
+                addStone: false,
+                addNether: true,
+                baseMod: "create"
+            },
+            {
+                featureName: "certus",
+                discardChance: 0.0,
+                featureSize: 0,
+                addStone: false,
+                addNether: true,
+                baseMod: "kubejs"
+            },
+            {
+                featureName: "charged_certus",
+                discardChance: 0.0,
+                featureSize: 0,
+                addStone: false,
+                addNether: true,
+                baseMod: "kubejs"
+            },
+            {
+                featureName: "etrium",
+                discardChance: 0.0,
+                featureSize: 0,
+                addStone: false,
+                addNether: true,
+                baseMod: "kubejs"
+            },
+            //vanilla
+            {
+                featureName: "coal_buried",
+                discardChance: 0.5,
+                featureSize: 17,
+                addStone: false,
+                addNether: true,
+                baseMod: "minecraft"
+            },
+            {
+                featureName: "coal",
+                discardChance: 0.0,
+                featureSize: 17,
+                addStone: false,
+                addNether: true,
+                baseMod: "minecraft"
+            },
+            {
+                featureName: "copper_large",
+                discardChance: 0.0,
+                featureSize: 20,
+                addStone: false,
+                addNether: true,
+                baseMod: "minecraft"
+            },
+            {
+                featureName: "copper_small",
+                discardChance: 0.0,
+                featureSize: 10,
+                addStone: false,
+                addNether: true,
+                baseMod: "minecraft"
+            },
+            {
+                featureName: "diamond_buried",
+                discardChance: 1.0,
+                featureSize: 8,
+                addStone: false,
+                addNether: true,
+                baseMod: "minecraft"
+            },
+            {
+                featureName: "diamond_large",
+                discardChance: 0.7,
+                featureSize: 12,
+                addStone: false,
+                addNether: true,
+                baseMod: "minecraft"
+            },
+            {
+                featureName: "diamond_medium",
+                discardChance: 0.5,
+                featureSize: 8,
+                addStone: false,
+                addNether: true,
+                baseMod: "minecraft"
+            },
+            {
+                featureName: "diamond_small",
+                discardChance: 0.5,
+                featureSize: 4,
+                addStone: false,
+                addNether: true,
+                baseMod: "minecraft"
+            },
+            {
+                featureName: "emerald",
+                discardChance: 0.0,
+                featureSize: 3,
+                addStone: false,
+                addNether: true,
+                baseMod: "minecraft"
+            },
+            {
+                featureName: "gold_buried",
+                discardChance: 0.5,
+                featureSize: 9,
+                addStone: false,
+                addNether: true,
+                baseMod: "minecraft"
+            },
+            {
+                featureName: "gold",
+                discardChance: 0.0,
+                featureSize: 9,
+                addStone: false,
+                addNether: true,
+                baseMod: "minecraft"
+            },
+            {
+                featureName: "iron_small",
+                discardChance: 0.0,
+                featureSize: 4,
+                addStone: false,
+                addNether: true,
+                baseMod: "minecraft"
+            },
+            {
+                featureName: "iron",
+                discardChance: 0.0,
+                featureSize: 9,
+                addStone: false,
+                addNether: true,
+                baseMod: "minecraft"
+            },
+            {
+                featureName: "lapis_buried",
+                discardChance: 1.0,
+                featureSize: 7,
+                addStone: false,
+                addNether: true,
+                baseMod: "minecraft"
+            },
+            {
+                featureName: "lapis",
+                discardChance: 0.0,
+                featureSize: 7,
+                addStone: false,
+                addNether: true,
+                baseMod: "minecraft"
+            },
+            {
+                featureName: "quartz",
+                discardChance: 0.0,
+                featureSize: 14,
+                addStone: false,
+                addNether: true,
+                baseMod: "minecraft"
+            },
+            {
+                featureName: "redstone",
+                discardChance: 0.0,
+                featureSize: 8,
+                addStone: false,
+                addNether: true,
+                baseMod: "minecraft"
+            },
         ];
 
         function log(message, type = 'info') {
@@ -355,20 +674,20 @@
             const progress = document.getElementById('progress');
             const progressBar = document.getElementById('progressBar');
             const percentage = (current / total) * 100;
-            
+
             progress.style.display = 'block';
             progressBar.style.width = percentage + '%';
         }
 
-        function generateBlockstateFile(stoneType, mineralType) {
-            if (mineralType == "redstone"){
+        function generateBlockstateFile(block) {
+            if (block.includes("redstone")) {
                 return {
                     "variants": {
                         "lit=false": {
-                            "model": `kubejs:block/ore/${mineralType}/${stoneType}_${mineralType}_ore`
+                            "model": `kubejs:block/${block}`
                         },
                         "lit=true": {
-                            "model": `kubejs:block/ore/${mineralType}/${stoneType}_${mineralType}_ore`
+                            "model": `kubejs:block/${block}`
                         }
                     }
                 }
@@ -376,63 +695,336 @@
             return {
                 "variants": {
                     "": {
-                        "model": `kubejs:block/${stoneType}_${mineralType}_ore`
+                        "model": `kubejs:block/${block}`
                     }
                 }
             };
         }
 
-        function generateBlockModelFile(stoneType, mineralType) {
+        function generateBlockModelFile(block, mineral) {
             return {
                 "parent": "minecraft:block/cube_all",
                 "textures": {
-                    "all": `kubejs:block/ore/${mineralType}/${stoneType}_${mineralType}_ore`
+                    "all": `kubejs:block/ore/${mineral}/${block}`
                 }
             };
         }
 
-        function generateItemModelFile(stoneType, mineralType) {
+        function generateItemModelFile(block) {
             return {
-                "parent": `kubejs:block/${stoneType}_${mineralType}_ore`
+                "parent": `kubejs:block/${block}`
             };
+        }
+
+        function generateConfiguredFeatureFile(featureName, featureSize, discardChance, addNether, baseMod) {
+            const targets = [];
+            var stoneId = `${baseMod}:${featureName}_ore`
+            var deepslateId = `${baseMod}:deepslate_${featureName}_ore`
+            if (baseMod == "immersiveengineering") {
+                stoneId = `${baseMod}:ore_${featureName}`
+                deepslateId = `${baseMod}:deepslate_ore_${featureName}`
+            }
+            targets.push(
+                {
+                    "state": {
+                        "Name": stoneId
+                    },
+                    "target": {
+                        "predicate_type": "minecraft:block_match",
+                        "block": "minecraft:stone"
+                    }
+                },
+                {
+                    "state": {
+                        "Name": deepslateId
+                    },
+                    "target": {
+                        "predicate_type": "minecraft:block_match",
+                        "block": "minecraft:deepslate"
+                    }
+                },
+                {
+                    "state": {
+                        "Name": `kubejs:andesite_${featureName}_ore`
+                    },
+                    "target": {
+                        "predicate_type": "minecraft:block_match",
+                        "block": "minecraft:andesite"
+                    }
+                },
+                {
+                    "state": {
+                        "Name": `kubejs:granite_${featureName}_ore`
+                    },
+                    "target": {
+                        "predicate_type": "minecraft:block_match",
+                        "block": "minecraft:granite"
+                    }
+                },
+                {
+                    "state": {
+                        "Name": `kubejs:diorite_${featureName}_ore`
+                    },
+                    "target": {
+                        "predicate_type": "minecraft:block_match",
+                        "block": "minecraft:diorite"
+                    }
+                },
+                {
+                    "state": {
+                        "Name": `kubejs:tuff_${featureName}_ore`
+                    },
+                    "target": {
+                        "predicate_type": "minecraft:block_match",
+                        "block": "minecraft:tuff"
+                    }
+                }
+            )
+
+            let netherName = `kubejs:nether_${featureName}_ore`
+
+            if (!addNether) netherName = `${baseMod}:nether_${featureName}_ore`;
+
+            targets.push(
+                {
+                    "state": {
+                        "Name": netherName
+                    },
+                    "target": {
+                        "predicate_type": "minecraft:block_match",
+                        "block": "minecraft:stone"
+                    }
+                }
+            )
+
+            targets.push(
+                {
+                    "state": {
+                        "Name": `kubejs:end_${featureName}_ore`
+                    },
+                    "target": {
+                        "predicate_type": "minecraft:block_match",
+                        "block": "minecraft:end_stone"
+                    }
+                },
+                {
+                    "state": {
+                        "Name": `kubejs:moon_${featureName}_ore`
+                    },
+                    "target": {
+                        "predicate_type": "minecraft:tag_match",
+                        "tag": "ad_astra:moon_stone_replaceables"
+                    }
+                },
+                {
+                    "state": {
+                        "Name": `kubejs:mars_${featureName}_ore`
+                    },
+                    "target": {
+                        "predicate_type": "minecraft:tag_match",
+                        "tag": "ad_astra:mars_stone_replaceables"
+                    }
+                },
+                {
+                    "state": {
+                        "Name": `kubejs:venus_${featureName}_ore`
+                    },
+                    "target": {
+                        "predicate_type": "minecraft:tag_match",
+                        "tag": "ad_astra:venus_stone_replaceables"
+                    }
+                },
+                {
+                    "state": {
+                        "Name": `kubejs:mercury_${featureName}_ore`
+                    },
+                    "target": {
+                        "predicate_type": "minecraft:tag_match",
+                        "tag": "ad_astra:mercury_stone_replaceables"
+                    }
+                },
+                {
+                    "state": {
+                        "Name": `kubejs:glacio_${featureName}_ore`
+                    },
+                    "target": {
+                        "predicate_type": "minecraft:tag_match",
+                        "tag": "ad_astra:glacio_stone_replaceables"
+                    }
+                }
+            )
+
+
+            return {
+                "type": "minecraft:ore",
+                "config": {
+                    "discard_chance_on_air_exposure": discardChance,
+                    "size": featureSize,
+                    "targets": targets
+                }
+            };
+        }
+
+        function generateLootTableFile(blockId, min, max, droppedItem, fortuneFunction) {
+            // Build the functions array based on template
+            let functions = [];
+
+            if (min != 1 && max != 1) {
+                functions.push({
+                    "add": false,
+                    "count": {
+                        "type": "minecraft:uniform",
+                        "max": max,
+                        "min": min
+                    },
+                    "function": "minecraft:set_count"
+                });
+            }
+
+
+            if ((fortuneFunction == "redstone" || fortuneFunction == "uniform") && (fortuneFunction != null || fortuneFunction != undefined)) {
+                functions.push({
+                    "enchantment": "minecraft:fortune",
+                    "formula": "minecraft:uniform_bonus_count",
+                    "function": "minecraft:apply_bonus",
+                    "parameters": {
+                        "bonusMultiplier": 1
+                    }
+                });
+            } else {
+                functions.push({
+                    "enchantment": "minecraft:fortune",
+                    "formula": "minecraft:ore_drops",
+                    "function": "minecraft:apply_bonus"
+                });
+            }
+
+            // Always add explosion decay
+            functions.push({
+                "function": "minecraft:explosion_decay"
+            });
+
+            return {
+                "type": "minecraft:block",
+                "pools": [
+                    {
+                        "bonus_rolls": 0.0,
+                        "entries": [
+                            {
+                                "type": "minecraft:alternatives",
+                                "children": [
+                                    {
+                                        "type": "minecraft:item",
+                                        "conditions": [
+                                            {
+                                                "condition": "minecraft:match_tool",
+                                                "predicate": {
+                                                    "enchantments": [
+                                                        {
+                                                            "enchantment": "minecraft:silk_touch",
+                                                            "levels": {
+                                                                "min": 1
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ],
+                                        "name": `kubejs:${blockId}`
+                                    },
+                                    {
+                                        "type": "minecraft:item",
+                                        "functions": functions,
+                                        "name": droppedItem
+                                    }
+                                ]
+                            }
+                        ],
+                        "rolls": 1.0
+                    }
+                ],
+                "random_sequence": `kubejs:blocks/${blockId}`
+            }
         }
 
         async function generateFiles() {
             const button = document.querySelector('.generate-btn');
             button.disabled = true;
             button.textContent = '⚙️ Generating Files...';
-            
+
             log('Starting file generation...', 'info');
-            
+
             const zip = new JSZip();
-            const totalCombinations = ORE_STONE_TYPES.length * ORE_MINERAL_TYPES.length;
+            const totalCombinations = ORE_STONE_TYPES.length * ORE_MINERAL_TYPES.length + ORE_FEATURE_TYPES.length;
             let currentProgress = 0;
 
             // Create folder structure
-            const blockstatesFolder = zip.folder('blockstates');
-            const modelsFolder = zip.folder('models');
+            const assetsFolder = zip.folder('assets');
+            const dataFolder = zip.folder('data');
+
+            //assets
+            const kubejsAssetsFolder = assetsFolder.folder('kubejs');
+
+            const blockstatesFolder = kubejsAssetsFolder.folder('blockstates');
+            const modelsFolder = kubejsAssetsFolder.folder('models');
+
             const blockFolder = modelsFolder.folder('block');
             const itemFolder = modelsFolder.folder('item');
 
+            //data
+            const kubejsDataFolder = dataFolder.folder('kubejs');
+            const minecraftDataFolder = dataFolder.folder('minecraft')
+
+            const kubejsWorldgenFolder = kubejsDataFolder.folder('worldgen');
+            const kubejsConfiguredFeatureFile = kubejsWorldgenFolder.folder('configured_feature')
+
+            const minecraftWorldgenFolder = minecraftDataFolder.folder('worldgen');
+            const minecraftConfiguredFeatureFile = minecraftWorldgenFolder.folder('configured_feature')
+
+            const createConfiguredFeatureFile = dataFolder.folder('create').folder('worldgen').folder('configured_feature')
+
+            const BlockLootTablesFolder = kubejsDataFolder.folder('loot_tables').folder('blocks')
+
+
             log(`Generating files for ${totalCombinations} block combinations...`, 'info');
 
-            for (const stone of ORE_STONE_TYPES) {
-                for (const mineral of ORE_MINERAL_TYPES) {
-                    const blockId = `${stone.stoneType}_${mineral.mineralType}_ore`;
-                    
+            for (const mineral of ORE_MINERAL_TYPES) {
+                let stoneTypes = [...ORE_STONE_TYPES];
+                if (mineral.addStone) {
+                    stoneTypes.unshift("stone", "deepslate")
+                }
+                if (!mineral.addNether) {
+                    stoneTypes.splice(stoneTypes.indexOf("nether"), 1)
+                }
+
+                for (const stone of stoneTypes) {
+                    let blockId;
+
+                    if (stone == "stone") {
+                        blockId = `${mineral.mineralType}_ore`
+                    } else {
+                        blockId = `${stone}_${mineral.mineralType}_ore`
+                    }
+
                     // Generate blockstate file
-                    const blockstateContent = generateBlockstateFile(stone.stoneType, mineral.mineralType);
-                    blockstatesFolder.file(`${blockId}.json`, JSON.stringify(blockstateContent, null, 2));
-                    
+                    const blockstateContent = generateBlockstateFile(blockId);
+                    blockstatesFolder.file(`${blockId}.json`, JSON.stringify(blockstateContent, null, 4));
+
                     // Generate model file
-                    const blockModelContent = generateBlockModelFile(stone.stoneType, mineral.mineralType);
-                    const itemModelContent = generateItemModelFile(stone.stoneType, mineral.mineralType);
-                    blockFolder.file(`${blockId}.json`, JSON.stringify(blockModelContent, null, 2));
-                    itemFolder.file(`${blockId}.json`, JSON.stringify(itemModelContent, null, 2));
-                    
+                    const blockModelContent = generateBlockModelFile(blockId, mineral.mineralType);
+                    const itemModelContent = generateItemModelFile(blockId);
+
+                    blockFolder.file(`${blockId}.json`, JSON.stringify(blockModelContent, null, 4));
+                    itemFolder.file(`${blockId}.json`, JSON.stringify(itemModelContent, null, 4));
+
+                    // Generate loot_table file
+                    const lootTableContent = generateLootTableFile(blockId, mineral.minDrop, mineral.maxDrop, mineral.dropId, mineral.fortuneFormula)
+
+                    BlockLootTablesFolder.file(`${blockId}.json`, JSON.stringify(lootTableContent, null, 4))
+
                     currentProgress++;
                     updateProgress(currentProgress, totalCombinations);
-                    
+
                     // Allow UI to update
                     if (currentProgress % 10 === 0) {
                         await new Promise(resolve => setTimeout(resolve, 1));
@@ -440,10 +1032,34 @@
                 }
             }
 
+            for (const feature of ORE_FEATURE_TYPES) {
+                const featureId = `ore_${feature.featureName}`
+
+                const configuredFeatureContent = generateConfiguredFeatureFile(feature.featureName, feature.featureSize, feature.discardChance, feature.addNether, feature.baseMod);
+                const featureJSON = JSON.stringify(configuredFeatureContent, null, 4)
+
+                if (feature.baseMod == "minecraft") {
+                    minecraftConfiguredFeatureFile.file(`${featureId}.json`, featureJSON)
+                } else if (feature.baseMod == "create") {
+                    createConfiguredFeatureFile.file(`${featureId}.json`, featureJSON)
+                } else {
+                    kubejsConfiguredFeatureFile.file(`${featureId}.json`, featureJSON)
+                }
+
+                currentProgress++;
+                updateProgress(currentProgress, totalCombinations);
+
+                // Allow UI to update
+                if (currentProgress % 10 === 0) {
+                    await new Promise(resolve => setTimeout(resolve, 1));
+                }
+            }
+
+
             log('Files generated successfully! Creating zip archive...', 'success');
-            
+
             // Generate and download zip
-            const content = await zip.generateAsync({type: 'blob'});
+            const content = await zip.generateAsync({ type: 'blob' });
             const url = URL.createObjectURL(content);
             const a = document.createElement('a');
             a.href = url;
@@ -452,24 +1068,24 @@
             a.click();
             document.body.removeChild(a);
             URL.revokeObjectURL(url);
-            
+
             log(`Successfully generated and downloaded ${totalCombinations * 2} files!`, 'success');
-            
+
             button.disabled = false;
             button.textContent = '✅ Download Complete - Generate Again?';
-            
+
             setTimeout(() => {
                 button.textContent = '🚀 Generate All Files';
             }, 3000);
         }
 
         // Update statistics on page load
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const mineralCount = ORE_MINERAL_TYPES.length;
             const stoneCount = ORE_STONE_TYPES.length;
             const totalBlocks = mineralCount * stoneCount;
             const totalFiles = totalBlocks * 2; // blockstate + model for each block
-            
+
             document.getElementById('mineralCount').textContent = mineralCount;
             document.getElementById('stoneCount').textContent = stoneCount;
             document.getElementById('totalFiles').textContent = totalFiles;
@@ -477,4 +1093,5 @@
         });
     </script>
 </body>
+
 </html>

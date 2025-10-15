@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "schematics"
+	group: "6109BB5CC8B8C5FB"
+	id: "6B40E3842346B1F2"
+	order_index: 5
+	quest_links: [ ]
+	quests: [ ]
+	title: "Schematics"
+}

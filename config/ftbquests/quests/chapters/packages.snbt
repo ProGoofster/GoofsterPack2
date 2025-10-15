@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "packages"
+	group: "6109BB5CC8B8C5FB"
+	id: "3EDA15218488998A"
+	order_index: 4
+	quest_links: [ ]
+	quests: [ ]
+	title: "Packages"
+}

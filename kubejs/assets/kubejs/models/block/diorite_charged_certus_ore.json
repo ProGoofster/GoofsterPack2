@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "kubejs:block/ore/charged_certus/diorite_charged_certus_ore"
-  }
-}

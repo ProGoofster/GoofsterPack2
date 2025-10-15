@@ -1,0 +1,9 @@
+{
+	chapter_groups: [
+		{ id: "07D9105A1B20372F", title: "Progression" }
+		{ id: "5EB992D3BFA012E4", title: "Stuff" }
+		{ id: "6109BB5CC8B8C5FB", title: "Create" }
+		{ id: "6F0BEB6B35CFC88C", title: "Tech Mods" }
+		{ id: "23716E0D494E0545", title: "Vanilla+ Mods" }
+	]
+}

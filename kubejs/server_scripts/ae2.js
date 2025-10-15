@@ -228,6 +228,7 @@ ServerEvents.recipes((event) => {
     "ae2:fluid_p2p_tunnel",
     "ae2:fe_p2p_tunnel",
     "ae2:light_p2p_tunnel",
+    "appmek:chemical_p2p_tunnel"
   ];
   for (var i of p2p) event.stonecutting(i, p2p);
 

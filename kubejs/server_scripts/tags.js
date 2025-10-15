@@ -154,7 +154,60 @@ ServerEvents.tags("fluid", (event) => {
 
   event.removeAllTagsFrom("ad_astra:oxygen");
   event.removeAllTagsFrom("ad_astra:hydrogen");
+
+  //rocket fuel
+  event.removeAll("ad_astra:fuel");
+  event.removeAll("ad_astra:tier_1_rover_fuel");
+  event.removeAll("ad_astra:tier_1_rocket_fuel");
+  event.removeAll("ad_astra:tier_2_rocket_fuel");
+  event.removeAll("ad_astra:tier_3_rocket_fuel");
+  event.removeAll("ad_astra:tier_4_rocket_fuel");
+
+  const tierFuels = [
+    [
+      "kubejs:rocket_fuel_1",
+      "kubejs:rocket_fuel_2",
+      "kubejs:rocket_fuel_3",
+      "kubejs:rocket_fuel_4",
+      "kubejs:rocket_cryo_fuel_1",
+      "kubejs:rocket_cryo_fuel_2",
+      "kubejs:rocket_cryo_fuel_3",
+      "kubejs:rocket_cryo_fuel_4"
+    ],
+    [
+      "kubejs:rocket_fuel_2",
+      "kubejs:rocket_fuel_3",
+      "kubejs:rocket_fuel_4",
+      "kubejs:rocket_cryo_fuel_2",
+      "kubejs:rocket_cryo_fuel_3",
+      "kubejs:rocket_cryo_fuel_4"
+    ],
+    [
+      "kubejs:rocket_fuel_3",
+      "kubejs:rocket_fuel_4",
+      "kubejs:rocket_cryo_fuel_3",
+      "kubejs:rocket_cryo_fuel_4"
+    ],
+    [
+      "kubejs:rocket_fuel_4",
+      "kubejs:rocket_cryo_fuel_4"
+    ],
+    [
+      "kubejs:rocket_cryo_fuel_1",
+      "kubejs:rocket_cryo_fuel_2",
+      "kubejs:rocket_cryo_fuel_3",
+      "kubejs:rocket_cryo_fuel_4"
+    ]
+  ];
   
+  
+  event.add("ad_astra:tier_1_rocket_fuel", tierFuels[0]);
+  event.add("ad_astra:tier_2_rocket_fuel", tierFuels[1]);
+  event.add("ad_astra:tier_3_rocket_fuel", tierFuels[2]);
+  event.add("ad_astra:tier_4_rocket_fuel", tierFuels[3]);
+  event.add("ad_astra:efficient_fuel", tierFuels[5]);
+
+  event.add("tier_1_rover_fuel", "ad_astra:tier_1_rocket_fuel")
 });
 
 ServerEvents.tags("block", (event) => {

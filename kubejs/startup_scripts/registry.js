@@ -54,6 +54,8 @@ StartupEvents.registry("item", (event) => {
     .create("unfused_silicon_panel")
     .displayName("Mysterious Panel (Silicon)")
     .glow(true);
+
+  event.create("raw_etrium")
 });
 
 StartupEvents.registry("fluid", (event) => {

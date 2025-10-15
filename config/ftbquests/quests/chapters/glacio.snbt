@@ -1,0 +1,22 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "glacio"
+	group: "07D9105A1B20372F"
+	id: "7DCC7D95402C19DC"
+	order_index: 4
+	quest_links: [ ]
+	quests: [{
+		id: "4D80914B018F829E"
+		tasks: [{
+			dimension: "ad_astra:glacio"
+			icon: "ad_astra:glacio_globe"
+			id: "7C17C38E3186F06A"
+			title: "Visit Glacio"
+			type: "dimension"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "Glacio"
+}
