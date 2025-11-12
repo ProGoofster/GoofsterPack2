@@ -12,10 +12,93 @@ ServerEvents.recipes((event) => {
   event.remove({ id: "createaddition:rolling/electrum_plate" });
   event.remove({ id: "createaddition:rolling/electrum_ingot" });
 
+  event.remove({ id: "createaddition:pressing/steel_ingot" });
+  event.remove({ id: "createaddition:pressing/constantan_ingot" });
+  event.remove({ id: "createaddition:pressing/uranium_ingot" });
+  event.remove({ id: "createaddition:pressing/nickel_ingot" });
+  event.remove({ id: "createaddition:pressing/silver_ingot" });
+  event.remove({ id: "createaddition:pressing/lead_ingot" });
+  event.remove({ id: "createaddition:pressing/aluminum_ingot" });
+  event.remove({ output: Fluid.of("createaddition:seed_oil") });
+  event.remove({ output: "createaddition:biomass" });
+  event.remove({ output: "createaddition:biomass_pellet_block" });
+  event.remove({ output: "createaddition:biomass_pellet" });
+  event.remove({ output: Fluid.of("createaddition:bioethanol") });
+  event.remove({ output: "createaddition:connector" });
+  event.remove({ output: "createaddition:small_light_connector" });
+  event.remove({ output: "createaddition:large_connector" });
+  event.remove({ output: "createaddition:redstone_relay" });
+  event.remove({ output: "createaddition:redstone_relay" });
+  event.remove({ output: "createaddition:iron_wire" });
+  event.remove({ output: "createaddition:gold_wire" });
+  event.remove({ input: "createaddition:gold_wire" });
+  event.remove({ output: "createaddition:brass_rod" });
+  event.replaceInput({ output: "createaddition:barbed_wire" }, "#forge:wires/iron", "#forge:wires/steel")
+  event.remove({ output: /createaddition:.*spool/ });
+  event.replaceInput({}, "createaddition:copper_spool", "immersiveengineering:wirecoil_copper")
+
+  event.replaceOutput({}, "createaddition:iron_rod", "immersiveengineering:stick_iron")
+  event.replaceOutput({}, "createaddition:gold_rod", "immersiveposts:stick_gold")
+  event.replaceOutput({}, "createaddition:copper_rod", "immersiveposts:stick_copper")
+  event.replaceOutput({}, "createaddition:electrum_rod", "immersiveposts:stick_electrum")
+
+
   event.remove({ id: "createaddition:crafting/modular_accumulator_electrum" });
   event.remove({ id: "createaddition:crafting/large_connector_electrum" });
   event.remove({ output: "create_enchantment_industry:experience_rotor" });
   event.remove({ input: "create_enchantment_industry:experience_rotor" });
+
+  event.recipes.createMixing('2x immersiveengineering:ingot_electrum', [
+    '#forge:ingots/silver',
+    '#forge:ingots/gold',
+  ]).heated().id('createaddition:mixing/electrum')
+
+  event.recipes.createMixing('2x immersiveengineering:insulating_glass', [
+    '2x #forge:glass',
+    '#forge:dusts/iron',
+  ]).heated().id('createaddition:compat/immersiveengineering/insulating_glass')
+
+  let rodmetals = ["gold", "copper", "lead", "silver", "nickel", "constantan", "electrum", "uranium"]
+  rodmetals.forEach(metal => {
+    event.custom({
+      type: "createaddition:rolling",
+      input: {
+        tag: `forge:ingots/${metal}`,
+      },
+      result: {
+        item: `immersiveposts:stick_${metal}`,
+        count: 2,
+      },
+    }).id(`createaddition:rolling/${metal}_ingot`);
+  })
+  rodmetals = ["iron", "steel", "aluminum"]
+  rodmetals.forEach(metal => {
+    event.custom({
+      type: "createaddition:rolling",
+      input: {
+        tag: `forge:ingots/${metal}`,
+      },
+      result: {
+        item: `immersiveengineering:stick_${metal}`,
+        count: 2,
+      },
+    }).id(`createaddition:rolling/${metal}_ingot`);
+  })
+
+  let wiremetals = ["copper", "electrum"];
+  wiremetals.forEach(metal => {
+    event.custom({
+      type: "createaddition:rolling",
+      input: {
+        tag: `forge:plates/${metal}`,
+      },
+      result: {
+        item: `immersiveengineering:wire_${metal}`,
+        count: 2,
+      },
+    }).id(`createaddition:rolling/${metal}_plate`);
+  })
+
 
   event
     .custom({
@@ -244,6 +327,50 @@ ServerEvents.recipes((event) => {
     ])
     .id("create:compacting/end_stone");
 
+
+
+  event.recipes.createMixing('2x ad_astra:moon_stone', [
+    'ad_astra:moon_sand',
+    'minecraft:soul_soil',
+    Fluid.of('minecraft:lava', 100)
+  ]).id('create:mixing/moon_stone');
+
+  event.recipes.createMixing('2x ad_astra:mars_stone', [
+    'ad_astra:mars_sand',
+    'ad_astra:conglomerate',
+    Fluid.of('minecraft:lava', 100)
+  ]).id('create:mixing/mars_stone');
+
+  event.recipes.createMixing('2x ad_astra:venus_stone', [
+    'ad_astra:venus_sand',
+    'ad_astra:infernal_spire_block',
+    Fluid.of('minecraft:lava', 100)
+  ]).id('create:mixing/venus_stone');
+
+  event.recipes.createMixing('2x ad_astra:mercury_stone', [
+    'ad_astra:mercury_cobblestone',
+    'minecraft:magma_block',
+    Fluid.of('minecraft:lava', 100)
+  ]).id('create:mixing/mercury_stone');
+
+  event.recipes.createMixing('2x ad_astra:glacio_stone', [
+    'ad_astra:permafrost',
+    'ae2:sky_stone_block',
+    Fluid.of('minecraft:lava', 100)
+  ]).id('create:mixing/galcio_stone');
+
+  event.recipes.createMixing('2x ad_astra:conglomerate', [
+    'minecraft:granite',
+    'minecraft:dripstone_block',
+    Fluid.of('minecraft:lava', 100)
+  ]).id('create:mixing/conglomerate');
+
+  event.recipes.createMixing('2x ad_astra:infernal_spire_block', [
+    'minecraft:basalt',
+    'minecraft:magma_block',
+    Fluid.of('minecraft:lava', 100)
+  ]).id('create:mixing/infernal_spire_block');
+
   //ae2 skystone
   event.replaceInput(
     { id: "create:milling/compat/ae2/sky_stone_block" },
@@ -359,6 +486,19 @@ ServerEvents.recipes((event) => {
   event.smelting("create:scorchia", "create:scoria");
   event.blasting("create:scorchia", "create:scoria");
 
+  event.recipes.create.milling('ad_astra:moon_cobblestone', 'ad_astra:moon_stone').id('create:milling/moon_cobblestone').processingTime(200)
+  event.recipes.create.milling('ad_astra:moon_sand', 'ad_astra:moon_cobblestone').id('create:milling/moon_sand').processingTime(200)
+
+  event.recipes.create.milling('ad_astra:mars_cobblestone', 'ad_astra:mars_stone').id('create:milling/mars_cobblestone').processingTime(200)
+  event.recipes.create.milling('ad_astra:mars_sand', 'ad_astra:mars_cobblestone').id('create:milling/mars_sand').processingTime(200)
+
+  event.recipes.create.milling('ad_astra:venus_cobblestone', 'ad_astra:venus_stone').id('create:milling/venus_cobblestone').processingTime(200)
+  event.recipes.create.milling('ad_astra:venus_sand', 'ad_astra:venus_cobblestone').id('create:milling/venus_sand').processingTime(200)
+
+  event.recipes.create.milling('ad_astra:mercury_cobblestone', 'ad_astra:mercury_stone').id('create:milling/mercury_cobblestone').processingTime(200)
+
+  event.recipes.create.milling('ad_astra:glacio_cobblestone', 'ad_astra:glacio_stone').id('create:milling/glacio_cobblestone').processingTime(200)
+
   //crushing sandstone
   event.recipes.create
     .milling("minecraft:red_sand", "#c:red_sandstone_blocks")
@@ -374,6 +514,11 @@ ServerEvents.recipes((event) => {
     .id("create:milling/red_arid_sandstone");
 
   event.replaceOutput({}, "createaddition:zinc_sheet", "createdeco:zinc_sheet");
+
+  //rework!!!
+  //event.recipes.create.splashing([Item.of('ad_astra:desh_nugget').withChance(0.04), Item.of('immersiveengineering:nugget_silver').withChance(0.04), Item.of('immersiveengineering:nugget_lead').withChance(0.04)], 'ad_astra:moon_sand').id('create:splashing/moon_sand');
+  //event.recipes.create.splashing([Item.of('ad_astra:ostrum_nugget').withChance(0.04), Item.of('immersiveengineering:nugget_nickel').withChance(0.04), Item.of('immersiveengineering:nugget_aluminum').withChance(0.04)], 'ad_astra:mars_sand').id('create:splashing/mars_sand');
+  //event.recipes.create.splashing([Item.of('ad_astra:calorite_nugget').withChance(0.06), Item.of('thermal:tin_nugget').withChance(0.06)], 'ad_astra:venus_sand').id('create:splashing/venus_sand');
 
   //copycat shaft recipe
   event.remove({ output: "copycats:copycat_shaft" });

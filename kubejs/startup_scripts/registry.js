@@ -2,8 +2,22 @@
 
 const $Gas = Java.loadClass('mekanism.api.chemical.gas.Gas')
 const $GasBuilder = Java.loadClass('mekanism.api.chemical.gas.GasBuilder')
-// const $Slurry = Java.loadClass('mekanism.api.chemical.slurry.Slurry')
-// const $SlurryBuilder = Java.loadClass('mekanism.api.chemical.slurry.SlurryBuilder')
+const $InfuseType = Java.loadClass('mekanism.api.chemical.infuse.InfuseType')
+const $InfuseTypeBuilder = Java.loadClass('mekanism.api.chemical.infuse.InfuseTypeBuilder')
+const $Slurry = Java.loadClass('mekanism.api.chemical.slurry.Slurry')
+const $SlurryBuilder = Java.loadClass('mekanism.api.chemical.slurry.SlurryBuilder')
+
+
+const mekStackAdditions = [
+  { material: "aluminum", color: "#d1ecdf" },
+  { material: "silver", color: "#e2e4fa" },
+  { material: "nickel", color: "#c6cbbb" },
+  { material: "zinc", color: "#b9e8c0" },
+  { material: "desh", color: "#c67143" },
+  { material: "ostrum", color: "#765360" },
+  { material: "calorite", color: "#9e1e3e" },
+  { material: "etrium", color: "#87ffff" }
+];
 
 StartupEvents.registry("block", (event) => {
   event
@@ -55,7 +69,61 @@ StartupEvents.registry("item", (event) => {
     .displayName("Mysterious Panel (Silicon)")
     .glow(true);
 
-  event.create("raw_etrium")
+  event.create("kubejs:crushed_raw_desh").tag("create:crushed_raw_materials");
+  event.create("kubejs:crushed_raw_ostrum").tag("create:crushed_raw_materials");
+  event.create("kubejs:crushed_raw_calorite").tag("create:crushed_raw_materials");
+  event.create("crushed_raw_etrium").tag("create:crushed_raw_materials");
+  event.create("enriched_etrium").tag("mekanism:enriched").tag("mekanism:enriched/etrium");
+  event.create("fluorite_enriched_diamond").tag("mekanism:enriched").tag("mekanism:enriched/fluorite_diamond");
+
+  event
+    .create("dust_desh")
+    .displayName("Desh Grit")
+    .tag(`forge:dusts`)
+    .tag(`forge:dusts/desh`);
+  event
+    .create("dust_ostrum")
+    .displayName("Ostrum Grit")
+    .tag(`forge:dusts`)
+    .tag(`forge:dusts/ostrum`);
+  event
+    .create("dust_calorite")
+    .displayName("Calorite Grit")
+    .tag(`forge:dusts`)
+    .tag(`forge:dusts/calorite`);
+  event
+    .create("dust_etrium")
+    .displayName("Etrium Grit")
+    .tag(`forge:dusts`)
+    .tag(`forge:dusts/etrium`);
+  event
+    .create("dust_zinc")
+    .displayName("Zinc Grit")
+    .tag(`forge:dusts`)
+    .tag(`forge:dusts/zinc`);
+  event
+    .create("dust_brass")
+    .displayName("Brass Grit")
+    .tag(`forge:dusts`)
+    .tag(`forge:dusts/brass`);
+
+  event.create("rocket_fuel_catalyst")
+
+  const mekItems = ['clump', 'crystal', 'dirty_dust', 'shard']
+  function mekStack(name, color) {
+    mekItems.forEach(type => {
+      event.create(`${name}_${type}`)
+        .texture('layer0', 'mekanism:item/empty')
+        .texture('layer1', `kubejs:item/${type}`)
+        .texture('layer2', `mekanism:item/${type}_overlay`)
+        .color(1, color)
+        .tag(`mekanism:${type}s`)
+        .tag(`mekanism:${type}s/${name}`)
+    })
+  }
+  mekStackAdditions.forEach(entry => {
+    mekStack(entry.material, entry.color)
+  })
 });
 
 StartupEvents.registry("fluid", (event) => {
@@ -66,6 +134,7 @@ StartupEvents.registry("fluid", (event) => {
   event
     .create("polonium_fusion_fuel")
     .displayName("Liquid Polonium-Enhanced D-T Compound")
+  event.create("infused_biodiesel")
 
   event
     .create("rocket_fuel_1")
@@ -127,16 +196,22 @@ StartupEvents.registry("fluid", (event) => {
 })
 
 StartupEvents.registry('mekanism:gas', event => {
-  event.createCustom('chloroethane', () => $Gas($GasBuilder.builder()))
-  event.createCustom('polonium_fusion_fuel', () => $Gas($GasBuilder.builder())).displayName("Polonium-Enhanced D-T Compound")
+  event.createCustom('chloroethane', () => $Gas($GasBuilder.builder().tint(Color.of("#ffffff").getRgbJS())))
+  event.createCustom('polonium_fusion_fuel', () => $Gas($GasBuilder.builder().tint(Color.of("#ffffff").getRgbJS()))).displayName("Polonium-Enhanced D-T Compound")
 })
 
-// StartupEvents.registry('mekanism:slurry', event => {
-//   global.mekStackAdditions.forEach(entry => {
-//     event.createCustom(`clean_${entry.material}`, () => $Slurry($SlurryBuilder.clean().ore(`forge:ores/${entry.material}`).tint(Color.of(entry.color).getRgbJS())))
-//     event.createCustom(`dirty_${entry.material}`, () => $Slurry($SlurryBuilder.dirty().ore(`forge:ores/${entry.material}`).tint(Color.of(entry.color).getRgbJS())))
-//   })
-// })
+StartupEvents.registry('mekanism:infuse_type', event => {
+  event.createCustom('etrium', () => $InfuseType($InfuseTypeBuilder.builder().tint(Color.of("#ffffff").getRgbJS())))
+  event.createCustom('fluorite_enriched_diamond', () => $InfuseType($InfuseTypeBuilder.builder().tint(Color.of("#ffffff").getRgbJS())))
+})
+
+StartupEvents.registry('mekanism:slurry', event => {
+
+  mekStackAdditions.forEach(entry => {
+    event.createCustom(`clean_${entry.material}`, () => $Slurry($SlurryBuilder.clean().ore(`forge:ores/${entry.material}`).tint(Color.of(entry.color).getRgbJS())))
+    event.createCustom(`dirty_${entry.material}`, () => $Slurry($SlurryBuilder.dirty().ore(`forge:ores/${entry.material}`).tint(Color.of(entry.color).getRgbJS())))
+  })
+})
 
 ItemEvents.modification((event) => {
   event.modify("waterframes:remote", (item) => {

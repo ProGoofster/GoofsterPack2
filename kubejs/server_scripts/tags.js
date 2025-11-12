@@ -67,14 +67,6 @@ ServerEvents.tags("item", (event) => {
     "atmospheric:smooth_red_arid_sandstone",
   ]);
 
-  event.add("aquaculturedelight:non_neptunium_knives", [
-    "farmersdelight:flint_knife",
-    "farmersdelight:iron_knife",
-    "farmersdelight:diamond_knife",
-    "farmersdelight:netherite_knife",
-    "farmersdelight:golden_knife",
-  ]);
-  event.removeAllTagsFrom(/aquaculture:.*_fillet_knife/);
   event.removeAllTagsFrom("abnormals_delight:necromium_knife");
   event.removeAllTagsFrom("abnormals_delight:silver_knife");
 
@@ -114,12 +106,10 @@ ServerEvents.tags("item", (event) => {
 
   event.removeAll("chisel_chipped_integration:metals/aluminum_blocks");
   event.removeAll("chisel_chipped_integration:metals/bronze_blocks");
-  event.removeAll("chisel_chipped_integration:metals/cobalt_blocks");
   event.removeAll("chisel_chipped_integration:metals/electrum_blocks");
   event.removeAll("chisel_chipped_integration:metals/invar_blocks");
   event.removeAll("chisel_chipped_integration:metals/lead_blocks");
   event.removeAll("chisel_chipped_integration:metals/nickel_blocks");
-  event.removeAll("chisel_chipped_integration:metals/platinum_blocks");
   event.removeAll("chisel_chipped_integration:metals/silver_blocks");
   event.removeAll("chisel_chipped_integration:metals/steel_blocks");
   event.removeAll("chisel_chipped_integration:metals/tin_blocks");
@@ -141,6 +131,25 @@ ServerEvents.tags("item", (event) => {
   ]);
 
   event.add("forge:sandstone/venus_sandstone", "ad_astra:venus_sandstone")
+
+  event.removeAllTagsFrom("mekanism:lead_ore", "mekanism:deepslate_lead_ore", "mekanism:ingot_lead", "mekanism:block_lead", "mekanism:dust_lead", "mekanism:raw_lead", "mekanism:nugget_lead", "mekanism:block_raw_lead");
+  event.removeAllTagsFrom("immersiveengineering:ore_uranium", "immersiveengineering:deepslate_ore_uranium", "immersiveengineering:ingot_uranium", "immersiveengineering:storage_uranium", "immersiveengineering:dust_uranium", "immersiveengineering:raw_uranium", "immersiveengineering:nugget_uranium", "immersiveengineering:raw_block_uranium");
+  event.removeAllTagsFrom("createaddition:diamond_grit", "mekanism:dust_obsidian")
+  event.removeAllTagsFrom("ad_astra:steel_ingot", "ad_astra:steel_nugget", "ad_astra:steel_plate", "ad_astra:steel_rod", "ad_astra:steel_block");
+  event.removeAllTagsFrom("mekanism:ingot_steel", "mekanism:nugget_steel", "mekanism:dust_steel", "mekanism:block_steel");
+
+  event.add("forge:raw_materials/etrium", "goofsterpack:raw_etrium")
+  event.add("forge:ingots/etrium", "ad_astra:etrium_ingot")
+  event.add("forge:nuggets/etrium", "ad_astra:etrium_nugget")
+  event.add("forge:storage_blocks/etrium", "ad_astra:etrium_block")
+
+  event.removeAllTagsFrom("ad_astra:iron_plate", "immersiveengineering:plate_iron")
+  event.removeAllTagsFrom("immersiveengineering:plate_gold", "immersiveengineering:plate_copper")
+  event.removeAllTagsFrom("ad_astra:steel_rod", "ad_astra:iron_rod")
+  event.removeAllTagsFrom("createaddition:iron_rod")
+  event.removeAllTagsFrom(/createaddition:electrum.*/)
+  event.removeAllTagsFrom("createaddition:copper_wire", "createaddition:iron_wire", "createaddition:gold_wire", "createaddition:electrum_wire", "createaddition:iron_rod", "createaddition:gold_rod", "createaddition:brass_rod", "createaddition:copper_rod")
+  event.removeAllTagsFrom("immersiveengineering:nugget_copper")
 });
 
 ServerEvents.tags("fluid", (event) => {
@@ -199,8 +208,8 @@ ServerEvents.tags("fluid", (event) => {
       "kubejs:rocket_cryo_fuel_4"
     ]
   ];
-  
-  
+
+
   event.add("ad_astra:tier_1_rocket_fuel", tierFuels[0]);
   event.add("ad_astra:tier_2_rocket_fuel", tierFuels[1]);
   event.add("ad_astra:tier_3_rocket_fuel", tierFuels[2]);
@@ -208,6 +217,10 @@ ServerEvents.tags("fluid", (event) => {
   event.add("ad_astra:efficient_fuel", tierFuels[5]);
 
   event.add("tier_1_rover_fuel", "ad_astra:tier_1_rocket_fuel")
+
+  event.add("kubejs:chloroethane", "kubejs:chloroethane");
+  event.add("kubejs:polonium_fusion_fuel", "kubejs:polonium_fusion_fuel");
+  event.add("kubejs:infused_biodiesel", "kubejs:infused_biodiesel");
 });
 
 ServerEvents.tags("block", (event) => {
@@ -227,8 +240,8 @@ ServerEvents.tags("block", (event) => {
   event.add('create:non_movable', 'ae2:flawless_budding_quartz');
 
   event.add("create:chest_mounted_storage", [/^(?!minecraft:ender_chest$|ae2:sky_stone_chest$).*_chest$/])
-  event.add("create:simple_mounted_storage", [/.*_cabinet/, /^(?!minecraft:ender_chest$|ae2:sky_stone_chest$).*_chest$/, /everycomp:af\/.*_drawer/, /another_furniture:.*_drawer/])
-  event.add("create:single_block_inventories", [/.*_cabinet/, /^(?!minecraft:ender_chest$|ae2:sky_stone_chest$).*_chest$/, /everycomp:af\/.*_drawer/, /another_furniture:.*_drawer/])
+  event.add("create:simple_mounted_storage", [/.*_cabinet/, /^(?!minecraft:ender_chest$|ae2:sky_stone_chest$).*_chest$/])
+  event.add("create:single_block_inventories", [/.*_cabinet/, /^(?!minecraft:ender_chest$|ae2:sky_stone_chest$).*_chest$/])
 });
 
 ServerEvents.tags("worldgen/structure", (event) => {

@@ -78,6 +78,7 @@ progression
         advanced laser connector
 compat
     coal + charcoal to dust w/other crushers
+    charcoal block fix
 
 Small mods to integrate:
     Nirvana
@@ -206,6 +207,9 @@ for server:
 
 server info:
     seed choices:
+
+    -6680158985856009126
+    -worldborder: 2200 (4400)
         
     -small worldborder around island for the first week or so
         -datapack to disable it after ender dragon

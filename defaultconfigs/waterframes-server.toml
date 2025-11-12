@@ -33,7 +33,7 @@
 		#In case VS breaks something on their side, this option should stop client/server crashing
 		#Or if the audio isn't working, disable this option should help
 		#(This option is called VSEureka because valkirienskies is too long, and VS may be misleading)
-		vsEurekaCompat = true
+		vsEurekaCompat = false
 
 		[waterframes.multimedia.watermedia]
 			#Enables VLC/FFMPEG usage for multimedia processing like videos and music (support added by WATERMeDIA)

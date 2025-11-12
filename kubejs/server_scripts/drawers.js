@@ -5,9 +5,12 @@ ServerEvents.recipes((event) => {
 
   let storageUpgrades = [
     ["obsidian", "#forge:ingots/copper"],
-    ["iron", "#forge:ingots/iron"],
-    ["gold", "#forge:ingots/gold"],
-    ["diamond", "#forge:gems/diamond"],
+    ["copper", "#forge:ingots/iron"],
+    ["iron", "#forge:ingots/gold"],
+    ["gold", "#forge:gems/diamond"],
+    ["emerald", "#forge:ingots/desh"],
+    ["diamond", "#forge:ingots/ostrum"],
+    ["netherite", "#forge:ingots/calorite"],
   ];
 
   storageUpgrades.forEach((type) => {
@@ -38,20 +41,4 @@ ServerEvents.recipes((event) => {
       P: '#minecraft:planks'
     }
   ).id('storagedrawers:upgrade_template')
-
-  event.custom({
-    type: "minecraft:smithing_transform",
-    template: {
-      item: "minecraft:netherite_upgrade_smithing_template",
-    },
-    base: {
-      item: "storagedrawers:diamond_storage_upgrade",
-    },
-    addition: {
-      item: "minecraft:netherite_ingot",
-    },
-    result: {
-      item: "storagedrawers:emerald_storage_upgrade",
-    },
-  }).id("storagedrawers:emerald_storage_upgrade");
 });

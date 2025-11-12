@@ -82,10 +82,6 @@ ServerEvents.recipes(event => {
         }
     ).id('kubejs:netherite_upgrade');
 
-    //aquaculture
-    event.remove({output: 'aquaculture:fish_fillet_raw', type: 'minecraft:shapeless'});
-    event.remove({output: /aquaculture:.*_fillet_knife/});
-
     //choclate
     event.replaceInput({}, 'neapolitan:chocolate_bar', 'create:bar_of_chocolate')
     event.remove({id: 'neapolitan:chocolate/chocolate_bar'})
@@ -99,32 +95,17 @@ ServerEvents.recipes(event => {
     event.remove({output: 'berry_good:sweet_berry_basket'})
     event.remove({output: 'berry_good:glow_berry_basket'})
 
-    //architects pallete compat
-    event.remove({id: 'architects_palette:tuff_bricks'})
-    event.remove({id: 'architects_palette:calcite_bricks'})
-    event.remove({id: 'architects_palette:dripstone_bricks'})
-
-    event.replaceInput({output: 'architects_palette:hadaline_tiles'}, 'architects_palette:hadaline', 'architects_palette:hadaline_bricks')
-    event.shaped(
-        'architects_palette:hadaline_bricks',
-        [
-          'DD',
-          'DD',
-        ],
-        {
-            D: 'architects_palette:hadaline_tiles',
-        }
-    ).id('architects_palette:hadaline_bricks_from_tiles');
-
-    //architects palette dupe recipe fix 
-    event.remove({id: 'architects_palette:blasting/nether_brass_ingot_from_nether_brass_blend_blasting'})
-
     //remove leaf pile
     event.remove({output: /autumnity:.*maple_leaf_pile/})
     event.remove({output: /environmental:.*plum_leaf_pile/})
 
-    //remove another furniture stools
-    event.remove({output: /^another_furniture:(?!.*tall_).*_stool$/})
+    //classic pipe extractor tweak
+    event.replaceInput({output: "classicpipes:advanced_copper_pipe"}, "minecraft:netherite_ingot", "#forge:ingots/lead");
+
+    //chisel cc:tweak overlap fix
+    event.replaceInput({output: "chisel_chipped_integration:futura_gray_screen"}, "minecraft:redstone", "minecraft:lapis_lazuli")
+
+    event.remove({mod: "ftbquests", not: {output: "ftbquests:book"}})
 });
 
 MoreJSEvents.villagerTrades((event) => {

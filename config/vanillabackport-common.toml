@@ -15,5 +15,5 @@
 	#Determine if dried ghasts should generate in Nether Fossils
 	generateDriedGhasts = true
 	#Determine if all leash connections should be dropped when using a firework rocket while elytra flying
-	dropLeashConnectionsOnFireworkBoost = true
+	dropLeashConnectionsOnFireworkBoost = false
 

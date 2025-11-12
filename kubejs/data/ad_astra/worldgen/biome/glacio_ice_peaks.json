@@ -1,0 +1,101 @@
+{
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground",
+      "minecraft:canyon"
+    ]
+  },
+  "downfall": 1.0,
+  "effects": {
+    "fog_color": 12638463,
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2.0,
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000
+    },
+    "sky_color": 12638463,
+    "water_color": 4159204,
+    "water_fog_color": 329011
+  },
+  "features": [
+    [],
+    [],
+    [
+      "minecraft:amethyst_geode"
+    ],
+    [],
+    [
+      "minecraft:ice_spike",
+      "minecraft:ice_patch"
+    ],
+    [],
+    [
+      "ad_astra:glacio_ice_shard_ore",
+      "goofsterpack:ore_coal_lower",
+      "goofsterpack:ore_coal_upper",
+      "goofsterpack:ore_copper",
+      "goofsterpack:ore_iron_middle",
+      "goofsterpack:ore_iron_small",
+      "goofsterpack:ore_iron_upper",
+      "goofsterpack:ore_lapis",
+      "goofsterpack:ore_lapis_buried",
+      "goofsterpack:ore_aluminum",
+      "goofsterpack:ore_calorite",
+      "goofsterpack:ore_deep_nickel",
+      "goofsterpack:ore_desh",
+      "goofsterpack:ore_diamond",
+      "goofsterpack:ore_diamond_buried",
+      "goofsterpack:ore_diamond_large",
+      "goofsterpack:ore_emerald",
+      "goofsterpack:ore_etrium",
+      "goofsterpack:ore_fluorite_buried",
+      "goofsterpack:ore_fluorite_normal",
+      "goofsterpack:ore_gold",
+      "goofsterpack:ore_gold_lower",
+      "goofsterpack:ore_lead",
+      "goofsterpack:ore_nickel",
+      "goofsterpack:ore_osmium_middle",
+      "goofsterpack:ore_osmium_small",
+      "goofsterpack:ore_osmium_upper",
+      "goofsterpack:ore_ostrum",
+      "goofsterpack:ore_redstone",
+      "goofsterpack:ore_redstone_lower",
+      "goofsterpack:ore_silver",
+      "goofsterpack:ore_tin_large",
+      "goofsterpack:ore_tin_small",
+      "goofsterpack:ore_uranium_buried",
+      "goofsterpack:ore_uranium_small",
+      "goofsterpack:ore_zinc"
+    ],
+    [],
+    [],
+    [
+      "minecraft:glow_lichen"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ],
+  "has_precipitation": true,
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [
+      {
+        "type": "ad_astra:glacian_ram",
+        "maxCount": 4,
+        "minCount": 2,
+        "weight": 12
+      }
+    ],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  },
+  "temperature": -0.7
+}
