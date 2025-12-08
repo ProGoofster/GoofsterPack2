@@ -2,9 +2,26 @@ ServerEvents.recipes((event) => {
     event.remove({ type: "ad_astra:compressing" })
     event.remove({ type: "ad_astra:alloying" })
     event.replaceOutput({}, Fluid.of('ad_astra:oxygen'), Fluid.of("mekanism:oxygen"));
-    event.remove({ output: "ad_astra:iron_rod"})
+    event.remove({ output: "ad_astra:iron_rod" })
     event.replaceInput({}, "ad_astra:iron_rod", "#forge:rods/iron");
     event.replaceInput({}, "ad_astra:steel_rod", "#forge:rods/steel");
+    event.remove({ output: "ad_astra:wrench" })
+
+    event.remove({ output: "ad_astra:launch_pad"})
+    var ip = "kubejs:incomplete_launch_pad";
+    event.recipes.createSequencedAssembly(
+        "ad_astra:launch_pad",
+        "#forge:storage_blocks/steel",
+        [
+            event.recipes.createPressing(ip, ip),
+            event.recipes.createDeploying(ip, [ip, "#forge:rods/steel"]),
+            event.recipes.createDeploying(ip, [ip, "create:precision_mechanism"]),
+            event.recipes.createDeploying(ip, [ip, "#forge:rods/steel"]),
+            event.recipes.createPressing(ip, ip),
+        ]
+        )
+        .transitionalItem(ip)
+        .loops(1);
 
     event.custom({
         type: "ad_astra:oxygen_loading",
@@ -56,7 +73,7 @@ ServerEvents.recipes((event) => {
     ], {
         P: '#forge:plates/desh',
         B: '#forge:storage_blocks/desh',
-        D: 'immersiveengineering:light_engineering',
+        D: 'immersiveengineering:heavy_engineering',
         C: 'create:controls',
         S: '#create:seats',
         A: 'immersiveengineering:component_electronic',
@@ -116,8 +133,6 @@ ServerEvents.recipes((event) => {
         V: 'ad_astra:photovoltaic_vesnium_cell'
     }).id('ad_astra:nasa_workbench/tier_4_rocket_from_nasa_workbench')
 
-    event.recipes.create.deploying('ad_astra:photovoltaic_vesnium_cell', ['mekanism:solar_panel', 'ad_astra:calorite_tank'])
-
     event.recipes.create.deploying('ad_astra:steel_tank', ['minecraft:bucket', '#forge:plates/steel']).id('ad_astra:steel_tank')
     event.recipes.create.deploying('ad_astra:desh_tank', ['minecraft:bucket', 'ad_astra:desh_plate']).id('ad_astra:desh_tank')
     event.recipes.create.deploying('ad_astra:ostrum_tank', ['minecraft:bucket', 'ad_astra:ostrum_plate']).id('ad_astra:ostrum_tank')
@@ -127,7 +142,23 @@ ServerEvents.recipes((event) => {
 
     event.remove({ id: "conversion:fuel_from_oil" })
 
-    event.recipes.immersiveengineering.arc_furnace("kubejs:rocket_fuel_catalyst", "immersiveengineering:ingot_hop_graphite", ["#forge:dusts/iron", "#forge:dusts/aluminum"])
+    event.recipes.immersiveengineering.arc_furnace("kubejs:rocket_fuel_catalyst", "immersiveengineering:ingot_hop_graphite", ["4x #forge:dusts/lead", "4x #forge:dusts/aluminum"])
+
+    event.custom({
+        type: "immersiveengineering:refinery",
+        catalyst: {
+            item: "kubejs:rocket_fuel_catalyst"
+        },
+        energy: 80,
+        input0: {
+            amount: 100,
+            tag: "forge:biodiesel"
+        },
+        result: {
+            amount: 100,
+            fluid: "kubejs:infused_biodiesel"
+        }
+    })
 
     let fuelArr = [
         ["immersiveengineering:creosote", "kubejs:rocket_fuel_1", "forge:creosote"],
@@ -156,7 +187,7 @@ ServerEvents.recipes((event) => {
             type: "immersiveengineering:refinery",
             energy: 120,
             input0: {
-                amount: 8,
+                amount: 40,
                 tag: arr[2]
             },
             result: {
@@ -170,4 +201,47 @@ ServerEvents.recipes((event) => {
     event.recipes.create.mixing(Fluid.of('kubejs:rocket_cryo_fuel_2', 250), [Fluid.of('kubejs:rocket_fuel_2', 250), Fluid.of('ad_astra:cryo_fuel', 250)]);
     event.recipes.create.mixing(Fluid.of('kubejs:rocket_cryo_fuel_3', 250), [Fluid.of('kubejs:rocket_fuel_3', 250), Fluid.of('ad_astra:cryo_fuel', 250)]);
     event.recipes.create.mixing(Fluid.of('kubejs:rocket_cryo_fuel_4', 250), [Fluid.of('kubejs:rocket_fuel_4', 250), Fluid.of('ad_astra:cryo_fuel', 250)]);
+
+    event.shaped(
+        'ad_astra:photovoltaic_vesnium_cell',
+        [
+            'C',
+            'S',
+            'C'
+        ],
+        {
+            C: "#forge:plates/calorite",
+            S: 'mekanismgenerators:solar_panel'
+        }
+    );
+
+    // Etrium ingot <-> nugget <-> block conversions
+    event.shapeless('9x ad_astra:etrium_nugget', 'ad_astra:etrium_ingot');
+    event.shapeless('9x ad_astra:etrium_ingot', 'ad_astra:etrium_block');
+    event.shaped('ad_astra:etrium_block', [
+        'EEE',
+        'EEE',
+        'EEE'
+    ], {
+        E: 'ad_astra:etrium_ingot'
+    });
+    event.shaped('ad_astra:etrium_ingot', [
+        'EEE',
+        'EEE',
+        'EEE'
+    ], {
+        E: 'ad_astra:etrium_nugget'
+    });
+
+    event.remove({output: "ae2:sky_dust", input: "ad_astra:sky_stone"})
+    event.remove({output: "ae2:smooth_sky_stone_block", input: "ad_astra:sky_stone"})
+
+    event.remove({output: ["ad_astra_giselle_addon:gravity_normalizer", "ad_astra_giselle_addon:automation_nasa_workbench"]})
+
+    event.remove({output: "ad_astra:steel_cable"})
+    event.remove({output: "ad_astra:desh_cable"})
+    event.remove({output: "ad_astra:cable_duct"})
+    event.remove({output: "ad_astra:sky_stone"})
+    
+    event.remove({id: "ad_astra:refining/fuel_from_refining_oil"})
 })

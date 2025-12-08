@@ -1,0 +1,15 @@
+{
+  "requires": [
+    "neapolitan"
+  ],
+  "objectives": [
+    "_all_objs",
+    "treasures",
+    "resources",
+    "neapolitan_obj",
+    "neapolitan_any"
+  ],
+  "rewards": [
+    "_all_rews"
+  ]
+}

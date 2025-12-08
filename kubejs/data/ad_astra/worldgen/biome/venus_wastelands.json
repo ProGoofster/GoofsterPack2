@@ -45,7 +45,8 @@
       "goofsterpack:ore_tin_large",
       "goofsterpack:ore_tin_small",
       "goofsterpack:ore_uranium_buried",
-      "goofsterpack:ore_uranium_small"
+      "goofsterpack:ore_uranium_small",
+      "kubejs:ore_salt"
     ],
     [
       "minecraft:spring_lava"

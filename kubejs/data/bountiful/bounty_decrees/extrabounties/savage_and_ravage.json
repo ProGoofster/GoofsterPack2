@@ -1,0 +1,15 @@
+{
+  "requires": [
+    "savage_and_ravage"
+  ],
+  "objectives": [
+    "_all_objs",
+    "treasures",
+    "resources",
+    "savage_and_ravage_obj",
+    "savage_and_ravage_any"
+  ],
+  "rewards": [
+    "_all_rews"
+  ]
+}

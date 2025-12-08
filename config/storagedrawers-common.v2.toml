@@ -124,11 +124,11 @@
 		# DROP: Drawer drops items into the world, up to the dropStackLimit value.  Stored items over that limit are voided.
 		# VOID: Drawer voids all items when dropped.
 		#Allowed Values: KEEP, DROP, VOID
-		dropMode = "KEEP"
+		dropMode = "DROP"
 		# 
 		# If dropMode is set to DROP, this is the maximum number of stacks that can be spilled into the world
 		# from the entire block.  By default, this is set to the amount a vanilla chest could drop.
-		dropStackLimit = 32
+		dropStackLimit = 40960
 
 # Configuration around the controller and drawer networks.
 [Controller]
@@ -162,15 +162,15 @@
 
 		[Upgrades.StorageTiers.Emerald]
 			enableUpgrade = true
-			storageMultiplier = 64
+			storageMultiplier = 32
 
 		[Upgrades.StorageTiers.Diamond]
 			enableUpgrade = true
-			storageMultiplier = 256
+			storageMultiplier = 64
 
 		[Upgrades.StorageTiers.Netherite]
 			enableUpgrade = true
-			storageMultiplier = 2048
+			storageMultiplier = 128
 
 	# Allows same-item slots to balance out their amounts when items are added or removed from a slot.
 	# Works across networks when acting through a controller.
@@ -332,7 +332,7 @@
 		enable = true
 		# 
 		# Show labels by default on newly placed drawers.
-		showDefault = false
+		showDefault = true
 
 	# Concealment keys are used to show or hide the item labels on the face of drawers.
 	# The primary use of this key is for performance by disabling the more expensive dynamic rendering.

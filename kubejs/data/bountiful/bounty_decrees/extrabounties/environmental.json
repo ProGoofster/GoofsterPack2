@@ -1,0 +1,15 @@
+{
+  "requires": [
+    "environmental"
+  ],
+  "objectives": [
+    "_all_objs",
+    "treasures",
+    "resources",
+    "environmental_obj",
+    "environmental_any"
+  ],
+  "rewards": [
+    "_all_rews"
+  ]
+}

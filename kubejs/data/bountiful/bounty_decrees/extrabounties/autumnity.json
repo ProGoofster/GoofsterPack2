@@ -1,0 +1,14 @@
+{
+  "requires": [
+    "autumnity"
+  ],
+  "objectives": [
+    "_all_objs",
+    "treasures",
+    "resources",
+    "autumnity_any"
+  ],
+  "rewards": [
+    "_all_rews"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "requires": [
+    "dice"
+  ],
+  "objectives": [
+    "_all_objs",
+    "treasures",
+    "resources",
+    "dice_any"
+  ],
+  "rewards": [
+    "_all_rews"
+  ]
+}

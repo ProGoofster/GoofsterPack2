@@ -27,13 +27,13 @@
 		[types.wood_type.autumnity]
 			maple = true
 
-		[types.wood_type.vanillabackport]
-			pale_oak = true
-
 		[types.wood_type.ad_astra]
 			aeronos = true
 			strophar = true
 			glacian = true
+
+		[types.wood_type.minecraft]
+			pale_oak = true
 
 	[types.leaves_type]
 
@@ -81,11 +81,11 @@
 			currant = true
 			grimwood = true
 
-		[types.leaves_type.vanillabackport]
-			pale_oak = true
-
 		[types.leaves_type.ad_astra]
 			glacian = true
+
+		[types.leaves_type.minecraft]
+			pale_oak = true
 
 	[types.cake]
 
@@ -148,7 +148,7 @@
 		[entries.wood_type.refurbished_furniture]
 			storage_cabinet = true
 			desk = true
-			cutting_board = true
+			cutting_board = false
 			lattice_fence = true
 			basin = true
 			kitchen_drawer = true

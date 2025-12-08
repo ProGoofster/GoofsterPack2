@@ -37,77 +37,46 @@ StartupEvents.registry("block", (event) => {
 });
 
 StartupEvents.registry("item", (event) => {
-  event.create("incomplete_logic_processor", "create:sequenced_assembly");
-  event.create("incomplete_calculation_processor", "create:sequenced_assembly");
-  event.create("incomplete_engineering_processor", "create:sequenced_assembly");
-
-  event
-    .create("netherite_fluix_compound")
-    .displayName("Netherite-Fluix Compound");
-
-  event.create("energized_alloy").glow(true);
-
-  event
-    .create("incomplete_unfused_panel", "create:sequenced_assembly")
-    .displayName("Incomplete Mysterious Panel")
-    .glow(true);
-
-  event
-    .create("unfused_calculaton_panel")
-    .displayName("Mysterious Panel (Calculation)")
-    .glow(true);
-  event
-    .create("unfused_engineering_panel")
-    .displayName("Mysterious Panel (Engineering)")
-    .glow(true);
-  event
-    .create("unfused_logic_panel")
-    .displayName("Mysterious Panel (Logic)")
-    .glow(true);
-  event
-    .create("unfused_silicon_panel")
-    .displayName("Mysterious Panel (Silicon)")
-    .glow(true);
-
-  event.create("kubejs:crushed_raw_desh").tag("create:crushed_raw_materials");
+event.create("kubejs:crushed_raw_desh").tag("create:crushed_raw_materials");
   event.create("kubejs:crushed_raw_ostrum").tag("create:crushed_raw_materials");
   event.create("kubejs:crushed_raw_calorite").tag("create:crushed_raw_materials");
   event.create("crushed_raw_etrium").tag("create:crushed_raw_materials");
   event.create("enriched_etrium").tag("mekanism:enriched").tag("mekanism:enriched/etrium");
   event.create("fluorite_enriched_diamond").tag("mekanism:enriched").tag("mekanism:enriched/fluorite_diamond");
+  event.create("pipe_frame")
 
   event
     .create("dust_desh")
-    .displayName("Desh Grit")
+    .displayName("Desh Dust")
     .tag(`forge:dusts`)
     .tag(`forge:dusts/desh`);
   event
     .create("dust_ostrum")
-    .displayName("Ostrum Grit")
+    .displayName("Ostrum Dust")
     .tag(`forge:dusts`)
     .tag(`forge:dusts/ostrum`);
   event
     .create("dust_calorite")
-    .displayName("Calorite Grit")
+    .displayName("Calorite Dust")
     .tag(`forge:dusts`)
     .tag(`forge:dusts/calorite`);
   event
     .create("dust_etrium")
-    .displayName("Etrium Grit")
+    .displayName("Etrium Dust")
     .tag(`forge:dusts`)
     .tag(`forge:dusts/etrium`);
   event
     .create("dust_zinc")
-    .displayName("Zinc Grit")
+    .displayName("Zinc Dust")
     .tag(`forge:dusts`)
     .tag(`forge:dusts/zinc`);
   event
     .create("dust_brass")
-    .displayName("Brass Grit")
+    .displayName("Brass Dust")
     .tag(`forge:dusts`)
     .tag(`forge:dusts/brass`);
 
-  event.create("rocket_fuel_catalyst")
+  event.create("rocket_fuel_catalyst").displayName("Biodisel Infusion Catalyst")
 
   const mekItems = ['clump', 'crystal', 'dirty_dust', 'shard']
   function mekStack(name, color) {
@@ -124,17 +93,31 @@ StartupEvents.registry("item", (event) => {
   mekStackAdditions.forEach(entry => {
     mekStack(entry.material, entry.color)
   })
+
+
+  event.create("incomplete_logic_processor", "create:sequenced_assembly");
+  event.create("incomplete_calculation_processor", "create:sequenced_assembly");
+  event.create("incomplete_engineering_processor", "create:sequenced_assembly");
+
+  event.create("incomplete_launch_pad", "create:sequenced_assembly").parentModel("ad_astra:item/launch_pad");
 });
 
 StartupEvents.registry("fluid", (event) => {
   event
     .create("chloroethane")
     .displayName("Liquid Chloroethane")
+    .thinTexture(0xa4514b)
+    .bucketColor(0xa4514b)
 
   event
     .create("polonium_fusion_fuel")
     .displayName("Liquid Polonium-Enhanced D-T Compound")
+    .thinTexture(0x4690BE)
+    .bucketColor(0x4690BE)
+
   event.create("infused_biodiesel")
+    .thinTexture(0xD4A017)
+    .bucketColor(0xD4A017)
 
   event
     .create("rocket_fuel_1")
@@ -196,13 +179,13 @@ StartupEvents.registry("fluid", (event) => {
 })
 
 StartupEvents.registry('mekanism:gas', event => {
-  event.createCustom('chloroethane', () => $Gas($GasBuilder.builder().tint(Color.of("#ffffff").getRgbJS())))
-  event.createCustom('polonium_fusion_fuel', () => $Gas($GasBuilder.builder().tint(Color.of("#ffffff").getRgbJS()))).displayName("Polonium-Enhanced D-T Compound")
+  event.createCustom('chloroethane', () => $Gas($GasBuilder.builder().tint(Color.of("#a4514b").getRgbJS())))
+  event.createCustom('polonium_fusion_fuel', () => $Gas($GasBuilder.builder().tint(Color.of("#4690be").getRgbJS()))).displayName("Polonium-Enhanced D-T Compound")
 })
 
 StartupEvents.registry('mekanism:infuse_type', event => {
-  event.createCustom('etrium', () => $InfuseType($InfuseTypeBuilder.builder().tint(Color.of("#ffffff").getRgbJS())))
-  event.createCustom('fluorite_enriched_diamond', () => $InfuseType($InfuseTypeBuilder.builder().tint(Color.of("#ffffff").getRgbJS())))
+  event.createCustom('etrium', () => $InfuseType($InfuseTypeBuilder.builder().tint(Color.of("#82dbbb").getRgbJS())))
+  event.createCustom('fluorite_enriched_diamond', () => $InfuseType($InfuseTypeBuilder.builder().tint(Color.of("#95f1e2").getRgbJS())))
 })
 
 StartupEvents.registry('mekanism:slurry', event => {

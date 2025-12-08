@@ -513,8 +513,6 @@ ServerEvents.recipes((event) => {
     .milling("atmospheric:red_arid_sand", "#forge:sandstone/red_arid_sandstone")
     .id("create:milling/red_arid_sandstone");
 
-  event.replaceOutput({}, "createaddition:zinc_sheet", "createdeco:zinc_sheet");
-
   //rework!!!
   //event.recipes.create.splashing([Item.of('ad_astra:desh_nugget').withChance(0.04), Item.of('immersiveengineering:nugget_silver').withChance(0.04), Item.of('immersiveengineering:nugget_lead').withChance(0.04)], 'ad_astra:moon_sand').id('create:splashing/moon_sand');
   //event.recipes.create.splashing([Item.of('ad_astra:ostrum_nugget').withChance(0.04), Item.of('immersiveengineering:nugget_nickel').withChance(0.04), Item.of('immersiveengineering:nugget_aluminum').withChance(0.04)], 'ad_astra:mars_sand').id('create:splashing/mars_sand');
@@ -539,4 +537,123 @@ ServerEvents.recipes((event) => {
       },
     ],
   });
+
+  event.shaped(
+    "createaddition:barbed_wire",
+    [
+      ' W ',
+      'W W',
+      ' W '
+    ],
+    {
+      W: "#forge:wires/steel"
+    }
+  ).id("createaddition:crafting/barbed_wire");
+
+  event.shaped(
+    "createaddition:modular_accumulator",
+    [
+      ' R ',
+      'CBC',
+      ' W '
+    ],
+    {
+      W: "#forge:wires/copper",
+      R: "#forge:rods/copper",
+      C: "createaddition:capacitor",
+      B: "create:brass_casing"
+    }
+  ).id("createaddition:crafting/modular_accumulator_gold");
+
+  event.remove({ id: "create_factory_logistics:network_link_qualification_create_factory_abstractions_empty" })
+
+  event.recipes.create.milling("mekanism:dust_emerald", "minecraft:emerald")
+  event.recipes.create.milling("mekanism:dust_quartz", "minecraft:quartz")
+  event.recipes.create.milling("mekanism:dust_lapis_lazuli", "minecraft:lapis_lazuli")
+  event.recipes.create.milling("mekanism:dust_fluorite", "mekanism:fluorite_gem")
+
+  event.custom({
+    type: "create:crushing",
+    ingredients: [
+      {
+        item: "goofsterpack:glacio_diamond_ore"
+      }
+    ],
+    processingTime: 350,
+    results: [
+      {
+        item: "minecraft:diamond"
+      },
+      {
+        chance: 0.75,
+        item: "minecraft:diamond"
+      },
+      {
+        chance: 0.75,
+        item: "create:experience_nugget"
+      },
+      {
+        chance: 0.125,
+        item: "ad_astra:glacio_cobblestone"
+      }
+    ]
+  })
+
+  event.custom({
+    type: "create:crushing",
+    ingredients: [
+      {
+        item: "goofsterpack:glacio_emerald_ore"
+      }
+    ],
+    processingTime: 350,
+    results: [
+      {
+        item: "minecraft:emerald"
+      },
+      {
+        chance: 0.75,
+        item: "minecraft:emerald"
+      },
+      {
+        chance: 0.75,
+        item: "create:experience_nugget"
+      },
+      {
+        chance: 0.125,
+        item: "ad_astra:glacio_cobblestone"
+      }
+    ]
+  })
+
+  event.custom({
+    type: "create:crushing",
+    ingredients: [
+      {
+        item: "goofsterpack:glacio_redstone_ore"
+      }
+    ],
+    processingTime: 250,
+    results: [
+      {
+        count: 6,
+        item: "minecraft:redstone"
+      },
+      {
+        chance: 0.5,
+        item: "minecraft:redstone"
+      },
+      {
+        chance: 0.75,
+        item: "create:experience_nugget"
+      },
+      {
+        chance: 0.125,
+        item: "ad_astra:glacio_cobblestone"
+      }
+    ]
+  })
+
+  event.recipes.create.mixing(Fluid.of("kubejs:rocket_fuel_1", 4), Fluid.of("immersiveengineering:creosote", 20)).heated()
+
 });

@@ -1,0 +1,9 @@
+{
+  "objectives": [
+    "inventor_objs",
+    "_all_objs"
+  ],
+  "rewards": [
+    "_all_rews"
+  ]
+}

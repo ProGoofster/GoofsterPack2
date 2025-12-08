@@ -1,0 +1,80 @@
+{
+	"content": {
+		"all_rew_spur": {
+			"type": "item",
+			"content": "numismatics:spur",
+			"amount": {
+				"min": 1,
+				"max": 64
+			},
+			"unitWorth": 100,
+			"weightMult":  2.21
+		},
+		"all_rew_bevel": {
+			"type": "item",
+			"content": "numismatics:bevel",
+			"rarity": "COMMON",
+			"amount": {
+				"min": 1,
+				"max": 32
+			},
+			"unitWorth": 800,
+			"weightMult": 0.90
+		},
+		"all_rew_sprocket": {
+			"type": "item",
+			"content": "numismatics:sprocket",
+			"rarity": "UNCOMMON",
+			"amount": {
+				"min": 1,
+				"max": 16
+			},
+			"unitWorth": 1600,
+			"weightMult":  0.74
+		},
+		"all_rew_cog": {
+			"type": "item",
+			"content": "numismatics:cog",
+			"rarity": "RARE",
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"unitWorth": 6400,
+			"weightMult": 0.74
+		},
+		"all_rew_decree": {
+			"type": "item",
+			"content": "bountiful:decree",
+			"rarity": "UNCOMMON",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+			"unitWorth": 4000,
+			"weightMult": 0.82
+		},
+		"all_rew_crown": {
+			"type": "item",
+			"content": "numismatics:crown",
+			"rarity": "EPIC",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+			"unitWorth": 32000,
+			"weightMult": 0.12
+		},
+		"all_rew_sun": {
+			"type": "item",
+			"content": "numismatics:sun",
+			"rarity": "LEGENDARY",
+			"amount": {
+				"min": 1,
+				"max": 1
+			},
+			"unitWorth": 64000,
+			"weightMult": 0.60
+		}
+	}
+}

@@ -90,19 +90,6 @@ ServerEvents.tags("item", (event) => {
 
   event.add("ae2:can_remove_color", "supplementaries:soap");
 
-  event.add(
-    "forge:plates",
-    "createdeco:zinc_sheet",
-    "createdeco:andesite_sheet",
-    "createdeco:netherite_sheet",
-    "createdeco:industrial_iron_sheet"
-  );
-  event.add("forge:plates/zinc", "createdeco:zinc_sheet");
-  event.add("forge:plates/andesite", "createdeco:andesite_sheet");
-  event.add("forge:plates/netherite", "createdeco:netherite_sheet");
-  event.add("forge:plates/industrial_iron", "createdeco:industrial_iron_sheet");
-
-  event.removeAllTagsFrom("createaddition:zinc_sheet");
 
   event.removeAll("chisel_chipped_integration:metals/aluminum_blocks");
   event.removeAll("chisel_chipped_integration:metals/bronze_blocks");
@@ -150,6 +137,24 @@ ServerEvents.tags("item", (event) => {
   event.removeAllTagsFrom(/createaddition:electrum.*/)
   event.removeAllTagsFrom("createaddition:copper_wire", "createaddition:iron_wire", "createaddition:gold_wire", "createaddition:electrum_wire", "createaddition:iron_rod", "createaddition:gold_rod", "createaddition:brass_rod", "createaddition:copper_rod")
   event.removeAllTagsFrom("immersiveengineering:nugget_copper")
+
+  event.add("supplementaries:throwable_bricks", "minecraft:resin_brick")
+
+  event.removeAllTagsFrom("refurbished_furniture:knife")
+
+  event.add("forge:cheese", ['ad_astra:cheese', 'brewinandchewin:flaxen_cheese_wedge'])
+
+  event.removeAllTagsFrom("mekanism:sawdust")
+
+  event.removeAllTagsFrom(["mekanism:dust_iron", "mekanism:dust_gold", "mekanism:dust_copper"])
+
+  event.removeAllTagsFrom("immersiveengineering:dust_sulfur")
+
+  event.remove("forge:dyes/yellow", "mekanism:dust_sulfur")
+
+  event.removeAllTagsFrom("minecraft:turtle_egg")
+
+  event.add("supplementaries:wattle_and_daubs", "#supplementaries:wattle_and_daub")
 });
 
 ServerEvents.tags("fluid", (event) => {
@@ -171,6 +176,11 @@ ServerEvents.tags("fluid", (event) => {
   event.removeAll("ad_astra:tier_2_rocket_fuel");
   event.removeAll("ad_astra:tier_3_rocket_fuel");
   event.removeAll("ad_astra:tier_4_rocket_fuel");
+
+  event.removeAllTagsFrom("createaddition:bioethanol");
+  event.removeAllTagsFrom("createaddition:seed_oil");
+  event.removeAllTagsFrom("createaddition:flowing_bioethanol");
+  event.removeAllTagsFrom("createaddition:flowing_seed_oil");
 
   const tierFuels = [
     [
@@ -229,13 +239,6 @@ ServerEvents.tags("block", (event) => {
     "create:fan_processing_catalysts/smoking",
     "createaddition:liquid_blaze_burner"
   );
-
-  //make fire pit work w/fan
-  event.add(
-    "create:fan_processing_catalysts/smoking",
-    "supplementaries:fire_pit"
-  );
-  event.add("create:passive_boiler_heaters", "supplementaries:fire_pit");
 
   event.add('create:non_movable', 'ae2:flawless_budding_quartz');
 

@@ -25,7 +25,7 @@
                             "function": "minecraft:looting_enchant"
                         }
                     ],
-                    "name": "immersiveengineering:dust_sulfur"
+                    "name": "mekanism:dust_sulfur"
                 }
             ],
             "rolls": 1.0

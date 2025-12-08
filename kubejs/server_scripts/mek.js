@@ -1,4 +1,8 @@
 ServerEvents.recipes((event) => {
+    //remove op
+    event.remove({ output: "mekanism:module_gravitational_modulating_unit" })
+    event.remove({ output: "mekanism:module_teleportation_unit" })
+    event.remove({ output: "mekanism:cardboard_box" })
     //bone to skull
     //event.recipes.mekanism.dissolution() //bone + sufuric to calcium slurry
     //event.recipes.mekanism.reaction() //calcium slurry to skull
@@ -72,7 +76,7 @@ ServerEvents.recipes((event) => {
     event.recipes.mekanism.metallurgic_infusing("mekanism:alloy_reinforced", "mekanism:alloy_infused", { infuse_type: "kubejs:fluorite_enriched_diamond", amount: 20 })
         .id("mekanism:metallurgic_infusing/alloy/reinforced");
 
-    event.recipes.mekanism.enriching("kubejs:enriched_etrium", "#forge:ingots/etrium")
+    event.recipes.mekanism.enriching("kubejs:enriched_etrium", "#forge:dusts/etrium")
     event.custom({
         type: "mekanism:infusion_conversion",
         input: {
@@ -82,6 +86,19 @@ ServerEvents.recipes((event) => {
         },
         output: {
             amount: 80,
+            infuse_type: "kubejs:etrium"
+        }
+    })
+
+    event.custom({
+        type: "mekanism:infusion_conversion",
+        input: {
+            ingredient: {
+                tag: "forge:dusts/etrium"
+            }
+        },
+        output: {
+            amount: 10,
             infuse_type: "kubejs:etrium"
         }
     })
@@ -99,4 +116,89 @@ ServerEvents.recipes((event) => {
             infuse_type: "kubejs:fluorite_enriched_diamond"
         }
     })
+
+    event.remove({ output: "mekanism:oredictionificator" })
+
+    event.recipes.create.mixing("4x mekanism:ingot_bronze", ["3x #forge:ingots/copper", "#forge:ingots/tin"]).heated();
+
+    //nucleosynth
+    event.remove({ type: "mekanism:nucleosynthesizing", output: "minecraft:diamond" })
+    event.remove({ type: "mekanism:nucleosynthesizing", output: "minecraft:dragon_egg" })
+    event.remove({ type: "mekanism:nucleosynthesizing", output: "minecraft:enchanted_golden_apple" })
+
+    //progress gas & fluid (rocket fuel)
+    event.custom({
+        type: "mekanism:rotary",
+        fluidInput: {
+            amount: 1,
+            fluid: "kubejs:chloroethane"
+        },
+        fluidOutput: {
+            amount: 1,
+            fluid: "kubejs:chloroethane"
+        },
+        gasInput: {
+            amount: 1,
+            gas: "kubejs:chloroethane"
+        },
+        gasOutput: {
+            amount: 1,
+            gas: "kubejs:chloroethane"
+        }
+    })
+
+    event.custom({
+        type: "mekanism:rotary",
+        fluidInput: {
+            amount: 1,
+            fluid: "kubejs:polonium_fusion_fuel"
+        },
+        fluidOutput: {
+            amount: 1,
+            fluid: "kubejs:polonium_fusion_fuel"
+        },
+        gasInput: {
+            amount: 1,
+            gas: "kubejs:polonium_fusion_fuel"
+        },
+        gasOutput: {
+            amount: 1,
+            gas: "kubejs:polonium_fusion_fuel"
+        }
+    })
+
+    event.recipes.mekanism.chemical_infusing("kubejs:chloroethane", "mekanism:chlorine", "mekanism:ethene")
+    event.recipes.mekanism.chemical_infusing("kubejs:polonium_fusion_fuel", "mekanismgenerators:fusion_fuel", "mekanism:polonium")
+
+    event.replaceInput({
+        output: ["mekanism:meka_tool", "mekanism:mekasuit_bodyarmor", "mekanism:mekasuit_boots",
+            "mekanism:mekasuit_helmet", "mekanism:mekasuit_pants"]
+    }, "mekanism:basic_induction_cell", "mekanism:pellet_antimatter")
+
+    event.replaceInput({
+        output: ["mekanism:basic_universal_cable", "mekanism:basic_thermodynamic_conductor", "mekanism:basic_mechanical_pipe", "mekanism:basic_pressurized_tube", "mekanism:basic_logistical_transporter"]
+    }, "#forge:ingots/steel", "#forge:ingots/osmium")
+
+    event.shaped(
+        "mekanism:atomic_disassembler",
+        [
+            'ITI',
+            'ICI',
+            ' E '
+        ],
+        {
+            I: "mekanism:alloy_infused",
+            T: "mekanism:energy_tablet",
+            C: 'mekanism:elite_control_circuit',
+            E: 'mekanism:alloy_reinforced'
+        }
+    ).id("mekanism:atomic_disassembler");
+
+    event.recipes.mekanism.crushing("2x create:cinder_flour", "minecraft:netherrack")
+    event.recipes.mekanism.crushing("immersiveengineering:dust_coke", "immersiveengineering:coal_coke")
+    event.recipes.mekanism.crushing("9x immersiveengineering:dust_coke", "immersiveengineering:coke")
+    event.recipes.mekanism.crushing("ae2:ender_dust", "minecraft:ender_pearl")
+
+
+    event.recipes.mekanism.crushing("4x ad_astra:ice_shard", "#forge:ores/ice_shard")
 })

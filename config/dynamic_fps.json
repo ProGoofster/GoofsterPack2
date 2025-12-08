@@ -1,0 +1,9 @@
+{
+  "states": {
+    "invisible": {
+      "volume_multipliers": {
+        "master": 0.25
+      }
+    }
+  }
+}

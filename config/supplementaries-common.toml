@@ -223,14 +223,14 @@
 			break_radius = 1.1
 
 	[functional.lumisene]
-		enabled = true
+		enabled = false
 		#Gives the flammable effext also when merely stepping on lumisene. Turning this off if you think effects are not something that should be applied like that and just by drinking it.
 		#Range: 0 ~ 10000
 		flammable_from_lumisene_block_duration = 50
 
 		[functional.lumisene.lumisene_bottle]
 			#Enables lumisene bottles and the flammable effect and lumisene bottles. Turn off if you think its over the top and doesnt match with existing effects
-			enabled = true
+			enabled = false
 			#Duration of the flammable effect when you drink a lumisene bottle
 			#Range: 0 ~ 10000
 			flammable_duration = 300
@@ -258,7 +258,7 @@
 	candle_holder = true
 	bunting = true
 	fine_wood = true
-	fire_pit = true
+	fire_pit = false
 	wicker_fence = true
 
 	[building.daub]
@@ -528,7 +528,7 @@
 #General settings
 [general]
 	#Enable Creative Tab
-	creative_tab = false
+	creative_tab = true
 	#Set to false to disable custom dispenser behaviors (i.e: filling jars) if for some reason they are causing trouble
 	dispensers = true
 	#Creates a creative tab full of filled jars

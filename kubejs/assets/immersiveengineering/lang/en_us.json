@@ -20,9 +20,19 @@
   "block.immersiveengineering.stairs_alu_scaffolding_grate_top": "Aluminum Scaffolding Stairs",
   "block.immersiveengineering.stairs_alu_scaffolding_wooden_top": "Aluminum Scaffolding Stairs",
   "item.immersiveengineering.ingot_aluminum": "Aluminum Ingot",
-  "item.immersiveengineering.dust_aluminum": "Aluminum Grit",
+  "item.immersiveengineering.dust_aluminum": "Aluminum Dust",
   "item.immersiveengineering.raw_aluminum": "Raw Aluminum",
   "item.immersiveengineering.nugget_aluminum": "Aluminum Nugget",
   "item.immersiveengineering.plate_aluminum": "Aluminum Plate",
-  "item.immersiveengineering.wire_aluminum": "Aluminum Wire"
+  "item.immersiveengineering.wire_aluminum": "Aluminum Wire",
+  "item.immersiveengineering.dust_copper": "Copper Dust",
+  "item.immersiveengineering.dust_lead": "Lead Dust",
+  "item.immersiveengineering.dust_silver": "Silver Dust",
+  "item.immersiveengineering.dust_nickel": "Nickel Dust",
+  "item.immersiveengineering.dust_uranium": "Uranium Dust",
+  "item.immersiveengineering.dust_constantan": "Constantan Dust",
+  "item.immersiveengineering.dust_electrum": "Electrum Dust",
+  "item.immersiveengineering.dust_steel": "Steel Dust",
+  "item.immersiveengineering.dust_iron": "Iron Dust",
+  "item.immersiveengineering.dust_gold": "Gold Dust"
 }

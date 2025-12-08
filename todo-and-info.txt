@@ -1,34 +1,80 @@
-Mods for next Update:
-    -Create Steam and Rails
-        -or: Create: Chimneys
-    -Create Stock Bridge
-    -Create: Fishing Bobber Detector
-    -Create: CC Total Logistics
-    -Create: Sound of Steam
-    -Create Factory Logistics
-    -Create: Escalated
-    -Create: Advanced Logistics (for redstone radio, turn off Wormhole)
-    -compact machines / hyperbox
-        -test for worldborder, chunk loading, ect
-    -Mekanism
-    -Ad astra
-    -Integrated Dynamics
-    -industrial foregoing??
-    -botania??
-    -building gadgets??
-    -modular routers??
+    Before upload:
+        setup server
+        test x-ray snitch
+    
 
-To remove for next server:
-    chipped + addons 
-    another furnature (replaced by cfm)
-    aquaculture
-    replace enchantment industry version
+Update bits:
+    universal create wrench
+        IE blocks
+        Mek blocks
+        config mek pipes
+        picks up to inv
+
+    nerf jet suit
+
+    special log compat with mek + ie
+
+    remove backpack injects (bc emi)
+
+    more creative (heh) ad astra recipes
+
+    Ore automation
+    next tier recipes for hard processes
+        Ie <- create
+
+        mekanism <- IE & create
+
+        AE2 <- mekanims & IE & create
+
+    IE
+        make loot bags craftable from progression items
+        make fluids makable by mek
+
+
+
+
+Server engagment plans:
+    Public works projects:
+        paths & path decoration
+        build infrastructure between major locations
+        nether highway
+        enchanted library
+
+    Events:
+        "movie" showings
+        open mic
+        cross country horse race
+        building project event (chungusboro style)
+            Christmas town
+            slum town
+        Tower challenge (rigged for stone)
+            reward
+
+    encouraged mindset:
+        contribute to the community
+        try something new
+        build outside your comfort zone
+        plan big 
+        have multiple projects (across the world)
+        make shops!
+        plan your own events
+        do roleplay/server lore
+
+    my plans:
+        proto builds
+            Kino cinema <- Owen style outdoor theater
+            Socialism Center <- public vault + beds & workshop
+            Enchantorium <- Villager Depot + Skeletron XP Tower
+        Central generator + Ae2, IE wire across island
+        Shops:
+            Stoneworks
+
 
 Design princibles:
     -multiple ways to craft important items
     -if something was really hard and tedious before, the next tier should simplify it
     -everything should be automatable
-    -ores can be made from air 
+    -ores can be made from nothing 
         -every tier can upgrade ore automation
     -simplify
         -recipes should be complicated, yet natural
@@ -60,7 +106,6 @@ progression
         teleporter
         ultimate tier
         refined obsidian with "etrium" found on glacio in raw form, must be processed
-        Integrated Dynamics trees, common
         every type of ore
         wither skull recipe
 
@@ -73,115 +118,6 @@ progression
         fuel refining should take A LOT of raw resources, to the point you need to automate it
         rockets should also take a lot of resources, and be made in create crafters - look at that one modpack dejojo played
         making the new fuel + rocket should involve processes from the tiers before, and more than it did to get to the first planet
-
-    Need teleportation core:
-        advanced laser connector
-compat
-    coal + charcoal to dust w/other crushers
-    charcoal block fix
-
-Small mods to integrate:
-    Nirvana
-    Crayfish Furnature
-        -replace frying pan recipes with farmers delight skillet
-        -remove cutting board
-    mekanism covers
-    me infinity cells
-    laser io 
-    hyperbox
-        -worldborders per dimension
-    Entangled
-        -teleportation core
-    dice
-    chalk
-    sound of steam
-    hypertubes
-    extra gauges
-    Escalated
-    construction wands
-    create stock bridge
-    create factory Logistics
-    Oculus
-    chunk loader
-        -gate w/ spaceores
-
-Large mods to integrate
-    integrated Dynamics
-    FTB Quests
-    Immersive
-        -sawmill
-    Mekanism
-        -sawmill
-    Ad Astra
-        -gravity normalizer (giselle) overhaul
-            -retexture, recipe to be upgrade
-    Extended AE
-        -remove wireless
-    curvey pipes
-        -mekanfied recipes
-        -mekanism rates
-    classic Pipes
-        -pretty basic? should be IE age (require steel?)
-        -buildcraft textures??
-        -no netherite in recipes
-        -"creatify + IE" recipes
-    steam and Rails
-        -curios downscaling
-    building gadgets
-    applied flux
-        -remove custom circuit
-        -fix MEGA FE, either remove or rework
-    
-
-curvey pipes
-    Scale properly with mekanism
-    use mekanism equivalents in crafting
-    
-potato knishes tree
-    -potato pancakes into little black squash balls
-    -little black worms into centipedes
-    -into potato knishes
-
-Immersive Engineering
-    Fix textures
-    remove boss shader drop
-    make loot bags craftable from progression items
-    make fluids makable by mek
-
-Mekanism
-    Ethanol recipe (ethelyene + water)
-
-Create Crafts and additions
-    Remove biofuel, replace with biodisel
-    replace strawed blazes with blaze burners that auto take liquids life tfg
-
-Alternative AE2 press recipes
-
-Ore stuff:
-    Ores in huge viens not working
-
-General
-    -change ae2 press info
-    -ae2 singularity jei shouldn't show 64k
-    -nerf biofuel
-    -remove backpack injects (bc emi)
-    -lapis and ink sac automation
-        -lapis
-            -haunting something magical...
-        -ink sac
-            -from ink, filling "empty sacs"
-    -Moyai infinite cobble like from liminal industries
-    
-
-hyperbox
-    ae2 cells recipes
-Storage Drawers:
-    Rebalance Drawer Upgrades
-        -iron
-        -gold 
-        -diamond
-        -netherite
-        -space metal
 
 server issues:
     -disable "copy cats"
@@ -218,11 +154,3 @@ server info:
     -community events every other week (friday, saturday, or sunday)
         -community planning encouraged
         -players can "book" a week for their event in a queue
-        -backup list of rotating events when nothing booked
-            -movie viewing
-            -minigame/pvp tournament
-            -open mic
-            -enderdragon (one time)
-        -event ideas:
-            -boat race track
-            -fishing tourney

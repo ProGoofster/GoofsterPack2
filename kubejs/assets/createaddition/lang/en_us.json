@@ -1,3 +1,5 @@
 {
-	"item.createaddition.diamond_grit_sandpaper": "Diamond Grit Sand Paper"
+	"item.createaddition.diamond_grit_sandpaper": "Diamond Grit Sand Paper",
+		"item.createaddition.zinc_sheet": "Zinc Plate",
+	"item.createaddition.electrum_sheet": "Electrum Plate"
 }

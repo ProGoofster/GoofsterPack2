@@ -1,14 +1,22 @@
+const METAL_CONFLICTS = ['iron', 'copper', 'gold', 'steel', 'lead', 'uranium']
+
 ServerEvents.recipes((event) => {
 
-    // event.replaceInput({}, "mekanism:dust_obsidian", "create:powdered_obsidian")
-    // event.replaceInput({}, "createaddition:diamond_grit", "mekanism:dust_diamond")
-    // event.replaceOutput({}, "mekanism:dust_obsidian", "create:powdered_obsidian")
-    // event.replaceOutput({}, "createaddition:diamond_grit", "mekanism:dust_diamond")
+    METAL_CONFLICTS.forEach(type => {
+        event.replaceOutput({}, `#forge:dusts/${type}`, `immersiveengineering:dust_${type}`)
+    })
 
     event.replaceInput({}, "mekanism:dust_obsidian", "#forge:dusts/obsidian")
     event.replaceInput({}, "createaddition:diamond_grit", "#forge:dusts/diamond")
     event.replaceOutput({}, "mekanism:dust_obsidian", "#forge:dusts/obsidian")
     event.replaceOutput({}, "createaddition:diamond_grit", "#forge:dusts/diamond")
+
+    event.replaceInput({}, "mekanism:sawdust", "#forge:dusts/wood")
+    event.replaceOutput({}, "mekanism:sawdust", "#forge:dusts/wood")
+    event.remove({output: "immersiveengineering:crafting/paper_from_sawdusts"})
+
+    event.replaceInput({}, "immersiveengineering:dust_sulfur", "#forge:dusts/sulfur")
+    event.replaceOutput({}, "immersiveengineering:dust_sulfur", "#forge:dusts/sulfur")
 
 
     let replacements = [

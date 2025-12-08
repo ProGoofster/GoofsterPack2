@@ -43,7 +43,8 @@
       "goofsterpack:ore_osmium_small",
       "goofsterpack:ore_osmium_upper",
       "goofsterpack:ore_tin_large",
-      "goofsterpack:ore_tin_small"
+      "goofsterpack:ore_tin_small",
+      "kubejs:ore_salt"
     ],
     [
       "minecraft:large_dripstone",

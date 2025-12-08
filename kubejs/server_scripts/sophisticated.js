@@ -22,6 +22,7 @@ ServerEvents.recipes(event => {
   ]
 
   event.remove({id: "sophisticatedbackpacks:backpack"})
+  
   backpackColors.forEach(i => {
     event.shaped(
       i[1],

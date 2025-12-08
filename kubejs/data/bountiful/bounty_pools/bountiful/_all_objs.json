@@ -1,0 +1,539 @@
+{
+	"content": {
+
+		"all_obj_primary_currency": {
+			"type": "item",
+			"content": "minecraft:emerald",
+			"amount": {
+				"min": 1,
+				"max": 20
+			},
+			"unitWorth": 600,
+			"weightMult": 0.65
+		},
+
+		"all_obj_iron_block": {
+			"type": "item",
+			"rarity": "EPIC",
+			"content": "minecraft:iron_block",
+			"amount": {
+				"min": 1,
+				"max": 16
+			},
+			"unitWorth": 5400,
+			"weightMult": 0.1
+		},
+
+		"all_obj_anvil": {
+			"type": "item",
+			"rarity": "EPIC",
+			"content": "minecraft:anvil",
+			"amount": {
+				"min": 1,
+				"max": 6
+			},
+			"unitWorth": 18600,
+			"weightMult": 0.1
+		},
+
+		"all_obj_diamond": {
+			"type": "item",
+			"rarity": "LEGENDARY",
+			"content": "minecraft:diamond",
+			"amount": {
+				"min": 1,
+				"max": 64
+			},
+			"unitWorth": 6400,
+			"weightMult": 0.1
+		},
+
+		"all_obj_zombie": {
+			"type": "entity",
+			"timeMult": 6.0,
+			"content": "minecraft:zombie",
+			"amount": {
+				"min": 1,
+				"max": 10
+			},
+			"unitWorth": 1000,
+			"weightMult": 0.2
+		},
+
+		"all_obj_spider": {
+			"type": "entity",
+			"timeMult": 6.0,
+			"content": "minecraft:spider",
+			"amount": {
+				"min": 1,
+				"max": 6
+			},
+			"unitWorth": 1200,
+			"weightMult": 0.2
+		},
+
+		"all_obj_creeper": {
+			"type": "entity",
+			"timeMult": 7.0,
+			"content": "minecraft:creeper",
+			"amount": {
+				"min": 1,
+				"max": 6
+			},
+			"unitWorth": 2000,
+			"weightMult": 0.2
+		},
+
+		"all_obj_dirt": {
+			"type": "item",
+			"content": "minecraft:dirt",
+			"amount": {
+				"min": 24,
+				"max": 64
+			},
+			"unitWorth": 15,
+			"weightMult": 0.2
+		},
+
+		"all_obj_cobblestone": {
+			"type": "item",
+			"content": "minecraft:cobblestone",
+			"amount": {
+				"min": 24,
+				"max": 64
+			},
+			"unitWorth": 25,
+			"weightMult": 0.2
+		},
+
+		"all_obj_stonebrick": {
+			"type": "item",
+			"rarity": "UNCOMMON",
+			"content": "minecraft:stone_bricks",
+			"amount": {
+				"min": 12,
+				"max": 64
+			},
+			"unitWorth": 50,
+			"weightMult": 0.2
+		},
+
+		"all_obj_sand": {
+			"type": "item",
+			"content": "minecraft:sand",
+			"amount": {
+				"min": 24,
+				"max": 64
+			},
+			"unitWorth": 20,
+			"weightMult": 0.2
+		},
+
+		"all_obj_gravel": {
+			"type": "item",
+			"content": "minecraft:gravel",
+			"amount": {
+				"min": 24,
+				"max": 64
+			},
+			"unitWorth": 30,
+			"weightMult": 0.2
+		},
+
+		"all_obj_clay": {
+			"type": "item",
+			"content": "minecraft:clay_ball",
+			"amount": {
+				"min": 12,
+				"max": 48
+			},
+			"unitWorth": 80,
+			"weightMult": 0.3
+		},
+
+		"all_obj_bone": {
+			"type": "item",
+			"content": "minecraft:bone",
+			"amount": {
+				"min": 8,
+				"max": 32
+			},
+			"unitWorth": 75,
+			"weightMult": 0.3
+		},
+
+		"all_obj_rotten_flesh": {
+			"type": "item",
+			"content": "minecraft:rotten_flesh",
+			"amount": {
+				"min": 16,
+				"max": 48
+			},
+			"unitWorth": 30,
+			"weightMult": 0.3
+		},
+
+		"all_obj_string": {
+			"type": "item",
+			"content": "minecraft:string",
+			"amount": {
+				"min": 8,
+				"max": 32
+			},
+			"unitWorth": 50,
+			"weightMult": 0.3
+		},
+
+		"all_obj_arrows": {
+			"type": "item",
+			"content": "minecraft:arrow",
+			"amount": {
+				"min": 16,
+				"max": 64
+			},
+			"unitWorth": 35,
+			"weightMult": 0.3
+		},
+
+		"all_obj_wheat": {
+			"type": "item",
+			"content": "minecraft:wheat",
+			"amount": {
+				"min": 16,
+				"max": 64
+			},
+			"unitWorth": 40,
+			"weightMult": 0.3
+		},
+
+		"all_obj_kelp": {
+			"type": "item",
+			"content": "minecraft:kelp",
+			"amount": {
+				"min": 16,
+				"max": 64
+			},
+			"unitWorth": 45,
+			"weightMult": 0.3
+		},
+
+		"all_obj_bamboo": {
+			"type": "item",
+			"content": "minecraft:bamboo",
+			"amount": {
+				"min": 24,
+				"max": 64
+			},
+			"unitWorth": 35,
+			"weightMult": 0.3
+		},
+
+		"all_obj_slimeball": {
+			"type": "item",
+			"rarity": "UNCOMMON",
+			"content": "minecraft:slime_ball",
+			"amount": {
+				"min": 4,
+				"max": 16
+			},
+			"unitWorth": 250,
+			"weightMult": 0.4
+		},
+
+		"all_obj_gunpowder": {
+			"type": "item",
+			"content": "minecraft:gunpowder",
+			"amount": {
+				"min": 8,
+				"max": 32
+			},
+			"unitWorth": 150,
+			"weightMult": 0.4
+		},
+
+		"all_obj_spider_eye": {
+			"type": "item",
+			"content": "minecraft:spider_eye",
+			"amount": {
+				"min": 4,
+				"max": 16
+			},
+			"unitWorth": 120,
+			"weightMult": 0.3
+		},
+
+		"all_obj_ender_pearl": {
+			"type": "item",
+			"rarity": "UNCOMMON",
+			"content": "minecraft:ender_pearl",
+			"amount": {
+				"min": 2,
+				"max": 12
+			},
+			"unitWorth": 800,
+			"weightMult": 0.3
+		},
+
+		"all_obj_blaze_rod": {
+			"type": "item",
+			"rarity": "RARE",
+			"content": "minecraft:blaze_rod",
+			"amount": {
+				"min": 2,
+				"max": 8
+			},
+			"unitWorth": 800,
+			"weightMult": 0.2
+		},
+
+		"all_obj_obsidian": {
+			"type": "item",
+			"rarity": "UNCOMMON",
+			"content": "minecraft:obsidian",
+			"amount": {
+				"min": 4,
+				"max": 24
+			},
+			"unitWorth": 400,
+			"weightMult": 0.3
+		},
+
+		"all_obj_crying_obsidian": {
+			"type": "item",
+			"rarity": "RARE",
+			"content": "minecraft:crying_obsidian",
+			"amount": {
+				"min": 2,
+				"max": 12
+			},
+			"unitWorth": 600,
+			"weightMult": 0.2
+		},
+
+		"all_obj_quartz": {
+			"type": "item",
+			"rarity": "UNCOMMON",
+			"content": "minecraft:quartz",
+			"amount": {
+				"min": 8,
+				"max": 32
+			},
+			"unitWorth": 200,
+			"weightMult": 0.3
+		},
+
+		"all_obj_prismarine_shard": {
+			"type": "item",
+			"rarity": "UNCOMMON",
+			"content": "minecraft:prismarine_shard",
+			"amount": {
+				"min": 4,
+				"max": 16
+			},
+			"unitWorth": 400,
+			"weightMult": 0.2
+		},
+
+		"all_obj_prismarine_crystals": {
+			"type": "item",
+			"rarity": "RARE",
+			"content": "minecraft:prismarine_crystals",
+			"amount": {
+				"min": 2,
+				"max": 12
+			},
+			"unitWorth": 500,
+			"weightMult": 0.2
+		},
+
+		"all_obj_glowstone_dust": {
+			"type": "item",
+			"content": "minecraft:glowstone_dust",
+			"amount": {
+				"min": 8,
+				"max": 32
+			},
+			"unitWorth": 150,
+			"weightMult": 0.3
+		},
+
+		"all_obj_nether_wart": {
+			"type": "item",
+			"rarity": "UNCOMMON",
+			"content": "minecraft:nether_wart",
+			"amount": {
+				"min": 8,
+				"max": 32
+			},
+			"unitWorth": 85,
+			"weightMult": 0.3
+		},
+
+		"all_obj_chorus_fruit": {
+			"type": "item",
+			"rarity": "UNCOMMON",
+			"content": "minecraft:chorus_fruit",
+			"amount": {
+				"min": 8,
+				"max": 24
+			},
+			"unitWorth": 200,
+			"weightMult": 0.3
+		},
+
+		"all_obj_shulker_shell": {
+			"type": "item",
+			"rarity": "EPIC",
+			"content": "minecraft:shulker_shell",
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"unitWorth": 4800,
+			"weightMult": 0.1
+		},
+
+		"all_obj_nether_star": {
+			"type": "item",
+			"rarity": "LEGENDARY",
+			"content": "minecraft:nether_star",
+			"amount": {
+				"min": 1,
+				"max": 2
+			},
+			"unitWorth": 64000,
+			"weightMult": 0.05
+		},
+
+		"all_obj_skeleton": {
+			"type": "entity",
+			"timeMult": 6.0,
+			"content": "minecraft:skeleton",
+			"amount": {
+				"min": 1,
+				"max": 8
+			},
+			"unitWorth": 1100,
+			"weightMult": 0.2
+		},
+
+		"all_obj_enderman": {
+			"type": "entity",
+			"rarity": "UNCOMMON",
+			"timeMult": 7.0,
+			"content": "minecraft:enderman",
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"unitWorth": 1800,
+			"weightMult": 0.2
+		},
+
+		"all_obj_witch": {
+			"type": "entity",
+			"rarity": "UNCOMMON",
+			"timeMult": 7.0,
+			"content": "minecraft:witch",
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"unitWorth": 1600,
+			"weightMult": 0.2
+		},
+
+		"all_obj_blaze": {
+			"type": "entity",
+			"rarity": "RARE",
+			"timeMult": 8.0,
+			"content": "minecraft:blaze",
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"unitWorth": 2200,
+			"weightMult": 0.15
+		},
+
+		"all_obj_pillager": {
+			"type": "entity",
+			"rarity": "UNCOMMON",
+			"timeMult": 6.5,
+			"content": "minecraft:pillager",
+			"amount": {
+				"min": 1,
+				"max": 6
+			},
+			"unitWorth": 1400,
+			"weightMult": 0.2
+		},
+
+		"all_obj_drowned": {
+			"type": "entity",
+			"timeMult": 6.5,
+			"content": "minecraft:drowned",
+			"amount": {
+				"min": 1,
+				"max": 6
+			},
+			"unitWorth": 1300,
+			"weightMult": 0.2
+		},
+
+		"all_obj_slime": {
+			"type": "entity",
+			"rarity": "UNCOMMON",
+			"timeMult": 6.0,
+			"content": "minecraft:slime",
+			"amount": {
+				"min": 1,
+				"max": 8
+			},
+			"unitWorth": 900,
+			"weightMult": 0.3
+		},
+
+		"all_obj_wither_skeleton": {
+			"type": "entity",
+			"rarity": "EPIC",
+			"timeMult": 9.0,
+			"content": "minecraft:wither_skeleton",
+			"amount": {
+				"min": 1,
+				"max": 3
+			},
+			"unitWorth": 3000,
+			"weightMult": 0.1
+		},
+
+		"all_obj_phantom": {
+			"type": "entity",
+			"rarity": "UNCOMMON",
+			"timeMult": 7.0,
+			"content": "minecraft:phantom",
+			"amount": {
+				"min": 1,
+				"max": 6
+			},
+			"unitWorth": 1500,
+			"weightMult": 0.2
+		},
+
+		"all_obj_guardian": {
+			"type": "entity",
+			"rarity": "RARE",
+			"timeMult": 8.0,
+			"content": "minecraft:guardian",
+			"amount": {
+				"min": 1,
+				"max": 4
+			},
+			"unitWorth": 2000,
+			"weightMult": 0.15
+		}
+
+	}
+
+
+}

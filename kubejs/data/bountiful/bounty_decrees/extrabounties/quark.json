@@ -1,0 +1,14 @@
+{
+  "requires": [
+    "quark"
+  ],
+  "objectives": [
+    "_all_objs",
+    "treasures",
+    "resources",
+    "quark_any"
+  ],
+  "rewards": [
+    "_all_rews"
+  ]
+}

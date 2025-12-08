@@ -1,0 +1,15 @@
+{
+  "requires": [
+    "create"
+  ],
+  "objectives": [
+    "_all_objs",
+    "treasures",
+    "resources",
+    "create_core",
+    "create_baselogic"
+  ],
+  "rewards": [
+    "_all_rews"
+  ]
+}

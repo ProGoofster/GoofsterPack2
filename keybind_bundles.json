@@ -1,0 +1,40 @@
+[
+  {
+    "id": "efbe8015-1adb-4139-ba39-469e46acaf15",
+    "name": "Mekanism",
+    "entries": [
+      {
+        "key": "key.mekanism.chest_mode",
+        "title": "Chest Mode Switch"
+      },
+      {
+        "key": "key.mekanism.feet_mode",
+        "title": "Feet Mode Switch"
+      },
+      {
+        "key": "key.mekanism.head_mode",
+        "title": "Head Mode Switch"
+      },
+      {
+        "key": "key.mekanism.mode",
+        "title": "Item Mode Switch"
+      },
+      {
+        "key": "key.mekanism.legs_mode",
+        "title": "Legs Mode Switch"
+      },
+      {
+        "key": "key.mekanism.module_tweaker",
+        "title": "Module Tweaker",
+        "icon": {
+          "id": "minecraft:air",
+          "Count": 0
+        }
+      },
+      {
+        "key": "key.mekanism.key_hud",
+        "title": "Show HUD"
+      }
+    ]
+  }
+]

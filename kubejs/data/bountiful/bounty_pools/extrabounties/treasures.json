@@ -1,0 +1,67 @@
+{
+  "content": {
+    "ender_pearl": {
+      "type": "item",
+      "content": "minecraft:ender_pearl",
+      "amount": {
+        "min": 1,
+        "max": 8
+      },
+      "unitWorth": 800
+    },
+    "glowstone": {
+      "type": "item",
+      "content": "minecraft:glowstone_dust",
+      "amount": {
+        "min": 4,
+        "max": 24
+      },
+      "unitWorth": 150
+    },
+    "redstone": {
+      "type": "item",
+      "content": "minecraft:redstone",
+      "amount": {
+        "min": 6,
+        "max": 32
+      },
+      "unitWorth": 150
+    },
+    "gold_ingot": {
+      "type": "item",
+      "content": "minecraft:gold_ingot",
+      "amount": {
+        "min": 3,
+        "max": 8
+      },
+      "unitWorth": 800
+    },
+    "lapis_lazuli": {
+      "type": "item",
+      "content": "minecraft:lapis_lazuli",
+      "amount": {
+        "min": 6,
+        "max": 32
+      },
+      "unitWorth": 200
+    },
+    "iron_ingot": {
+      "type": "item",
+      "content": "minecraft:iron_ingot",
+      "amount": {
+        "min": 8,
+        "max": 16
+      },
+      "unitWorth": 600
+    },
+    "copper_ingot": {
+      "type": "item",
+      "content": "minecraft:copper_ingot",
+      "amount": {
+        "min": 4,
+        "max": 32
+      },
+      "unitWorth": 200
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "block.ad_astra.cryo_fuel": "Cryo Fuel Additives",
+    "fluid.ad_astra.cryo_fuel": "Cryo Fuel Additives",
+    "fluid_type.ad_astra.cryo_fuel": "Cryo Fuel Additives",
+    "item.ad_astra.cryo_freezer.tooltip": "Converts ice shards into cryo fuel additives.",
+    "item.ad_astra.cryo_fuel_bucket": "Cryo Fuel Additives Bucket",
+    "block.ad_astra.cheese_block": "Moon Cheese Block",
+    "item.ad_astra.cheese": "Moon Cheese"
+}

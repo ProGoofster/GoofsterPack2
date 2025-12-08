@@ -1,0 +1,151 @@
+{
+  "requires": [
+    "dice"
+  ],
+  "content": {
+    "dice_magenta_d6": {
+      "type": "item",
+      "content": "dice:magenta_d6",
+      "amount": {
+        "min": 1,
+        "max": 1
+      },
+      "unitWorth": 800
+    },
+    "dice_red_d6": {
+      "type": "item",
+      "content": "dice:red_d6",
+      "amount": {
+        "min": 1,
+        "max": 1
+      },
+      "unitWorth": 800
+    },
+    "dice_black_d6": {
+      "type": "item",
+      "content": "dice:black_d6",
+      "amount": {
+        "min": 1,
+        "max": 1
+      },
+      "unitWorth": 800
+    },
+    "dice_brown_d6": {
+      "type": "item",
+      "content": "dice:brown_d6",
+      "amount": {
+        "min": 1,
+        "max": 1
+      },
+      "unitWorth": 800
+    },
+    "dice_cyan_d6": {
+      "type": "item",
+      "content": "dice:cyan_d6",
+      "amount": {
+        "min": 1,
+        "max": 1
+      },
+      "unitWorth": 800
+    },
+    "dice_green_d6": {
+      "type": "item",
+      "content": "dice:green_d6",
+      "amount": {
+        "min": 1,
+        "max": 1
+      },
+      "unitWorth": 800
+    },
+    "dice_yellow_d6": {
+      "type": "item",
+      "content": "dice:yellow_d6",
+      "amount": {
+        "min": 1,
+        "max": 1
+      },
+      "unitWorth": 800
+    },
+    "dice_purple_d6": {
+      "type": "item",
+      "content": "dice:purple_d6",
+      "amount": {
+        "min": 1,
+        "max": 1
+      },
+      "unitWorth": 800
+    },
+    "dice_gray_d6": {
+      "type": "item",
+      "content": "dice:gray_d6",
+      "amount": {
+        "min": 1,
+        "max": 1
+      },
+      "unitWorth": 800
+    },
+    "dice_white_d6": {
+      "type": "item",
+      "content": "dice:white_d6",
+      "amount": {
+        "min": 1,
+        "max": 1
+      },
+      "unitWorth": 800
+    },
+    "dice_light_blue_d6": {
+      "type": "item",
+      "content": "dice:light_blue_d6",
+      "amount": {
+        "min": 1,
+        "max": 1
+      },
+      "unitWorth": 800
+    },
+    "dice_lime_d6": {
+      "type": "item",
+      "content": "dice:lime_d6",
+      "amount": {
+        "min": 1,
+        "max": 1
+      },
+      "unitWorth": 800
+    },
+    "dice_orange_d6": {
+      "type": "item",
+      "content": "dice:orange_d6",
+      "amount": {
+        "min": 1,
+        "max": 1
+      },
+      "unitWorth": 800
+    },
+    "dice_pink_d6": {
+      "type": "item",
+      "content": "dice:pink_d6",
+      "amount": {
+        "min": 1,
+        "max": 1
+      },
+      "unitWorth": 800
+    },
+    "dice_blue_d6": {
+      "type": "item",
+      "content": "dice:blue_d6",
+      "amount": {
+        "min": 1,
+        "max": 1
+      },
+      "unitWorth": 800
+    },
+    "dice_light_gray_d6": {
+      "type": "item",
+      "content": "dice:light_gray_d6",
+      "amount": {
+        "min": 1,
+        "max": 1
+      },
+      "unitWorth": 800
+    }
+  }
+}
